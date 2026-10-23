@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import MailForm from '../components/MailForm.astro';
+import Icon from '../components/Icon.astro';
+import { SITE, phoneHref, waHref } from '../site.config';
+const boxes = [
+  { icon: 'mail', t: 'Informazioni e orientamento', d: 'Corsi, iscrizioni, lezioni private e consulenze.', v: SITE.email.info, href: `mailto:${SITE.email.info}` },
+  { icon: 'file', t: 'Valutazione CFU', d: 'Riconoscimento degli esami universitari già sostenuti.', v: SITE.email.valutazioni, href: `mailto:${SITE.email.valutazioni}` },
+  { icon: 'briefcase', t: 'Amministrazione', d: 'Pagamenti, rate, fatture e documenti amministrativi.', v: SITE.email.amministrazione, href: `mailto:${SITE.email.amministrazione}` },
+  ...(SITE.phone ? [{ icon: 'phone', t: 'Telefono', d: 'Parla subito con un orientatore.', v: SITE.phone, href: phoneHref }] : []),
+  ...(waHref ? [{ icon: 'whatsapp', t: 'WhatsApp', d: 'Scrivici quando vuoi.', v: 'Apri la chat', href: waHref }] : []),
+];
+const addr = [SITE.address.street, SITE.address.cap, SITE.address.city].filter(Boolean).join(', ');
+---
+<Base title="Contatti e orientamento gratuito" description={`Contatta ${SITE.name} per orientamento gratuito su corsi di laurea, master, certificazioni e lezioni private: ${SITE.email.info}.`}>
+  <PageHero
+    eyebrow="Contatti"
+    title={`Parliamo del tuo <em class="serif" style="color:var(--c-amber)">prossimo passo</em>.`}
+    lead="Scrivici: un orientatore ti risponde personalmente e ti propone il percorso più adatto, con tempi e costi chiari. La consulenza è gratuita."
+    crumbs={[{ label: 'Contatti' }]}
+  />
+  <section class="section">
+    <div class="wrap ct">
+      <div class="ct__boxes">
+        {boxes.map((b, i) => (
+          <a class="cbox" href={b.href} data-reveal style={`--d:${i}`} {...(b.icon === 'whatsapp' ? { target: '_blank', rel: 'noopener' } : {})}>
+            <span class="cbox__ic"><Icon name={b.icon} size={24} /></span>
+            <span><strong>{b.t}</strong><small>{b.d}</small><em>{b.v}</em></span>
+          </a>
+        ))}
+        {addr && <div class="cbox"><span class="cbox__ic"><Icon name="pin" size={24} /></span><span><strong>Sede</strong><em>{addr}</em></span></div>}
+      </div>
+      <div class="ct__form">
+        <h2>Richiedi una consulenza gratuita</h2>
+        <p>Compila il modulo: si aprirà il tuo programma di posta con il messaggio già pronto da inviare.</p>
+        <MailForm id="contatti" />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .ct { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(28px, 5vw, 64px); align-items: start; }
+  .ct__boxes { display: grid; gap: 12px; }
+  .cbox { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border-radius: var(--r); background: #fff; box-shadow: var(--shadow-sm); text-decoration: none; color: inherit; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+  a.cbox:hover { transform: translateX(6px); box-shadow: var(--shadow); }
+  .cbox__ic { flex: none; width: 50px; height: 50px; border-radius: 14px; display: grid; place-items: center; background: var(--c-blue-soft); color: var(--c-blue); }
+  .cbox strong { display: block; font: 700 1.05rem var(--f-display); color: var(--c-ink); }
+  .cbox small { display: block; color: var(--c-muted); font-size: 0.9rem; margin: 2px 0 6px; }
+  .cbox em { font-style: normal; font-weight: 600; color: var(--c-blue); word-break: break-all; }
+  .ct__form { background: #fff; border-radius: var(--r-lg); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow); }
+  .ct__form h2 { font-size: 1.8rem; }
+  .ct__form > p { color: var(--c-muted); }
+  @media (max-width: 900px) { .ct { grid-template-columns: minmax(0, 1fr); } }
+</style>

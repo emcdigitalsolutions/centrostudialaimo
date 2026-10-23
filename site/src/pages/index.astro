@@ -1,0 +1,406 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import CourseCard from '../components/CourseCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Faq from '../components/Faq.astro';
+import MailForm from '../components/MailForm.astro';
+import { lauree, masters, perfezionamenti, certificazioni, regionali, abilitanti, STATS, ROUTES, AREE, FACOLTA, splitIndirizzo } from '../lib/catalog';
+import { SITE } from '../site.config';
+
+const pick = <T extends { slug: string }>(arr: T[], re: RegExp) => arr.find((x) => re.test(x.slug));
+const marquee = [...lauree.slice(0, 40).map((l) => splitIndirizzo(l.title).nome), ...masters.map((m) => m.title)]
+  .filter((v, i, a) => a.indexOf(v) === i && v.length < 48)
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 28);
+
+type Card = { href: string; title: string; sub?: string; chips: { t: string; c?: string }[]; meta?: string; accent?: string };
+const L = (re: RegExp): Card | null => { const l = pick(lauree, re); if (!l) return null; const s = splitIndirizzo(l.title); return { href: ROUTES.laurea(l.slug), title: s.nome, sub: s.indirizzo && `Indirizzo ${s.indirizzo}`, chips: [{ t: l.livello === 'triennale' ? 'Triennale' : 'Magistrale', c: l.livello === 'triennale' ? 'blue' : 'violet' }, { t: l.classe }], meta: `Facoltà di ${l.facolta}`, accent: FACOLTA[l.facolta]?.color }; };
+const M = (re: RegExp): Card | null => { const m = pick(masters, re); return m ? { href: ROUTES.master(m.slug), title: m.title, chips: [{ t: `Master ${m.livello} liv.`, c: 'violet' }, { t: AREE[m.area].short }], meta: `${m.cfu} CFU · ${m.durata}`, accent: AREE[m.area].color } : null; };
+const P = (re: RegExp): Card | null => { const p = pick(perfezionamenti, re); return p ? { href: ROUTES.perf(p.slug), title: p.title, chips: [{ t: 'Perfezionamento', c: 'mint' }, { t: `${p.cfu} CFU` }], meta: p.durata, accent: 'var(--c-mint)' } : null; };
+const C = (re: RegExp): Card | null => { const c = pick(certificazioni, re); return c ? { href: ROUTES.cert(c.slug), title: c.title, chips: [{ t: c.tipo === 'linguistica' ? 'Linguistica' : 'Informatica', c: c.tipo === 'linguistica' ? 'coral' : 'blue' }], meta: c.durata || 'Online', accent: c.tipo === 'linguistica' ? 'var(--c-coral)' : 'var(--c-blue)' } : null; };
+const R = (re: RegExp): Card | null => { const r = pick(regionali, re); return r ? { href: ROUTES.reg(r.slug), title: r.title, chips: [{ t: 'Corso regionale', c: 'violet' }], meta: r.durata, accent: 'var(--c-violet)' } : null; };
+const A = (re: RegExp): Card | null => { const a = pick(abilitanti, re); return a ? { href: ROUTES.abil(a.slug), title: a.title, chips: [{ t: 'Abilitazione', c: 'amber' }], meta: a.crediti && /\d/.test(a.crediti) ? a.crediti : 'Requisiti e scadenze', accent: 'var(--c-amber)' } : null; };
+
+const profiles = [
+  { id: 'diplomato', icon: 'school', label: 'Sono diplomato', title: 'Il primo titolo universitario, senza test d’ingresso', text: 'Scegli tra lauree triennali online in cinque facoltà: iscrizioni aperte tutto l’anno e un tutor che ti segue fino alla tesi.', cta: { t: 'Tutte le lauree triennali', h: '/universita/lauree-triennali/' },
+    cards: [L(/^scienze-delleducazione-e-della-formazione-indirizzo-scienze-delleducazione-della-prima/), L(/^scienze-e-tecniche-psicologiche$/), L(/^ingegneria-informatica-indirizzo-intelligenza/)] },
+  { id: 'laureato', icon: 'grad', label: 'Sono laureato', title: 'Specializzati con una magistrale o un master', text: 'Lauree magistrali, master di I e II livello e corsi di perfezionamento per fare il salto nella tua professione.', cta: { t: 'Tutti i master', h: '/master/' },
+    cards: [L(/^psicologia-indirizzo-psicologia-clinica/), M(/criminologia-indirizzo-scienze-forensi/), M(/management-cybersecurity/)] },
+  { id: 'insegnare', icon: 'target', label: 'Voglio insegnare', title: 'Abilitazione, classi di concorso e punteggio', text: 'Percorsi abilitanti 30-36-60 CFU, master per completare la classe di concorso e titoli per entrare in graduatoria.', cta: { t: 'Vai all’Area Scuola', h: '/area-scuola/' },
+    cards: [A(/percorsi-abilitanti-per-linsegnamento/), M(/master-italiano-l2/), A(/tfa-sostegno/)] },
+  { id: 'docente', icon: 'award', label: 'Sono docente', title: 'Più punti in GPS, nuove competenze in classe', text: 'Certificazioni linguistiche e informatiche, CLIL, perfezionamenti da 60 CFU e master Mondo Scuola.', cta: { t: 'Pacchetti punteggio GPS', h: '/area-scuola/punteggio-gps/' },
+    cards: [P(/didattica-dellinsegnamento-con-la-metodologia-clil/), C(/certificazione-inglese-b2/), P(/il-docente-di-sostegno-educare/)] },
+  { id: 'ata', icon: 'users', label: 'Personale ATA', title: 'Titoli per l’accesso e il punteggio ATA', text: 'Certificazioni informatiche riconosciute e qualifiche regionali per entrare e salire nelle graduatorie del personale ATA.', cta: { t: 'Corsi regionali', h: '/corsi-regionali/' },
+    cards: [C(/pekit/), R(/asacom/), R(/osa-/)] },
+  { id: 'studente', icon: 'pencil', label: 'Ho bisogno di aiuto', title: 'Lezioni private su misura', text: 'Ripetizioni per scuola media e superiore, esami universitari, tesi, recupero anni e concorsi: in sede o online.', cta: { t: 'Scopri le lezioni private', h: '/lezioni-private/' },
+    cards: [
+      { href: '/lezioni-private/#scuola', title: 'Ripetizioni scuola media e superiore', chips: [{ t: 'Lezioni private', c: 'amber' }], meta: 'Individuali o in gruppo', accent: 'var(--c-amber)' },
+      { href: '/lezioni-private/#universita', title: 'Preparazione esami universitari e tesi', chips: [{ t: 'Lezioni private', c: 'amber' }], meta: 'In sede o online', accent: 'var(--c-amber)' },
+      { href: '/lezioni-private/#percorsi', title: 'Recupero anni scolastici e concorsi', chips: [{ t: 'Lezioni private', c: 'amber' }], meta: 'Piano su misura', accent: 'var(--c-amber)' },
+    ] },
+].map((p) => ({ ...p, cards: p.cards.filter(Boolean) as Card[] }));
+
+const bento = [
+  { href: '/universita/', cls: 'b-uni', icon: 'grad', n: STATS.lauree, k: 'corsi di laurea', t: 'Università online', d: 'Triennali e magistrali in Ingegneria, Psicologia, Economia, Giurisprudenza e Lettere.' },
+  { href: '/master/', cls: 'b-mas', icon: 'award', n: STATS.master, k: 'master', t: 'Master I e II livello', d: 'Scuola, sanità, PA e post laurea.' },
+  { href: '/area-scuola/', cls: 'b-scu', icon: 'school', n: STATS.perfezionamenti + abilitanti.length, k: 'percorsi scuola', t: 'Area Scuola', d: 'Perfezionamenti, abilitazioni e GPS.' },
+  { href: '/certificazioni/', cls: 'b-cer', icon: 'monitor', n: STATS.certificazioni, k: 'certificazioni', t: 'Certificazioni', d: 'Informatiche e linguistiche.' },
+  { href: '/lezioni-private/', cls: 'b-lez', icon: 'pencil', n: '1:1', k: 'o in piccoli gruppi', t: 'Lezioni private', d: 'Ripetizioni, esami, tesi e concorsi, in sede o online.' },
+  { href: '/corsi-regionali/', cls: 'b-reg', icon: 'users', n: regionali.length, k: 'corsi regionali', t: 'Corsi regionali', d: 'ASACOM, OSA, OPI e segreteria.' },
+];
+const steps = [
+  { icon: 'mail', t: 'Ci contatti', d: 'Scrivici o passa in sede: raccontaci titolo di studio, esperienza e obiettivi.' },
+  { icon: 'route', t: 'Ti orientiamo', d: 'Analizziamo i titoli che hai già e ti proponiamo il percorso più efficace, con tempi e costi chiari.' },
+  { icon: 'file', t: 'Ti iscriviamo', d: 'Pensiamo noi a moduli, documenti, riconoscimento CFU e scadenze.' },
+  { icon: 'user', t: 'Ti seguiamo', d: 'Un tutor ti accompagna lungo tutto il percorso, fino al traguardo.' },
+];
+const faq = [
+  { q: 'Che cosa offre il Centro Studi Alaimo?', a: `Corsi di laurea online triennali e magistrali, ${STATS.master} master di I e II livello, corsi di perfezionamento per docenti, percorsi abilitanti, certificazioni informatiche e linguistiche, corsi regionali e lezioni private, con orientamento gratuito.` },
+  { q: 'L’orientamento è gratuito?', a: 'Sì. La consulenza di orientamento e la valutazione dei CFU già acquisiti sono gratuite e senza impegno.' },
+  { q: 'I corsi si seguono online?', a: 'Sì: lezioni e materiali sono online e sempre disponibili. Gli esami universitari si sostengono nelle sedi d’esame dell’ateneo; le lezioni private si possono fare in sede o online.' },
+  { q: 'Posso pagare a rate?', a: 'Per la maggior parte dei corsi è prevista la rateizzazione della quota. Ti indichiamo le modalità di pagamento di ogni percorso.' },
+  { q: 'I titoli sono validi per le graduatorie?', a: 'Master, perfezionamenti e certificazioni proposti sono valutabili nelle graduatorie del personale docente e ATA secondo le tabelle ministeriali in vigore. Per ogni corso ti diciamo con precisione come viene valutato.' },
+  { q: 'Come vi contatto?', a: `Scrivi a ${SITE.email.info} per informazioni e orientamento, a ${SITE.email.valutazioni} per la valutazione CFU e a ${SITE.email.amministrazione} per pagamenti e documenti.` },
+];
+const ld = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url, inLanguage: 'it', publisher: { '@id': `${SITE.url}/#org` } };
+---
+<Base title={`${SITE.name} | Università online, master, certificazioni e lezioni private`} description={SITE.description} jsonld={ld} keywords="centro studi, corsi di laurea online, università telematica, master online, corsi di perfezionamento, percorsi abilitanti, certificazioni informatiche, certificazione inglese, lezioni private, ripetizioni, punteggio GPS, valutazione CFU, Sicilia">
+  <!-- HERO -->
+  <section class="hero grain">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="hb hb1"></span><span class="hb hb2"></span><span class="hb hb3"></span><span class="hero__grid"></span>
+    </div>
+    <div class="wrap hero__in">
+      <div class="hero__txt">
+        <p class="eyebrow eyebrow--light hero__a" style="--i:0">Formazione · Università · Certificazioni</p>
+        <h1 class="hero__a" style="--i:1">Ogni traguardo<br />è fatto di <em class="serif">gradini</em>.</h1>
+        <p class="hero__lead hero__a" style="--i:2">Lauree online, master, abilitazioni, certificazioni e lezioni private. Ti aiutiamo a scegliere il prossimo gradino e a salirlo, con un orientatore al tuo fianco.</p>
+        <form class="hero__search hero__a" style="--i:3" data-search-form role="search">
+          <Icon name="search" size={22} />
+          <label class="sr-only" for="hero-q">Cosa vuoi studiare?</label>
+          <input id="hero-q" type="search" placeholder="Cosa vuoi studiare? Es. Psicologia, CLIL, sostegno…" autocomplete="off" />
+          <button class="btn btn--amber" type="submit">Cerca</button>
+        </form>
+        <div class="hero__quick hero__a" style="--i:4">
+          {['Psicologia', 'Sostegno', 'Inglese C1', 'Infermiere', 'Ingegneria'].map((q) => <button type="button" class="chip chip--dark" data-search-open data-q={q}>{q}</button>)}
+        </div>
+      </div>
+
+      <div class="stairs" aria-hidden="true">
+        <span class="orb"><span></span></span>
+        {[
+          { t: 'Diploma', s: 'il punto di partenza', i: 'school' },
+          { t: 'Laurea', s: `${STATS.lauree} corsi online`, i: 'grad' },
+          { t: 'Master', s: `${STATS.master} specializzazioni`, i: 'award' },
+          { t: 'Abilitazione', s: 'e punteggio GPS', i: 'shield' },
+        ].map((s, n) => (
+          <div class="step" style={`--n:${n}`}>
+            <span class="step__ic"><Icon name={s.i} size={20} /></span>
+            <strong>{s.t}</strong><small>{s.s}</small>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="hero__stats wrap">
+      {[
+        { n: STATS.lauree, k: 'corsi di laurea' },
+        { n: STATS.master, k: 'master I e II livello' },
+        { n: STATS.perfezionamenti, k: 'perfezionamenti' },
+        { n: STATS.totale, k: 'percorsi in catalogo', plus: true },
+      ].map((s) => <div><strong data-count={s.n}>{s.n}</strong>{s.plus && <b>+</b>}<span>{s.k}</span></div>)}
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="mq" aria-hidden="true">
+    <div class="mq__track">
+      {[0, 1].map(() => <div class="mq__set">{marquee.map((m) => <span>{m}<i></i></span>)}</div>)}
+    </div>
+  </div>
+
+  <!-- PROFILI -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Da dove parti?</p>
+        <h2>Scegli il tuo punto di partenza, <em class="serif" style="color:var(--c-blue)">ti mostriamo la strada</em></h2>
+      </div>
+      <div class="pf" data-tabs>
+        <div class="pf__tabs" role="tablist" aria-label="Profilo">
+          {profiles.map((p, i) => (
+            <button role="tab" id={`tab-${p.id}`} aria-controls={`panel-${p.id}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1} class="pf__tab"><Icon name={p.icon} size={20} />{p.label}</button>
+          ))}
+        </div>
+        {profiles.map((p, i) => (
+          <div role="tabpanel" id={`panel-${p.id}`} aria-labelledby={`tab-${p.id}`} class="pf__panel" hidden={i !== 0}>
+            <div class="pf__intro">
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+              <a href={p.cta.h} class="btn btn--ghost btn--sm">{p.cta.t} <Icon name="arrow" class="arrow" /></a>
+            </div>
+            <div class="pf__cards">{p.cards.map((c) => <CourseCard {...c} />)}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Offerta formativa</p>
+        <h2>Un unico centro, <em class="serif" style="color:var(--c-blue)">tutta la formazione</em> che ti serve</h2>
+        <p>Dal diploma al master, dalla prima certificazione all’abilitazione: tutti i percorsi in un solo posto, con le stesse persone a seguirti.</p>
+      </div>
+      <div class="bento">
+        {bento.map((b, i) => (
+          <a href={b.href} class:list={['bt', b.cls]} data-reveal style={`--d:${i}`}>
+            <span class="bt__ic"><Icon name={b.icon} size={26} /></span>
+            {b.n && <span class="bt__n">{b.n}<small>{b.k}</small></span>}
+            <span class="bt__t">{b.t}</span>
+            <span class="bt__d">{b.d}</span>
+            <span class="bt__go"><Icon name="arrow-up-right" size={22} /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- COME FUNZIONA -->
+  <section class="section section--ink grain how">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow--light">Come funziona</p>
+        <h2>Dal primo contatto al traguardo, <em class="serif" style="color:var(--c-amber)">insieme</em></h2>
+      </div>
+      <ol class="flow">
+        {steps.map((s, i) => (
+          <li data-reveal style={`--d:${i}`}>
+            <span class="flow__n">0{i + 1}</span>
+            <span class="flow__ic"><Icon name={s.icon} size={26} /></span>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <CtaBand variant="cfu" />
+
+  <Faq items={faq} />
+
+  <!-- CONTATTO -->
+  <section class="section section--white" id="contatto">
+    <div class="wrap hc">
+      <div data-reveal>
+        <p class="eyebrow">Orientamento gratuito</p>
+        <h2>Parliamone. <em class="serif" style="color:var(--c-blue)">La prima consulenza è gratuita.</em></h2>
+        <p class="hc__lead">Raccontaci il tuo obiettivo: ti rispondiamo con una proposta su misura, senza impegno.</p>
+        <ul class="hc__list">
+          <li><Icon name="mail" size={20} /><span><small>Informazioni</small><a href={`mailto:${SITE.email.info}`}>{SITE.email.info}</a></span></li>
+          <li><Icon name="file" size={20} /><span><small>Valutazione CFU</small><a href={`mailto:${SITE.email.valutazioni}`}>{SITE.email.valutazioni}</a></span></li>
+          <li><Icon name="briefcase" size={20} /><span><small>Amministrazione</small><a href={`mailto:${SITE.email.amministrazione}`}>{SITE.email.amministrazione}</a></span></li>
+        </ul>
+      </div>
+      <div class="hc__form"><MailForm id="home" /></div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* HERO */
+  .hero { position: relative; background: var(--c-ink); color: #b9c3dd; padding: calc(var(--header-h) + clamp(40px, 7vw, 96px)) 0 0; overflow: hidden; isolation: isolate; }
+  .hero__bg { position: absolute; inset: 0; z-index: -1; }
+  .hb { position: absolute; border-radius: 50%; filter: blur(80px); }
+  .hb1 { width: 640px; height: 640px; background: var(--c-blue); right: -180px; top: -220px; opacity: 0.6; animation: drift 20s ease-in-out infinite alternate; }
+  .hb2 { width: 480px; height: 480px; background: var(--c-violet); left: -200px; bottom: -160px; opacity: 0.35; animation: drift 24s ease-in-out infinite alternate-reverse; }
+  .hb3 { width: 300px; height: 300px; background: var(--c-amber); right: 18%; top: 40%; opacity: 0.18; animation: drift 17s ease-in-out infinite alternate; }
+  .hero__grid { position: absolute; inset: 0; background-image: linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 70% 40%, #000 15%, transparent 70%); }
+  .hero__in { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .hero h1 { color: #fff; font-size: clamp(2.7rem, 6.4vw, 5.6rem); line-height: 0.98; margin-bottom: 0.35em; }
+  .hero h1 em { color: var(--c-amber); font-size: 1.08em; }
+  .hero__lead { font-size: clamp(1.08rem, 1.5vw, 1.28rem); max-width: 56ch; }
+  .hero__search { display: flex; align-items: center; gap: 10px; margin-top: 30px; padding: 8px 8px 8px 20px; max-width: 620px; border-radius: 999px; background: #fff; color: var(--c-blue); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); transition: box-shadow 0.3s; }
+  .hero__search:focus-within { box-shadow: 0 0 0 5px rgb(255 178 30 / 0.4), 0 24px 60px -20px rgb(0 0 0 / 0.6); }
+  .hero__search input { flex: 1; min-width: 0; border: 0; outline: none; font: 500 1.05rem var(--f-body); color: var(--c-ink); background: none; }
+  .hero__quick { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .hero__quick .chip { border: 1px solid rgb(255 255 255 / 0.14); cursor: pointer; transition: background 0.2s, color 0.2s; }
+  .hero__quick .chip:hover { background: var(--c-amber); color: var(--c-ink); }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero__a { opacity: 0; transform: translateY(24px); animation: rise 1s var(--ease) forwards; animation-delay: calc(var(--i) * 110ms + 100ms); }
+    .step { opacity: 0; transform: translateY(40px) scale(0.96); animation: rise 1s var(--ease) forwards; animation-delay: calc(var(--n) * 140ms + 500ms); }
+    .orb { opacity: 0; animation: orbIn 1.2s var(--ease) 1.2s forwards; }
+  }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @keyframes orbIn { from { opacity: 0; transform: translateY(30px) scale(0.4); } to { opacity: 1; transform: none; } }
+
+  /* scala */
+  .stairs { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); align-items: end; gap: 10px; height: 430px; }
+  .step { position: relative; display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; padding: 16px 14px; height: calc(30% + var(--n) * 20%); border-radius: 18px 18px 6px 6px; background: linear-gradient(180deg, rgb(255 255 255 / 0.16), rgb(255 255 255 / 0.04)); border: 1px solid rgb(255 255 255 / 0.16); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #fff; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.25); }
+  .step:last-of-type { background: linear-gradient(180deg, rgb(255 178 30 / 0.4), rgb(255 178 30 / 0.06)); border-color: rgb(255 178 30 / 0.5); }
+  .step__ic { position: absolute; top: 14px; left: 14px; width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: rgb(255 255 255 / 0.14); color: var(--c-amber); }
+  .step strong { font: 700 1.05rem/1.1 var(--f-display); }
+  .step small { font-size: 0.78rem; color: #b9c3dd; line-height: 1.25; }
+  .orb { position: absolute; right: calc(12.5% - 36px); top: -6px; width: 64px; height: 64px; }
+  .orb span { display: block; width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ffe2a3, var(--c-amber) 55%, #e48a00); box-shadow: 0 0 0 10px rgb(255 178 30 / 0.12), 0 0 60px 10px rgb(255 178 30 / 0.45); animation: float 4s ease-in-out infinite; }
+  @keyframes float { 50% { transform: translateY(-14px); } }
+
+  .hero__stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: clamp(40px, 6vw, 72px); border-top: 1px solid rgb(255 255 255 / 0.12); }
+  .hero__stats div { padding: 26px 0 30px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 4px; }
+  .hero__stats div + div { padding-left: 26px; border-left: 1px solid rgb(255 255 255 / 0.12); }
+  .hero__stats strong { font: 800 clamp(2.2rem, 4vw, 3.3rem)/1 var(--f-display); color: #fff; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+  .hero__stats b { font: 800 2rem var(--f-display); color: var(--c-amber); }
+  .hero__stats span { width: 100%; font-size: 0.92rem; margin-top: 6px; }
+
+  /* marquee */
+  .mq { background: var(--c-amber); color: var(--c-ink); overflow: hidden; padding: 16px 0; transform: rotate(-1.2deg) scale(1.02); margin: -10px 0 0; position: relative; z-index: 2; box-shadow: 0 20px 40px -20px rgb(13 26 58 / 0.4); }
+  .mq__track { display: flex; width: max-content; animation: mq 70s linear infinite; }
+  .mq:hover .mq__track { animation-play-state: paused; }
+  .mq__set { display: flex; }
+  .mq span { display: inline-flex; align-items: center; gap: 22px; padding-right: 22px; font: 700 1.05rem var(--f-display); white-space: nowrap; letter-spacing: -0.01em; }
+  .mq i { width: 9px; height: 9px; border-radius: 3px; background: var(--c-ink); transform: rotate(45deg); }
+  @keyframes mq { to { transform: translateX(-50%); } }
+
+  /* profili */
+  .pf__tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 28px; }
+  .pf__tab { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1.5px solid var(--c-line); background: #fff; font-weight: 600; color: var(--c-ink); transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.3s var(--ease); }
+  .pf__tab:hover { border-color: var(--c-ink); transform: translateY(-2px); }
+  .pf__tab[aria-selected='true'] { background: var(--c-ink); border-color: var(--c-ink); color: #fff; }
+  .pf__tab[aria-selected='true'] :global(svg) { color: var(--c-amber); }
+  .pf__panel[hidden] { display: none; }
+  .pf__panel { display: grid; grid-template-columns: 0.85fr 2fr; gap: 24px; align-items: stretch; animation: fadeUp 0.6s var(--ease); }
+  .pf__intro { padding: 30px; border-radius: var(--r-lg); background: linear-gradient(150deg, var(--c-blue-soft), #fff); border: 1px solid #d9e1ff; display: flex; flex-direction: column; gap: 10px; }
+  .pf__intro h3 { font-size: 1.55rem; margin: 0; }
+  .pf__intro p { color: var(--c-muted); margin: 0 0 8px; }
+  .pf__intro .btn { margin-top: auto; align-self: flex-start; }
+  .pf__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } }
+
+  /* bento */
+  .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(200px, auto); gap: 16px; }
+  .bt { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 26px; border-radius: var(--r-lg); text-decoration: none; overflow: hidden; isolation: isolate; color: var(--c-ink); background: var(--c-paper); transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); }
+  .bt:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+  .bt__ic { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: #fff; color: var(--c-blue); margin-bottom: auto; }
+  .bt__n { font: 800 clamp(2.4rem, 4vw, 3.6rem)/1 var(--f-display); letter-spacing: -0.05em; margin-top: 26px; display: flex; align-items: baseline; gap: 8px; }
+  .bt__n small { font: 600 0.9rem var(--f-body); letter-spacing: 0; opacity: 0.7; }
+  .bt__t { font: 700 1.3rem/1.15 var(--f-display); letter-spacing: -0.02em; margin-top: 12px; }
+  .bt__d { font-size: 0.95rem; opacity: 0.78; }
+  .bt__go { position: absolute; top: 22px; right: 22px; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1.5px solid currentColor; opacity: 0.35; transition: opacity 0.3s, transform 0.5s var(--ease), background 0.3s; }
+  .bt:hover .bt__go { opacity: 1; transform: rotate(45deg); }
+  .b-uni { grid-column: span 2; grid-row: span 2; background: radial-gradient(circle at 90% 10%, var(--c-blue-2), var(--c-blue) 40%, var(--c-ink)); color: #fff; }
+  .b-uni .bt__ic { background: rgb(255 255 255 / 0.14); color: var(--c-amber); }
+  .b-uni .bt__n { font-size: clamp(4rem, 9vw, 7.5rem); }
+  .b-uni .bt__t { font-size: 2rem; }
+  .b-uni::after { content: ''; position: absolute; z-index: -1; right: -60px; bottom: -60px; width: 300px; height: 300px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M27.5 16h9l14.5 34h-10l-2.6-6.5h-12.8L23 50H13zm4.5 11-4 10h8z' fill='%23fff' fill-rule='evenodd' opacity='.08'/%3E%3C/svg%3E") center/contain no-repeat; transition: transform 0.8s var(--ease); }
+  .b-uni:hover::after { transform: translate(-14px, -14px) rotate(-4deg); }
+  .b-mas { grid-column: span 2; background: var(--c-amber); }
+  .b-mas .bt__ic { color: #8a5a00; }
+  .b-scu { background: var(--c-mint-soft); }
+  .b-scu .bt__ic { color: var(--c-mint); }
+  .b-cer { background: var(--c-coral-soft); }
+  .b-cer .bt__ic { color: var(--c-coral); }
+  .b-lez { grid-column: span 2; background: var(--c-ink); color: #fff; }
+  .b-lez .bt__ic { background: rgb(255 255 255 / 0.12); color: var(--c-amber); }
+  .b-lez .bt__n { color: var(--c-amber); }
+  .b-reg { grid-column: span 2; background: var(--c-violet-soft); }
+  .b-reg .bt__ic { color: var(--c-violet); }
+
+  /* flow */
+  .flow { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; counter-reset: s; }
+  .flow li { position: relative; padding: 30px 26px; border-radius: var(--r-lg); background: rgb(255 255 255 / 0.04); border: 1px solid rgb(255 255 255 / 0.1); transition: background 0.4s, transform 0.5s var(--ease); }
+  .flow li:hover { background: rgb(255 255 255 / 0.08); transform: translateY(-4px); }
+  .flow__n { position: absolute; top: 22px; right: 24px; font: 800 2.6rem/1 var(--f-display); color: rgb(255 255 255 / 0.08); letter-spacing: -0.04em; }
+  .flow__ic { display: inline-grid; place-items: center; width: 56px; height: 56px; border-radius: 18px; background: var(--c-amber); color: var(--c-ink); margin-bottom: 20px; }
+  .flow h3 { font-size: 1.3rem; }
+  .flow p { margin: 0; color: #aeb8d3; }
+  .flow li:not(:last-child)::after { content: ''; position: absolute; top: 58px; right: -14px; width: 10px; height: 10px; border-top: 2px solid var(--c-amber); border-right: 2px solid var(--c-amber); transform: rotate(45deg); z-index: 2; }
+
+  /* contatto */
+  .hc { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .hc__lead { font-size: 1.15rem; color: var(--c-muted); }
+  .hc__list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }
+  .hc__list li { display: flex; gap: 14px; align-items: center; color: var(--c-blue); }
+  .hc__list small { display: block; color: var(--c-muted); font-size: 0.8rem; }
+  .hc__list a { color: var(--c-ink); font-weight: 600; text-decoration: none; word-break: break-all; }
+  .hc__list a:hover { color: var(--c-blue); }
+  .hc__form { background: var(--c-paper); border-radius: var(--r-lg); padding: clamp(22px, 4vw, 40px); }
+
+  @media (max-width: 1100px) {
+    .hero__in { grid-template-columns: minmax(0, 1fr); }
+    .stairs { height: 300px; max-width: 640px; }
+    .pf__panel { grid-template-columns: minmax(0, 1fr); }
+    .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .flow li::after { display: none; }
+  }
+  @media (max-width: 900px) {
+    .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .b-uni, .b-mas, .b-lez, .b-reg { grid-column: span 2; }
+    .b-uni { grid-row: auto; }
+    .pf__cards { grid-template-columns: minmax(0, 1fr); }
+    .hc { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .hero__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero__stats div + div:nth-child(odd) { padding-left: 0; border-left: 0; }
+    .hero__stats div:nth-child(n + 3) { border-top: 1px solid rgb(255 255 255 / 0.12); }
+    .stairs { height: 240px; gap: 6px; }
+    .step { padding: 10px 8px; }
+    .step__ic { display: none; }
+    .step strong { font-size: 0.86rem; }
+    .step small { display: none; }
+    .orb { width: 46px; height: 46px; }
+    .hero__search { flex-wrap: nowrap; padding-left: 16px; }
+    .hero__search .btn { padding-inline: 1em; }
+    .pf__tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 6px; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+    .pf__tab { flex: none; }
+    .bento { grid-template-columns: minmax(0, 1fr); }
+    .b-uni, .b-mas, .b-lez, .b-reg { grid-column: auto; }
+    .flow { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
+
+<script>
+  // Schede profilo accessibili (tablist)
+  document.querySelectorAll<HTMLElement>('[data-tabs]').forEach((root) => {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const select = (t: HTMLButtonElement) => {
+      tabs.forEach((x) => {
+        const on = x === t;
+        x.setAttribute('aria-selected', String(on));
+        x.tabIndex = on ? 0 : -1;
+        (document.getElementById(x.getAttribute('aria-controls')!) as HTMLElement).hidden = !on;
+      });
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(t));
+      t.addEventListener('keydown', (e) => {
+        const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        const n = tabs[(i + d + tabs.length) % tabs.length];
+        n.focus();
+        select(n);
+      });
+    });
+  });
+
+  // Contatori animati
+  const counters = document.querySelectorAll<HTMLElement>('[data-count]');
+  const io = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    const el = e.target as HTMLElement;
+    io.unobserve(el);
+    const end = Number(el.dataset.count);
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const t0 = performance.now();
+    const tick = (t: number) => {
+      const p = Math.min(1, (t - t0) / 1600);
+      el.textContent = String(Math.round(end * (1 - Math.pow(1 - p, 4))));
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }), { threshold: 0.6 });
+  counters.forEach((c) => io.observe(c));
+</script>

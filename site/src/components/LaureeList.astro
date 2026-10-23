@@ -1,0 +1,29 @@
+---
+import Catalog from './Catalog.astro';
+import CourseCard from './CourseCard.astro';
+import { lauree, splitIndirizzo, ROUTES, FACOLTA, cfuLaurea } from '../lib/catalog';
+interface Props { livello?: 'triennale' | 'magistrale' }
+const { livello } = Astro.props;
+const list = lauree.filter((l) => !livello || l.livello === livello);
+const facs = [...new Set(list.map((l) => l.facolta))].sort();
+const filters = [
+  ...(livello ? [] : [{ key: 'livello', label: 'Livello', options: [{ v: 'triennale', label: 'Triennali', n: lauree.filter((l) => l.livello === 'triennale').length }, { v: 'magistrale', label: 'Magistrali', n: lauree.filter((l) => l.livello === 'magistrale').length }] }]),
+  { key: 'facolta', label: 'Facoltà', options: facs.map((f) => ({ v: f, label: f, n: list.filter((l) => l.facolta === f).length })) },
+];
+---
+<Catalog filters={filters} total={list.length} placeholder="Cerca un corso, un indirizzo o una classe (es. L19, LM32)…" noun={['corso di laurea', 'corsi di laurea']}>
+  {list.map((l) => {
+    const s = splitIndirizzo(l.title);
+    return (
+      <CourseCard
+        href={ROUTES.laurea(l.slug)}
+        title={s.nome}
+        sub={s.indirizzo ? `Indirizzo ${s.indirizzo}` : undefined}
+        accent={FACOLTA[l.facolta]?.color}
+        chips={[{ t: l.livello === 'triennale' ? 'Triennale' : 'Magistrale', c: l.livello === 'triennale' ? 'blue' : 'violet' }, { t: `Classe ${l.classe}` }]}
+        meta={`${l.facolta} · ${cfuLaurea(l)} CFU`}
+        data={{ livello: l.livello, facolta: l.facolta }}
+      />
+    );
+  })}
+</Catalog>

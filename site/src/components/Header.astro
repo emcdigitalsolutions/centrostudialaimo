@@ -1,0 +1,211 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { MENUS, SIMPLE_LINKS } from '../lib/nav';
+const path = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '');
+const isActive = (href: string) => href !== '/' && path.startsWith(href.split('?')[0].split('#')[0]);
+---
+<header class="hdr" data-hdr>
+  <div class="hdr__bar wrap">
+    <a href="/" class="hdr__logo" aria-label="Centro Studi Alaimo, torna alla home">
+      <Logo variant="light" class="hdr__logo-light" />
+      <Logo variant="dark" class="hdr__logo-dark" />
+    </a>
+
+    <nav class="nav" aria-label="Menu principale">
+      <ul class="nav__list">
+        {MENUS.map((m, i) => (
+          <li class="nav__item" data-mega-item>
+            <button class:list={['nav__btn', { active: isActive(m.href) }]} aria-expanded="false" aria-controls={`mega-${i}`} data-mega-btn>
+              {m.label}<Icon name="chevron" size={16} stroke={2.2} />
+            </button>
+            <div class="mega" id={`mega-${i}`} data-mega>
+              <div class="mega__in wrap">
+                <div class="mega__intro">
+                  <p class="mega__title">{m.intro.title}</p>
+                  <p class="mega__text">{m.intro.text}</p>
+                  <a class="mega__more" href={m.href}>Scopri la sezione <Icon name="arrow" size={18} /></a>
+                </div>
+                {m.cols.map((c) => (
+                  <div class="mega__col">
+                    <p class="mega__head"><Icon name={c.icon} size={20} />{c.title}</p>
+                    <ul>
+                      {c.links.map((l) => (
+                        <li><a href={l.href}><span>{l.label}</span>{l.note && <small>{l.note}</small>}</a></li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </li>
+        ))}
+        {SIMPLE_LINKS.map((l) => (
+          <li class="nav__item"><a class:list={['nav__btn', { active: isActive(l.href) }]} href={l.href}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="hdr__actions">
+      <button class="hdr__search" data-search-open aria-label="Cerca un corso">
+        <Icon name="search" size={19} /><span class="hdr__search-t">Cerca</span><kbd>Ctrl K</kbd>
+      </button>
+      <a href="/contatti/" class="btn btn--amber btn--sm hdr__cta">Orientamento gratuito</a>
+      <button class="hdr__burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="drawer" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" data-drawer>
+    <div class="drawer__in">
+      <button class="drawer__search" data-search-open><Icon name="search" size={20} /> Cerca tra tutti i corsi…</button>
+      {MENUS.map((m) => (
+        <details class="drawer__group">
+          <summary>{m.label}<Icon name="chevron" size={20} /></summary>
+          <div class="drawer__body">
+            {m.cols.map((c) => (
+              <div>
+                <p class="drawer__head">{c.title}</p>
+                <ul>{c.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+              </div>
+            ))}
+            <a class="drawer__all" href={m.href}>Vai alla sezione {m.label} <Icon name="arrow" size={18} /></a>
+          </div>
+        </details>
+      ))}
+      {SIMPLE_LINKS.map((l) => <a class="drawer__link" href={l.href}>{l.label}<Icon name="arrow" size={20} /></a>)}
+      <a href="/contatti/" class="btn btn--amber btn--block" style="margin-top:20px">Orientamento gratuito</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .hdr { position: fixed; inset: 0 0 auto; z-index: 100; height: var(--header-h); transition: background 0.35s, box-shadow 0.35s, transform 0.4s var(--ease); }
+  .hdr__bar { height: 100%; display: flex; align-items: center; gap: 18px; }
+  .hdr__logo { display: grid; flex: none; text-decoration: none; }
+  .hdr__logo > :global(*) { grid-area: 1 / 1; transition: opacity 0.3s; }
+  :global(.hdr__logo-dark) { opacity: 0; }
+  .hdr.is-solid { background: rgb(247 244 237 / 0.86); backdrop-filter: blur(16px) saturate(1.6); -webkit-backdrop-filter: blur(16px) saturate(1.6); box-shadow: 0 1px 0 rgb(13 26 58 / 0.08); }
+  .hdr.is-solid :global(.hdr__logo-dark), .hdr.mega-open :global(.hdr__logo-dark) { opacity: 1; }
+  .hdr.is-solid :global(.hdr__logo-light), .hdr.mega-open :global(.hdr__logo-light) { opacity: 0; }
+  .hdr.mega-open { background: #fff; }
+  .hdr.is-hidden { transform: translateY(-100%); }
+
+  .nav { margin-inline: auto; }
+  .nav__list { display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0; }
+  .nav__btn { display: inline-flex; align-items: center; gap: 4px; padding: 10px 11px; white-space: nowrap; border: 0; background: none; border-radius: 999px; font: 600 0.94rem/1 var(--f-body); color: #fff; text-decoration: none; transition: background 0.2s, color 0.2s; }
+  .nav__btn :global(svg) { transition: transform 0.3s var(--ease); opacity: 0.7; }
+  .nav__btn:hover, .nav__btn[aria-expanded='true'] { background: rgb(255 255 255 / 0.12); }
+  .nav__btn[aria-expanded='true'] :global(svg) { transform: rotate(180deg); }
+  .nav__btn.active { color: var(--c-amber); }
+  .hdr.is-solid .nav__btn, .hdr.mega-open .nav__btn { color: var(--c-ink); }
+  .hdr.is-solid .nav__btn:hover, .hdr.mega-open .nav__btn:hover, .hdr.mega-open .nav__btn[aria-expanded='true'] { background: var(--c-paper-2); }
+  .hdr.is-solid .nav__btn.active, .hdr.mega-open .nav__btn.active { color: var(--c-blue); }
+
+  .mega { position: absolute; left: 0; right: 0; top: var(--header-h); background: #fff; border-top: 1px solid var(--c-line); box-shadow: 0 40px 60px -30px rgb(13 26 58 / 0.3); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.25s, transform 0.35s var(--ease), visibility 0.25s; }
+  .mega.open { opacity: 1; visibility: visible; transform: none; }
+  .mega__in { display: grid; grid-template-columns: 1.05fr 1fr 1fr 1fr; gap: 40px; padding: 40px 0 46px; }
+  .mega__intro { padding-right: 20px; border-right: 1px solid var(--c-line); }
+  .mega__title { font: 800 1.6rem/1.1 var(--f-display); color: var(--c-ink); letter-spacing: -0.03em; margin-bottom: 12px; }
+  .mega__text { color: var(--c-muted); font-size: 0.98rem; }
+  .mega__more { display: inline-flex; gap: 8px; align-items: center; font-weight: 700; color: var(--c-coral); text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.86rem; }
+  .mega__more:hover :global(svg) { transform: translateX(4px); }
+  .mega__more :global(svg) { transition: transform 0.3s var(--ease); }
+  .mega__head { display: flex; gap: 10px; align-items: center; font: 700 0.82rem/1 var(--f-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-blue); padding-bottom: 14px; margin-bottom: 8px; border-bottom: 1.5px solid var(--c-blue-soft); }
+  .mega ul { list-style: none; margin: 0; padding: 0; }
+  .mega li a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 9px 10px; margin-inline: -10px; border-radius: 10px; text-decoration: none; color: var(--c-text); font-size: 0.97rem; transition: background 0.2s, color 0.2s, padding 0.3s var(--ease); }
+  .mega li a:hover { background: var(--c-paper); color: var(--c-blue); padding-left: 16px; }
+  .mega li small { color: var(--c-muted); font-size: 0.78rem; white-space: nowrap; }
+
+  .hdr__actions { display: flex; align-items: center; gap: 10px; flex: none; }
+  .hdr__search { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border-radius: 999px; border: 1.5px solid rgb(255 255 255 / 0.25); background: rgb(255 255 255 / 0.06); color: #fff; font-size: 0.92rem; transition: background 0.2s, border-color 0.2s; }
+  .hdr__search kbd { font: 600 0.7rem/1 var(--f-body); padding: 4px 6px; border-radius: 6px; background: rgb(255 255 255 / 0.14); }
+  .hdr.is-solid .hdr__search, .hdr.mega-open .hdr__search { color: var(--c-ink); border-color: var(--c-line); background: #fff; }
+  .hdr.is-solid .hdr__search kbd, .hdr.mega-open .hdr__search kbd { background: var(--c-paper-2); }
+  .hdr__burger { display: none; width: 44px; height: 44px; border: 0; border-radius: 12px; background: rgb(255 255 255 / 0.1); position: relative; }
+  .hdr__burger span { position: absolute; left: 12px; right: 12px; height: 2px; border-radius: 2px; background: #fff; transition: transform 0.35s var(--ease), opacity 0.2s, background 0.2s; }
+  .hdr__burger span:nth-child(1) { top: 15px; } .hdr__burger span:nth-child(2) { top: 21px; } .hdr__burger span:nth-child(3) { top: 27px; right: 18px; }
+  .hdr.is-solid .hdr__burger, .hdr.drawer-open .hdr__burger { background: var(--c-paper-2); }
+  .hdr.is-solid .hdr__burger span, .hdr.drawer-open .hdr__burger span { background: var(--c-ink); }
+  .hdr.drawer-open .hdr__burger span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .hdr.drawer-open .hdr__burger span:nth-child(2) { opacity: 0; }
+  .hdr.drawer-open .hdr__burger span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); right: 12px; }
+  .hdr.drawer-open { background: #fff; }
+  .hdr.drawer-open :global(.hdr__logo-dark) { opacity: 1; }
+  .hdr.drawer-open :global(.hdr__logo-light) { opacity: 0; }
+
+  .drawer { position: fixed; inset: var(--header-h) 0 0; background: #fff; overflow-y: auto; transform: translateX(100%); transition: transform 0.45s var(--ease); visibility: hidden; }
+  .hdr.drawer-open .drawer { transform: none; visibility: visible; }
+  .drawer__in { padding: 18px 16px 40px; }
+  .drawer__search { width: 100%; display: flex; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 14px; border: 1.5px solid var(--c-line); background: var(--c-paper); color: var(--c-muted); font-size: 1rem; margin-bottom: 10px; }
+  .drawer__group { border-bottom: 1px solid var(--c-line); }
+  .drawer__group summary { list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 18px 4px; font: 700 1.2rem/1 var(--f-display); color: var(--c-ink); cursor: pointer; }
+  .drawer__group summary::-webkit-details-marker { display: none; }
+  .drawer__group summary :global(svg) { transition: transform 0.3s var(--ease); }
+  .drawer__group[open] summary :global(svg) { transform: rotate(180deg); }
+  .drawer__body { display: grid; gap: 18px; padding: 0 4px 20px; }
+  .drawer__head { font: 700 0.75rem/1 var(--f-body); text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-blue); margin-bottom: 6px; }
+  .drawer__body ul { list-style: none; margin: 0; padding: 0; }
+  .drawer__body li a { display: block; padding: 8px 0; text-decoration: none; color: var(--c-text); }
+  .drawer__all { display: inline-flex; gap: 8px; align-items: center; font-weight: 700; color: var(--c-coral); text-decoration: none; }
+  .drawer__link { display: flex; justify-content: space-between; align-items: center; padding: 18px 4px; border-bottom: 1px solid var(--c-line); font: 700 1.2rem/1 var(--f-display); color: var(--c-ink); text-decoration: none; }
+
+  @media (max-width: 1520px) { .hdr__search-t, .hdr__search kbd { display: none; } .hdr__search { width: 40px; padding: 0; justify-content: center; } }
+  @media (max-width: 1180px) {
+    .nav { display: none; }
+    .hdr__actions { margin-left: auto; }
+    .hdr__burger { display: block; }
+  }
+  @media (max-width: 560px) { .hdr__cta { display: none; } }
+</style>
+
+<script>
+  const hdr = document.querySelector<HTMLElement>('[data-hdr]')!;
+  let lastY = 0;
+  const onScroll = () => {
+    const y = window.scrollY;
+    hdr.classList.toggle('is-solid', y > 24);
+    const anyOpen = hdr.classList.contains('mega-open') || hdr.classList.contains('drawer-open');
+    hdr.classList.toggle('is-hidden', !anyOpen && y > 400 && y > lastY + 4);
+    if (y < lastY - 4 || y < 400) hdr.classList.remove('is-hidden');
+    lastY = y;
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mega menu: hover su desktop, click e tastiera ovunque
+  const items = [...hdr.querySelectorAll<HTMLElement>('[data-mega-item]')];
+  let closeT: number | undefined;
+  const closeAll = () => {
+    items.forEach((it) => {
+      it.querySelector('[data-mega]')?.classList.remove('open');
+      it.querySelector('[data-mega-btn]')?.setAttribute('aria-expanded', 'false');
+    });
+    hdr.classList.remove('mega-open');
+  };
+  const open = (it: HTMLElement) => {
+    clearTimeout(closeT);
+    closeAll();
+    it.querySelector('[data-mega]')!.classList.add('open');
+    it.querySelector('[data-mega-btn]')!.setAttribute('aria-expanded', 'true');
+    hdr.classList.add('mega-open');
+  };
+  items.forEach((it) => {
+    const btn = it.querySelector<HTMLButtonElement>('[data-mega-btn]')!;
+    btn.addEventListener('click', () => (btn.getAttribute('aria-expanded') === 'true' ? closeAll() : open(it)));
+    it.addEventListener('mouseenter', () => matchMedia('(hover: hover)').matches && open(it));
+    it.addEventListener('mouseleave', () => { closeT = window.setTimeout(closeAll, 180); });
+  });
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && closeAll());
+  document.addEventListener('click', (e) => { if (!hdr.contains(e.target as Node)) closeAll(); });
+
+  // Drawer mobile
+  const burger = hdr.querySelector<HTMLButtonElement>('[data-burger]')!;
+  burger.addEventListener('click', () => {
+    const o = hdr.classList.toggle('drawer-open');
+    burger.setAttribute('aria-expanded', String(o));
+    burger.setAttribute('aria-label', o ? 'Chiudi il menu' : 'Apri il menu');
+    document.documentElement.style.overflow = o ? 'hidden' : '';
+  });
+</script>

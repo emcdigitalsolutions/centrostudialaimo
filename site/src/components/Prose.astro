@@ -1,0 +1,14 @@
+---
+import type { Section } from '../lib/catalog';
+interface Props { body: Section[]; skip?: RegExp }
+const { body, skip } = Astro.props;
+const secs = body.filter((s) => !(skip && skip.test(s.h)));
+---
+<div class="prose">
+  {secs.map((s) => (
+    <>
+      {s.h && <h2>{s.h}</h2>}
+      {s.c.map((b) => (b.t === 'p' ? <p>{b.x}</p> : <ul>{b.items.map((i) => <li>{i}</li>)}</ul>))}
+    </>
+  ))}
+</div>

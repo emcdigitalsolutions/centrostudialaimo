@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from './PageHero.astro';
+import CourseDetail from './CourseDetail.astro';
+import Prose from './Prose.astro';
+import Program from './Program.astro';
+import CourseCard from './CourseCard.astro';
+import CtaBand from './CtaBand.astro';
+import { excerpt, lead, type Section, type Esame } from '../lib/catalog';
+import { SITE } from '../site.config';
+
+interface Props {
+  title: string; kind: string; body: Section[]; program?: Esame[]; url: string;
+  crumbs: { label: string; href?: string }[]; chips: string[];
+  facts: { icon: string; label: string; value: string }[];
+  related?: { href: string; title: string; chips?: { t: string; c?: string }[]; meta?: string; accent?: string }[];
+  relatedTitle?: string; keywords?: string; note?: string; accent?: string; credits?: string; hours?: string;
+}
+const p = Astro.props;
+const desc = excerpt(p.body) || `${p.kind}: ${p.title}. Programma, requisiti e iscrizione con ${SITE.name}.`;
+const overview = p.body.filter((s) => !/^(punteggi?o?|punteggi|valutazione)$/i.test(s.h));
+const punti = p.body.filter((s) => /^(punteggi?o?|punteggi|valutazione)$/i.test(s.h));
+const sections = [
+  { id: 'panoramica', label: 'Panoramica' },
+  ...(p.program?.length ? [{ id: 'programma', label: 'Programma' }] : []),
+  ...(punti.length ? [{ id: 'punteggio', label: 'Punteggio' }] : []),
+];
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Course', name: p.title, description: desc,
+  url: new URL(p.url, SITE.url).href, inLanguage: 'it', provider: { '@id': `${SITE.url}/#org` },
+  educationalCredentialAwarded: p.kind,
+  ...(p.credits && { numberOfCredits: { '@type': 'StructuredValue', value: Number(p.credits), unitText: 'CFU' } }),
+  hasCourseInstance: { '@type': 'CourseInstance', courseMode: 'online', ...(p.hours && { courseWorkload: p.hours }) },
+  offers: { '@type': 'Offer', category: 'Paid', availability: 'https://schema.org/InStock', url: new URL(p.url, SITE.url).href },
+};
+---
+<Base title={`${p.title} – ${p.kind}`} description={desc} jsonld={ld} keywords={p.keywords}>
+  <PageHero title={p.title} lead={lead(p.body) || desc} long={p.title.length > 55} crumbs={p.crumbs}>
+    <div class="phero__chips">{p.chips.filter(Boolean).map((c) => <span class="chip chip--dark">{c}</span>)}</div>
+  </PageHero>
+  <CourseDetail course={p.title} sections={sections} facts={p.facts} note={p.note}>
+    <section id="panoramica" data-reveal><Prose body={overview} /></section>
+    {p.program && p.program.length > 0 && <section id="programma"><Program items={p.program} /></section>}
+    {punti.length > 0 && (
+      <section id="punteggio" data-reveal>
+        <div class="punti">
+          <p class="eyebrow">Punteggio</p>
+          <Prose body={punti.map((s) => ({ ...s, h: '' }))} />
+          <p class="punti__n">Il punteggio è attribuito secondo le tabelle ministeriali in vigore: verifica con noi la tua posizione prima dell’iscrizione.</p>
+        </div>
+      </section>
+    )}
+  </CourseDetail>
+  {p.related && p.related.length > 0 && (
+    <section class="section--tight">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Potrebbe interessarti</p><h2>{p.relatedTitle ?? 'Altri corsi'}</h2></div>
+        <div class="grid-cards">{p.related.map((r) => <CourseCard {...r} />)}</div>
+      </div>
+    </section>
+  )}
+  <CtaBand />
+</Base>
+
+<style>
+  .punti { background: linear-gradient(135deg, var(--c-amber-soft), #fff); border: 1px solid #f3d9a0; border-radius: var(--r-lg); padding: clamp(22px, 4vw, 36px); }
+  .punti :global(.prose li::before) { background-color: var(--c-amber); }
+  .punti__n { font-size: 0.86rem; color: var(--c-muted); margin: 0; }
+</style>

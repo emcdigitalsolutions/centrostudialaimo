@@ -1,0 +1,37 @@
+---
+// Marchio: la «A» di Alaimo con il punto d'ambra, il traguardo raggiunto
+interface Props { variant?: 'dark' | 'light'; size?: number; class?: string; markOnly?: boolean }
+const { variant = 'dark', size = 44, class: cls = '', markOnly = false } = Astro.props;
+const uid = 'lg' + Math.random().toString(36).slice(2, 7);
+---
+<span class:list={['logo', `logo--${variant}`, cls]}>
+  <svg class="logo__mark" width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
+    <defs>
+      <linearGradient id={uid} x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#3a5cff" />
+        <stop offset="1" stop-color="#14245a" />
+      </linearGradient>
+    </defs>
+    <rect width="64" height="64" rx="18" fill={`url(#${uid})`} />
+    <path class="logo__a" d="M27.5 16h9l14.5 34h-10l-2.6-6.5h-12.8L23 50H13zm4.5 11-4 10h8z" fill="#fff" fill-rule="evenodd" />
+    <circle class="logo__dot" cx="46" cy="16" r="5.5" fill="#ffb21e" />
+  </svg>
+  {!markOnly && (
+    <span class="logo__text">
+      <span class="logo__small">Centro Studi</span>
+      <span class="logo__big">Alaimo</span>
+    </span>
+  )}
+</span>
+
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+  .logo__mark { flex: none; filter: drop-shadow(0 6px 14px rgb(40 72 216 / 0.35)); }
+  .logo__dot { transform-origin: 46px 16px; transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  :global(a:hover) > .logo .logo__dot, .logo:hover .logo__dot { transform: translateY(-3px) scale(1.12); }
+  .logo__text { display: grid; line-height: 1; }
+  .logo__small { font: 700 0.62rem/1 var(--f-body); letter-spacing: 0.26em; text-transform: uppercase; color: var(--c-blue); margin-bottom: 4px; }
+  .logo__big { font: 800 1.6rem/0.9 var(--f-display); letter-spacing: -0.04em; color: var(--c-ink); }
+  .logo--light .logo__small { color: var(--c-amber); }
+  .logo--light .logo__big { color: #fff; }
+</style>

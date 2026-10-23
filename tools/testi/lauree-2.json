@@ -1,0 +1,102 @@
+{
+ "lingue-e-letterature-moderne-e-traduzione-interculturale-indirizzo-lingue-e-letterature-europee": {
+  "i": ["Una magistrale per specializzarsi nelle grandi lingue e letterature europee, francese, inglese, spagnola e tedesca, con un approccio comparatistico. Allo studio avanzato di lingua, traduzione e letteratura si aggiungono storia moderna e contemporanea, antropologia e geografia economico-politica dell’Unione europea.", "Il percorso prepara a lavorare in contesti culturali, editoriali, educativi e internazionali."],
+  "o": ["Padroneggiare a livello avanzato le lingue europee", "Analizzare le letterature in chiave comparata", "Conoscere teoria e storia della traduzione", "Comprendere storia e istituzioni dell’Europa", "Progettare attività educative e di mediazione culturale"],
+  "s": ["Docente di lingue e letterature straniere, con i requisiti previsti", "Traduttore letterario e tecnico", "Esperto linguistico per enti culturali e istituzioni europee", "Redattore e consulente editoriale", "Collaboratore di festival, fondazioni e uffici stampa"]
+ },
+ "lingue-e-letterature-moderne-e-traduzione-interculturale-indirizzo-traduzione-e-processi-interlinguistici": {
+  "i": ["La magistrale per chi vuole fare della traduzione una professione. Lingua e traduzione avanzata in francese, inglese, spagnolo e tedesco si uniscono a linguistica italiana, glottodidattica e microlingue, teoria della traduzione e tecnologie per tradurre.", "Il laboratorio di scrittura e revisione in ambiente digitale allena a gestire testi specialistici con gli strumenti usati oggi nel mestiere."],
+  "o": ["Tradurre testi letterari e specialistici", "Usare strumenti di traduzione assistita e terminologia", "Revisionare e adattare testi in ambiente digitale", "Conoscere linguistica e linguaggi settoriali", "Mediare tra sistemi linguistici e culturali diversi"],
+  "s": ["Traduttore professionista", "Revisore e adattatore linguistico", "Terminologo e linguista per progetti digitali", "Content editor e copywriter multilingue", "Mediatore linguistico in enti, aziende e organizzazioni non governative"]
+ },
+ "psicologia-indirizzo-psicologia-clinica-e-dinamica": {
+  "i": ["La magistrale in Psicologia con un orientamento clinico e dinamico. Si approfondiscono psicopatologia, test psicologici, scienze psichiatriche, neuroscienze e relazioni interpersonali, fino alle tecniche di intervento e ai modelli di psicoterapia.", "Il tirocinio pratico valutativo integrato nel percorso e gli esami a scelta permettono di costruire un profilo professionale coerente con i propri interessi."],
+  "o": ["Valutare il disagio psichico e le psicopatologie", "Utilizzare test e strumenti di valutazione", "Conoscere i modelli di intervento e di psicoterapia", "Lavorare con individui, famiglie e gruppi", "Operare nel rispetto della deontologia professionale"],
+  "s": ["Psicologo clinico e di comunità, previo esame di Stato", "Psicologo in ambito educativo e scolastico", "Operatore in servizi sanitari e di riabilitazione", "Psicologo dello sviluppo e dell’età evolutiva", "Accesso alle scuole di specializzazione in psicoterapia"]
+ },
+ "psicologia-indirizzo-psicologia-e-nuove-tecnologie": {
+  "i": ["Una magistrale in Psicologia che guarda al rapporto tra mente e tecnologia. Alla base clinica comune, psicopatologia, neuroscienze, relazioni, si aggiungono psicologia cognitiva applicata, psicotecnologie per la clinica e lo studio delle dipendenze tecnologiche.", "Un profilo pensato per lo psicologo che usa strumenti digitali nella valutazione e nell’intervento e sa leggere gli effetti della tecnologia sul benessere."],
+  "o": ["Conoscere la psicologia cognitiva applicata", "Utilizzare tecnologie digitali in ambito clinico", "Riconoscere e trattare le dipendenze tecnologiche", "Promuovere salute e qualità della vita", "Lavorare nel rispetto della deontologia professionale"],
+  "s": ["Psicologo clinico, previo esame di Stato", "Esperto di interventi psicologici digitali e telepsicologia", "Consulente per la prevenzione delle dipendenze tecnologiche", "Psicologo in ambito educativo e scolastico", "Collaboratore in progetti di ricerca e innovazione"]
+ },
+ "psicologia-indirizzo-psicologia-giuridica": {
+  "i": ["La psicologia al servizio della giustizia. L’indirizzo approfondisce psicologia giuridica, psicodiagnostica forense, neuropsicologia clinica e forense, criminologia e dinamiche del comportamento deviante, insieme alla base clinica comune.", "Particolare attenzione è dedicata alle relazioni familiari a rischio e alla tutela dei minori, ambiti in cui lo psicologo è sempre più chiamato a collaborare con tribunali e servizi."],
+  "o": ["Conoscere la psicologia giuridica e forense", "Condurre valutazioni psicodiagnostiche in ambito giudiziario", "Comprendere le dinamiche del comportamento deviante", "Riconoscere situazioni di maltrattamento e rischio familiare", "Operare nel rispetto della deontologia professionale"],
+  "s": ["Psicologo giuridico e forense, previo esame di Stato", "Consulente tecnico in ambito civile e penale", "Esperto in valutazioni per il sistema giudiziario", "Operatore in servizi per la tutela dei minori", "Collaboratore in servizi di mediazione familiare e penale"]
+ },
+ "psicologia-indirizzo-psicologia-strategica": {
+  "i": ["Un indirizzo dedicato ai modelli di intervento brevi e orientati alla soluzione dei problemi. Comunicazione strategica, psicologia dell’apprendimento, delle organizzazioni e della leadership si affiancano alla base clinica su psicopatologia e neuroscienze.", "Lo studente impara tecniche di comunicazione, ristrutturazione cognitiva e gestione del cambiamento da applicare in contesti clinici, educativi e aziendali."],
+  "o": ["Conoscere i fondamenti dell’approccio strategico", "Applicare tecniche di comunicazione e problem solving", "Gestire disturbi emotivi e relazionali con interventi brevi", "Lavorare con organizzazioni e gruppi di lavoro", "Operare nel rispetto della deontologia professionale"],
+  "s": ["Psicologo, previo esame di Stato", "Consulente per organizzazioni, leadership e risorse umane", "Psicologo in ambito educativo e scolastico", "Coach e formatore in contesti aziendali", "Accesso alle scuole di specializzazione in psicoterapia"]
+ },
+ "scienze-biologiche-indirizzo-ambiente-e-biodiversita": {
+  "i": ["Lo studio della vita, dalle cellule agli ecosistemi, con un’attenzione particolare alla tutela dell’ambiente. Dopo le basi di chimica, fisica, matematica, biologia e genetica, l’indirizzo approfondisce botanica, zoologia e biodiversità.", "Il percorso prepara a monitorare habitat e specie, valutare l’impatto delle attività umane e contribuire alla gestione sostenibile delle risorse naturali."],
+  "o": ["Conoscere biologia cellulare, molecolare e genetica", "Studiare piante, animali ed ecosistemi", "Monitorare la biodiversità e lo stato degli habitat", "Valutare l’impatto ambientale", "Applicare il metodo scientifico in laboratorio e sul campo"],
+  "s": ["Tecnico e consulente ambientale", "Addetto alla conservazione della biodiversità in parchi e riserve", "Tecnico di laboratorio di analisi ambientali", "Biologo iunior, previo esame di Stato", "Accesso alle lauree magistrali in biologia ed ecologia"]
+ },
+ "scienze-biologiche-indirizzo-biosanitario-e-molecolare": {
+  "i": ["Le scienze biologiche applicate alla salute. Biologia cellulare e molecolare, biochimica e biochimica clinica, genetica, anatomia e fisiologia permettono di capire i processi alla base della salute e della malattia.", "Un percorso pensato per chi vuole lavorare in laboratori di analisi, nella ricerca biomedica e nell’industria delle biotecnologie, o proseguire con una magistrale."],
+  "o": ["Conoscere biologia molecolare e cellulare", "Comprendere biochimica e genetica umana", "Applicare tecniche di laboratorio biomedico", "Conoscere anatomia e fisiologia umana", "Lavorare con metodo scientifico e rigore"],
+  "s": ["Tecnico di laboratorio biomedico e di analisi", "Collaboratore nella ricerca biomedica", "Addetto in aziende farmaceutiche e biotecnologiche", "Biologo iunior, previo esame di Stato", "Accesso alle lauree magistrali in biologia e biotecnologie"]
+ },
+ "scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-global-tourism-and-cultural-heritage-management": {
+  "i": ["Il turismo e i beni culturali visti in prospettiva internazionale, con un corso interamente in lingua inglese. Economia delle imprese turistiche, revenue management, analisi dei dati e tecnologie digitali si uniscono a storia globale, geografia del turismo, museologia e restauro.", "Lo studio di più lingue straniere prepara a lavorare in destinazioni, strutture e organizzazioni culturali in Italia e all’estero."],
+  "o": ["Comprendere l’economia del turismo internazionale", "Gestire strutture ricettive e revenue management", "Valorizzare il patrimonio artistico e culturale", "Usare dati e tecnologie digitali per il turismo", "Comunicare in più lingue straniere"],
+  "s": ["Manager di strutture ricettive e destinazioni turistiche", "Addetto al marketing turistico e culturale", "Operatore in tour operator e agenzie internazionali", "Collaboratore di musei ed enti culturali", "Accesso a magistrali in turismo e management"]
+ },
+ "scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-management-dellospitalita-e-del-territorio": {
+  "i": ["Per chi vuole gestire alberghi, strutture ricettive e progetti turistici legati al territorio. Gestione delle imprese alberghiere, revenue management, risorse umane e contabilità si affiancano a geografia del turismo, sviluppo sostenibile, museologia e legislazione dei beni culturali.", "Quattro lingue straniere completano un profilo pronto per l’accoglienza internazionale."],
+  "o": ["Gestire imprese alberghiere e ricettive", "Applicare revenue management e controllo dei costi", "Gestire le risorse umane dell’ospitalità", "Valorizzare il territorio in modo sostenibile", "Conoscere la normativa sui beni culturali"],
+  "s": ["Manager e responsabile di strutture ricettive", "Revenue manager", "Addetto allo sviluppo turistico del territorio", "Operatore in enti di promozione turistica", "Imprenditore nel settore dell’accoglienza"]
+ },
+ "scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-management-e-turismo-culturale": {
+  "i": ["Un profilo che unisce spirito manageriale e conoscenza del patrimonio culturale. Economia aziendale, gestione e organizzazione delle imprese turistiche, contabilità e diritto dei beni culturali dialogano con geografia del turismo, letteratura, museologia e restauro.", "Lo studio di inglese, francese, spagnolo e tedesco prepara a progettare esperienze culturali per visitatori di tutto il mondo."],
+  "o": ["Conoscere economia e organizzazione delle aziende turistiche", "Progettare prodotti e itinerari di turismo culturale", "Valorizzare musei, siti e beni culturali", "Conoscere la legislazione dei beni culturali", "Comunicare in quattro lingue straniere"],
+  "s": ["Progettista di itinerari e prodotti turistico-culturali", "Addetto in musei, fondazioni e siti culturali", "Operatore in agenzie di viaggio e tour operator", "Addetto alla promozione turistica di enti locali", "Responsabile di eventi culturali"]
+ },
+ "scienze-della-comunicazione-indirizzo-comunicazione-istituzionale-e-dimpresa": {
+  "i": ["Il corso forma professionisti della comunicazione per aziende ed enti pubblici. Semiotica, sociologia della comunicazione, linguaggi audiovisivi, organizzazione aziendale, diritto dell’informazione e storia del giornalismo costruiscono una preparazione ampia e concreta.", "L’indirizzo approfondisce la comunicazione interna ed esterna delle organizzazioni, il branding e la comunicazione pubblica."],
+  "o": ["Progettare la comunicazione di aziende ed enti", "Gestire media tradizionali e digitali", "Applicare strategie di branding e relazioni pubbliche", "Conoscere il diritto dell’informazione", "Analizzare dati e pubblici con metodi di ricerca sociale"],
+  "s": ["Addetto alla comunicazione d’impresa", "Addetto alla comunicazione istituzionale in enti pubblici", "Social media manager", "Content strategist", "Collaboratore di uffici stampa e agenzie"]
+ },
+ "scienze-della-comunicazione-indirizzo-digital-entertainment-and-gaming": {
+  "i": ["Il videogioco come linguaggio, industria e strumento di coinvolgimento. Accanto alle basi di Scienze della Comunicazione, l’indirizzo propone fondamenti di game development, social gaming e gamification.", "Si studiano storytelling interattivo, cultura digitale ed esperienza utente per lavorare in uno dei settori più dinamici dell’economia creativa."],
+  "o": ["Conoscere i fondamenti dello sviluppo di videogiochi", "Applicare la gamification a comunicazione e formazione", "Scrivere storie interattive", "Progettare esperienze digitali coinvolgenti", "Comprendere mercato e pubblico dell’intrattenimento digitale"],
+  "s": ["Game designer e narrative designer iunior", "Esperto di gamification per aziende e formazione", "Community manager nel settore videoludico", "Addetto a marketing e comunicazione dell’intrattenimento digitale", "Content creator"]
+ },
+ "scienze-della-comunicazione-indirizzo-digital-marketing": {
+  "i": ["Comunicazione e marketing online, dalla strategia alla misurazione dei risultati. L’indirizzo aggiunge alle basi di Scienze della Comunicazione due esami dedicati al marketing digitale, base e avanzato.", "Si lavora su social media, motori di ricerca, pubblicità online, email marketing, analisi dei dati e commercio elettronico, con gli strumenti usati dalle aziende."],
+  "o": ["Pianificare strategie di marketing digitale", "Gestire social media e contenuti online", "Applicare tecniche di posizionamento sui motori di ricerca", "Impostare campagne pubblicitarie online", "Misurare risultati e ritorno degli investimenti"],
+  "s": ["Digital marketing specialist", "Social media manager", "Specialista di posizionamento e pubblicità online", "E-commerce specialist", "Addetto marketing in aziende e agenzie"]
+ },
+ "scienze-della-comunicazione-indirizzo-influencer": {
+  "i": ["Per chi vuole lavorare nella creator economy in modo professionale. L’indirizzo affianca alle basi di comunicazione, sociologia e diritto dell’informazione lo studio di psicologia e sociologia della moda.", "Si impara a costruire un’identità digitale, a produrre contenuti efficaci, a gestire una community e le collaborazioni con i brand, con attenzione a reputazione online, etica e diritto d’autore."],
+  "o": ["Costruire e gestire il personal branding", "Produrre contenuti foto, video e social", "Gestire collaborazioni con i brand", "Leggere dati e performance dei contenuti", "Tutelare reputazione e diritti online"],
+  "s": ["Content creator e influencer", "Influencer marketing manager", "Social media manager", "Consulente di comunicazione per brand di moda e lifestyle", "Talent manager e addetto alle relazioni con i creator"]
+ },
+ "scienze-della-nutrizione-umana-2": {
+  "i": ["Una magistrale per chi vuole lavorare nell’industria degli alimenti, dei nutraceutici e degli integratori. Fisiologia della nutrizione, chimica e biochimica degli alimenti, microbiologia e igiene si combinano con tecnologia e qualità dei prodotti.", "Legislazione e certificazioni alimentari e un esame dedicato a management e marketing degli integratori completano un profilo tecnico e commerciale insieme."],
+  "o": ["Conoscere chimica e biochimica degli alimenti", "Garantire qualità e sicurezza alimentare", "Sviluppare alimenti funzionali e nutraceutici", "Orientarsi tra normative e certificazioni", "Comprendere il mercato degli integratori"],
+  "s": ["Tecnologo e responsabile qualità nell’industria alimentare", "Addetto a ricerca e sviluppo di nutraceutici e integratori", "Product manager e marketing di integratori", "Consulente per normative e certificazioni alimentari", "Biologo nutrizionista, con i requisiti previsti"]
+ },
+ "scienze-della-nutrizione-umana": {
+  "i": ["Come gli alimenti agiscono sul corpo, dalla molecola alla dieta. Questa magistrale approfondisce fisiologia, biochimica clinica, regolazione del metabolismo, allergie e intolleranze, disturbi del comportamento alimentare e alimentazione in condizioni particolari e nello sport.", "Prepara a offrire consulenza nutrizionale qualificata e a lavorare nel controllo della qualità e della sicurezza degli alimenti."],
+  "o": ["Conoscere il metabolismo e la biochimica della nutrizione", "Progettare diete per popolazioni specifiche e sportivi", "Riconoscere allergie, intolleranze e disturbi alimentari", "Garantire qualità e sicurezza degli alimenti", "Applicare statistica e sorveglianza alimentare"],
+  "s": ["Biologo nutrizionista, con i requisiti previsti", "Consulente nutrizionale in centri sportivi e benessere", "Addetto al controllo qualità in aziende alimentari", "Collaboratore in laboratori di analisi", "Ricercatore in ambito nutrizionale"]
+ },
+ "scienze-delle-attivita-motorie-e-sportive-indirizzo-scienze-delle-attivita-motorie-e-sportive": {
+  "i": ["Il corso per chi vuole fare del movimento una professione. Anatomia, fisiologia dello sport e biomeccanica si uniscono a psicologia, pedagogia e didattica degli sport individuali, di squadra e natatori.", "Si impara a progettare e condurre attività motorie per tutte le età, con finalità educative, preventive e di benessere."],
+  "o": ["Conoscere anatomia, fisiologia e biomeccanica", "Progettare attività motorie per diverse età", "Insegnare sport individuali, di squadra e natatori", "Comunicare e motivare persone e gruppi", "Promuovere salute e benessere con il movimento"],
+  "s": ["Istruttore e tecnico sportivo in palestre e associazioni", "Educatore motorio in scuole e centri educativi", "Operatore motorio per la terza età", "Personal trainer", "Accesso alle magistrali in scienze motorie"]
+ },
+ "scienze-delle-attivita-motorie-e-sportive-indirizzo-sport-and-football-management": {
+  "i": ["Le scienze motorie con un indirizzo dedicato alla gestione dello sport e del calcio. Alla base biomedica e didattica si aggiungono economia delle imprese sportive e didattica e pedagogia speciale.", "Il percorso dà spazio agli aspetti economici, organizzativi e normativi delle società sportive e al valore sociale dello sport come strumento di integrazione e sviluppo del territorio."],
+  "o": ["Conoscere le basi biomediche del movimento", "Comprendere l’economia delle imprese sportive", "Organizzare attività e società sportive", "Orientarsi tra contratti e regole dello sport", "Usare lo sport come strumento educativo e inclusivo"],
+  "s": ["Collaboratore nella gestione di società e club sportivi", "Organizzatore di eventi sportivi", "Istruttore e tecnico sportivo", "Addetto in federazioni ed enti di promozione sportiva", "Responsabile di settori giovanili"]
+ },
+ "scienze-delleconomia-indirizzo-in-e-commerce-e-digital-management": {
+  "i": ["Una magistrale in economia pensata per le imprese digitali. Programmazione e controllo, strategia, statistica economica e diritto tributario si affiancano a marketing digitale, commercio elettronico, diritto dell’impresa digitale e organizzazione delle imprese digitali.", "Forma economisti capaci di guidare la trasformazione digitale delle aziende."],
+  "o": ["Gestire strategia e controllo di un’azienda", "Progettare e sviluppare il commercio elettronico", "Applicare il marketing digitale", "Conoscere le regole dell’impresa digitale", "Analizzare dati economici con strumenti statistici"],
+  "s": ["E-commerce manager", "Digital business manager", "Consulente per la trasformazione digitale", "Responsabile marketing digitale", "Controller in imprese digitali"]
+ }
+}

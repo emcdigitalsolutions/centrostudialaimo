@@ -1,0 +1,22 @@
+{
+ "pratiche-innovative-con-le-tecnologie-didattiche-tablet-lavagna-multimediale-lim": {
+  "i": ["Tablet, lavagna interattiva multimediale e strumenti digitali per lezioni più coinvolgenti. Il corso unisce storia della pedagogia e didattica generale a informatica per l’educazione e tecnologie dell’istruzione.", "Si impara a integrare le tecnologie nella progettazione delle attività, con esempi concreti da usare in classe."],
+  "o": ["Usare la LIM nella didattica quotidiana", "Progettare attività con il tablet", "Integrare le tecnologie nella programmazione", "Rendere le lezioni più interattive"],
+  "d": "Docenti delle scuole di ogni ordine e grado."
+ },
+ "profili-pedagogici-e-didattici-dellinsegnamento-di-scienze-motorie-nella-scuola-primaria": {
+  "i": ["Un corso dedicato all’educazione motoria nella scuola primaria. Psicomotricità, gioco e animazione, apprendimento motorio e psicologia applicata alle scienze motorie si uniscono a legislazione, nuova valutazione, progetti nazionali di sport a scuola, informatica e inglese.", "L’obiettivo è valorizzare lo sviluppo motorio, cognitivo e sociale dei bambini con un approccio inclusivo."],
+  "o": ["Progettare attività motorie per la primaria", "Applicare psicomotricità e gioco", "Gestire le relazioni educative", "Valutare in coerenza con la normativa"],
+  "d": "Docenti della scuola primaria, aspiranti docenti ed educatori."
+ },
+ "psicologia-scolastica": {
+  "i": ["La psicologia applicata alla scuola e ai contesti educativi. Il corso approfondisce sviluppo ed educazione, stili di pensiero e di apprendimento, competenze emotive e motivazionali, pedagogia del corpo e pedagogia speciale.", "Un modulo è dedicato agli aspetti psicologici dell’educazione online."],
+  "o": ["Comprendere le dinamiche individuali e di gruppo", "Riconoscere stili di apprendimento", "Sostenere motivazione ed emozioni", "Supportare studenti e docenti"],
+  "d": "Docenti, aspiranti docenti ed educatori."
+ },
+ "tecnologie-digitali-e-metodologiche-didattiche-a-distanza-scuola-dellinfanzia": {
+  "i": ["Un corso sulla didattica digitale e a distanza, con cinque indirizzi tra cui scegliere in base al grado di scuola. Informatica per l’educazione, tecnologie dell’istruzione, coding e media digitali sono la base comune.", "L’indirizzo per la scuola dell’infanzia approfondisce educazione mediale, didattica digitale e fondamenti pedagogici per la fascia 0-3 anni."],
+  "o": ["Progettare didattica digitale e a distanza", "Introdurre il coding", "Usare i media digitali in classe", "Scegliere l’indirizzo più adatto al proprio grado di scuola"],
+  "d": "Docenti di ogni ordine e grado e aspiranti insegnanti."
+ }
+}

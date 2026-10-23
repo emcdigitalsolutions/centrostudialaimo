@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import MailForm from '../../components/MailForm.astro';
+import Faq from '../../components/Faq.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE } from '../../site.config';
+const steps = [
+  { t: 'Ci mandi la tua carriera', d: 'Compila il modulo e allega alla mail il piano di studi o l’autocertificazione degli esami sostenuti, con voti e CFU.' },
+  { t: 'La commissione valuta', d: 'La commissione didattica dell’ateneo esamina gli esami e stabilisce quali crediti sono riconoscibili nel corso scelto.' },
+  { t: 'Ricevi l’esito e il preventivo', d: 'Ti inviamo gli esami convalidati, quelli ancora da sostenere e il preventivo dei costi di iscrizione per ogni annualità.' },
+  { t: 'Decidi con calma', d: 'La valutazione è gratuita e senza impegno: se vuoi procedere, ti seguiamo nell’immatricolazione.' },
+];
+const faq = [
+  { q: 'La valutazione è davvero gratuita?', a: 'Sì, è gratuita e non ti impegna a iscriverti.' },
+  { q: 'Chi decide quali esami vengono riconosciuti?', a: 'La commissione didattica dell’università, in base alla normativa vigente (D.M. 509/1999 come modificato dal D.M. 270/2004, art. 5, comma 7).' },
+  { q: 'Posso chiedere la valutazione se ho abbandonato gli studi o sono decaduto?', a: 'Sì: gli esami sostenuti in una carriera interrotta, conclusa o decaduta possono essere valutati per il riconoscimento.' },
+  { q: 'Quali documenti servono?', a: 'Basta il piano di studi o un’autocertificazione con l’elenco degli esami sostenuti, il settore scientifico-disciplinare (se lo conosci), i CFU e il voto. Per le lauree già conseguite è utile il certificato con esami.' },
+  { q: 'Quanto tempo ci vuole?', a: 'Di solito pochi giorni lavorativi, in base ai tempi della commissione. Ti avvisiamo appena l’esito è pronto.' },
+];
+---
+<Base title="Valutazione CFU gratuita: riconoscimento esami universitari" description="Richiedi gratis e senza impegno la valutazione della tua carriera universitaria: la commissione didattica indica quali CFU vengono riconosciuti e ricevi il preventivo dei costi di iscrizione." keywords="valutazione CFU, riconoscimento esami universitari, convalida esami, abbreviazione di carriera, seconda laurea, riprendere gli studi universitari">
+  <PageHero
+    eyebrow="Valutazione gratuita"
+    title={`Gli esami che hai già fatto <em class="serif" style="color:var(--c-amber)">valgono ancora</em>.`}
+    lead="Mandaci la tua carriera universitaria: la commissione didattica dell’ateneo valuta quali crediti (CFU) ti vengono riconosciuti e ricevi un preventivo dei costi. Gratis e senza impegno."
+    crumbs={[{ label: 'Università', href: '/universita/' }, { label: 'Valutazione CFU' }]}
+  >
+    <div class="phero__chips"><span class="chip chip--dark">Gratuita</span><span class="chip chip--dark">Senza impegno</span><span class="chip chip--dark">Preventivo incluso</span></div>
+  </PageHero>
+  <section class="section">
+    <div class="wrap cfu">
+      <div>
+        <p class="eyebrow">Come funziona</p>
+        <h2>Quattro passaggi, nessuna sorpresa</h2>
+        <ol class="steps">
+          {steps.map((s, i) => <li data-reveal style={`--d:${i}`}><span>{i + 1}</span><div><h3>{s.t}</h3><p>{s.d}</p></div></li>)}
+        </ol>
+        <p class="law"><Icon name="info" size={18} /> Valutazione secondo il D.M. 509/1999, art. 5, comma 7, come modificato dal D.M. 270/2004.</p>
+      </div>
+      <div class="cfu__form" id="richiedi">
+        <h2>Richiedi la valutazione</h2>
+        <p>La richiesta arriva a <a href={`mailto:${SITE.email.valutazioni}`}>{SITE.email.valutazioni}</a>. Ricordati di allegare il piano di studi alla mail.</p>
+        <MailForm kind="cfu" id="cfu" />
+      </div>
+    </div>
+  </section>
+  <Faq items={faq} title="Valutazione CFU: domande frequenti" />
+</Base>
+
+<style>
+  .cfu { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .steps { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 4px; position: relative; }
+  .steps::before { content: ''; position: absolute; left: 23px; top: 24px; bottom: 24px; width: 2px; background: linear-gradient(var(--c-blue), var(--c-amber)); }
+  .steps li { display: flex; gap: 20px; padding: 12px 0; position: relative; }
+  .steps li > span { flex: none; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: #fff; border: 2px solid var(--c-blue); font: 800 1.15rem var(--f-display); color: var(--c-blue); position: relative; }
+  .steps li:last-child > span { border-color: var(--c-amber); color: #8a5a00; }
+  .steps h3 { font-size: 1.15rem; margin: 10px 0 4px; }
+  .steps p { margin: 0; color: var(--c-muted); }
+  .law { display: flex; gap: 8px; align-items: center; font-size: 0.88rem; color: var(--c-muted); }
+  .cfu__form { background: #fff; border-radius: var(--r-lg); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow); position: sticky; top: calc(var(--header-h) + 16px); }
+  .cfu__form h2 { font-size: 1.8rem; }
+  .cfu__form > p { color: var(--c-muted); }
+  .cfu__form a { color: var(--c-blue); }
+  @media (max-width: 900px) { .cfu { grid-template-columns: minmax(0, 1fr); } .cfu__form { position: static; } }
+</style>

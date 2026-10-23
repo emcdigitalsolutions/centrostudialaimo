@@ -1,0 +1,28 @@
+---
+import GenericCourse from '../../components/GenericCourse.astro';
+import { regionali, ROUTES, type Corso } from '../../lib/catalog';
+import { SITE } from '../../site.config';
+export function getStaticPaths() {
+  return regionali.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Corso };
+---
+<GenericCourse
+  title={c.title}
+  kind="Corso regionale con qualifica"
+  body={c.body}
+  url={ROUTES.reg(c.slug)}
+  hours={c.durata}
+  crumbs={[{ label: 'Corsi regionali', href: '/corsi-regionali/' }, { label: c.title }]}
+  chips={['Corso regionale', c.durata ?? '', 'Online']}
+  facts={[
+    { icon: 'users', label: 'Tipologia', value: 'Corso regionale' },
+    { icon: 'clock', label: 'Durata', value: c.durata ?? '' },
+    { icon: 'laptop', label: 'Modalità', value: c.modalita || 'Online' },
+    ...(SITE.showPrices && c.prezzo ? [{ icon: 'euro', label: 'Quota', value: c.prezzo }] : []),
+  ]}
+  note="Qualifica utile anche per il punteggio nelle graduatorie del personale ATA, dove prevista."
+  related={regionali.filter((x) => x.slug !== c.slug).map((x) => ({ href: ROUTES.reg(x.slug), title: x.title, chips: [{ t: 'Regionale', c: 'violet' }], meta: x.durata, accent: 'var(--c-violet)' }))}
+  relatedTitle="Altri corsi regionali"
+  keywords={`${c.title.toLowerCase()}, corso regionale online, qualifica professionale, punteggio ATA`}
+/>

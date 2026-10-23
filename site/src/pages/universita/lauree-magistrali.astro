@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import LaureeList from '../../components/LaureeList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { STATS } from '../../lib/catalog';
+---
+<Base title="Lauree magistrali online" description={`${STATS.magistrali} corsi di laurea magistrale online, compresa Giurisprudenza a ciclo unico: specializzati in due anni (120 CFU) con lezioni ed esami online e un relatore fino alla tesi.`} keywords="laurea magistrale online, laurea specialistica online, giurisprudenza online, 120 CFU, università telematica">
+  <PageHero
+    eyebrow="Lauree magistrali"
+    title={`Specializzati, <em class="serif" style="color:var(--c-amber)">senza fermarti</em>.`}
+    lead={`${STATS.magistrali} corsi di laurea magistrale (120 CFU in due anni, Giurisprudenza a ciclo unico in cinque) da seguire online, compatibili con lavoro e famiglia.`}
+    crumbs={[{ label: 'Università', href: '/universita/' }, { label: 'Lauree magistrali' }]}
+  />
+  <section class="section--tight"><div class="wrap"><LaureeList livello="magistrale" /></div></section>
+  <CtaBand variant="cfu" />
+</Base>

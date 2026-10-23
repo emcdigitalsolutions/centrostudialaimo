@@ -1,0 +1,127 @@
+{
+ "attivita-e-strategie-di-sostegno-didattico-agli-alunni-con-disabilita-nella-scuola-di-oggi-la-formazione-dellinsegnante-specializzato": {
+  "i": ["Un corso annuale per acquisire competenze nella didattica inclusiva e nel sostegno agli alunni con disabilità. Legislazione scolastica, pedagogia speciale e sperimentale, psicologia e didattica si uniscono a temi pratici come la comprensione del testo, il metodo di studio e la gestione dello stress.", "Si impara a progettare attività personalizzate e a gestire la classe favorendo l’integrazione di tutti."],
+  "o": ["Conoscere le diverse forme di disabilità", "Progettare interventi didattici personalizzati", "Gestire la classe in ottica inclusiva", "Insegnare metodo di studio e tecniche di memorizzazione"],
+  "d": "Docenti, aspiranti docenti e operatori scolastici."
+ },
+ "competenze-e-metodologie-didattiche-dellanimatore-digitale": {
+  "i": ["Un corso per chi vuole guidare l’innovazione digitale a scuola. Nuovi media e linguaggi, progettazione didattica, tecnologie dell’istruzione e formazione a distanza sono i temi principali.", "Si impara a usare piattaforme e strumenti per la didattica online e mista e a supportare i colleghi."],
+  "o": ["Comprendere il ruolo dell’animatore digitale", "Usare piattaforme e strumenti digitali", "Progettare didattica online e mista", "Creare ambienti di apprendimento interattivi"],
+  "d": "Docenti, educatori e figure di supporto all’innovazione nella scuola."
+ },
+ "competenze-non-cognitive-e-life-skills-in-ambito-scolastico": {
+  "i": ["Autonomia, responsabilità, gestione delle emozioni e capacità di adattamento: le competenze non cognitive sono sempre più centrali nella scuola. Il corso lavora su intelligenza emotiva, relazione educativa, comunicazione efficace e pensiero divergente.", "Si progettano attività che sviluppano comportamenti positivi e resilienti negli studenti."],
+  "o": ["Conoscere le life skills e il quadro normativo", "Applicare l’intelligenza emotiva alla didattica", "Gestire emozioni e relazioni in classe", "Stimolare creatività e pensiero divergente"],
+  "d": "Docenti, aspiranti docenti ed educatori."
+ },
+ "competenze-per-sviluppare-il-pensiero-computazionale-con-il-coding": {
+  "i": ["Un corso per portare il coding e il pensiero computazionale in classe. Fondamenti di informatica, elementi di programmazione anche mobile e problem solving si uniscono a progettazione didattica e innovazione.", "Un modulo è dedicato alle tecnologie per l’inclusione degli alunni con bisogni educativi speciali."],
+  "o": ["Conoscere le basi della programmazione", "Progettare laboratori di coding", "Sviluppare il problem solving negli studenti", "Usare le tecnologie per l’inclusione"],
+  "d": "Docenti, educatori e formatori."
+ },
+ "didattica-dellinsegnamento-con-la-metodologia-clil": {
+  "i": ["Insegnare una disciplina in lingua straniera: è il cuore della metodologia CLIL. Il corso unisce linguistica educativa, normativa CLIL, psicologia dello sviluppo e programmazione didattica al perfezionamento della lingua inglese.", "Si progettano lezioni interdisciplinari coerenti con le indicazioni europee sull’apprendimento delle lingue."],
+  "o": ["Conoscere i fondamenti della metodologia CLIL", "Progettare lezioni integrate lingua-contenuto", "Conoscere la normativa CLIL", "Perfezionare l’inglese per l’insegnamento"],
+  "d": "Docenti di scuola primaria e secondaria."
+ },
+ "didattica-e-arti-terapie-tecniche-creative-in-ambito-scolastico": {
+  "i": ["Arte, musica, teatro e danza come strumenti educativi. Il corso fornisce le basi teoriche e pratiche per integrare le arti terapie nella didattica, a favore di benessere, inclusione e competenze trasversali.", "Un modulo è dedicato alle metodologie creative per gli alunni con DSA."],
+  "o": ["Conoscere i modelli delle arti terapie", "Integrare creatività e didattica", "Favorire l’inclusione con attività espressive", "Gestire la relazione educativa"],
+  "d": "Docenti, educatori e professionisti dell’educazione."
+ },
+ "didattica-integrale-per-il-nuovo-ambiente-di-apprendimento-2": {
+  "i": ["Un corso per aggiornare la didattica nei nuovi ambienti di apprendimento. Pedagogia e didattica integrale, docimologia e media digitali si affiancano a informatica per l’educazione e creazione di contenuti multimediali.", "Uno strumento pratico per lavorare in classe con metodi e tecnologie attuali."],
+  "o": ["Applicare i principi della didattica integrale", "Creare contenuti multimediali", "Valutare apprendimenti e competenze", "Conoscere la psicologia degli ambienti digitali"],
+  "d": "Insegnanti di ogni ordine e grado."
+ },
+ "difficolta-dellapprendimento-in-situazioni-di-handicap-ed-integrazione-scolastica": {
+  "i": ["Una preparazione completa per affrontare le sfide dell’inclusione scolastica. Pedagogia generale e speciale, psicologia scolastica e programmazione accompagnano dalla conoscenza del deficit all’intervento inclusivo.", "Si lavora con studenti con disabilità, BES e DSA per migliorare la qualità della didattica."],
+  "o": ["Conoscere le diverse forme di disabilità", "Applicare strategie didattiche inclusive", "Programmare interventi personalizzati", "Favorire l’integrazione nella classe"],
+  "d": "Docenti, educatori e operatori scolastici."
+ },
+ "educare-in-istituti-penitenziari": {
+  "i": ["L’educazione in carcere è strumento di crescita, responsabilità e reinserimento. Il corso fornisce le basi pedagogiche, psicologiche, sociologiche e giuridiche per progettare interventi educativi nel rispetto della dignità delle persone detenute.", "Si studiano modelli educativi per contesti speciali, formazione professionale, orientamento e attività creative per la riabilitazione."],
+  "o": ["Progettare interventi educativi in carcere", "Favorire orientamento e reinserimento sociale", "Usare arte e creatività per la riabilitazione", "Collaborare con l’amministrazione penitenziaria"],
+  "d": "Docenti, educatori e operatori sociali."
+ },
+ "gestire-i-disturbi-dellapprendimento-in-prospettiva-psicopedagogica": {
+  "i": ["Dislessia, disgrafia, disortografia e discalculia: il corso offre strumenti per riconoscere i disturbi specifici dell’apprendimento e intervenire in modo efficace. Pedagogia, psicologia dello sviluppo e pedagogia speciale si integrano con la programmazione scolastica.", "L’approccio è teorico e pratico, per migliorare subito la qualità dell’insegnamento."],
+  "o": ["Conoscere le caratteristiche dei DSA", "Applicare metodologie inclusive", "Usare strategie psicopedagogiche", "Collaborare con famiglie e specialisti"],
+  "d": "Docenti, educatori e professionisti della formazione."
+ },
+ "glottodidattica-infantile": {
+  "i": ["Come si sviluppa il linguaggio nei bambini e come insegnare loro le lingue. Il corso unisce psicologia, pedagogia e psicobiologia ad acquisizione e didattica del linguaggio, glottologia e linguistica.", "Si costruisce una cassetta degli attrezzi per progettare e valutare percorsi linguistici e per affrontare le difficoltà comunicative in età evolutiva."],
+  "o": ["Conoscere lo sviluppo del linguaggio", "Progettare attività linguistiche per bambini", "Riconoscere difficoltà linguistiche", "Valutare i progressi"],
+  "d": "Docenti e aspiranti docenti della scuola dell’infanzia e primaria."
+ },
+ "il-bullismo-interpretazione-fenomenologia-prevenzione-e-didattica": {
+  "i": ["Un corso per comprendere, riconoscere e contrastare bullismo e cyberbullismo a scuola. Psicologia della comunicazione, dell’educazione e dell’intersoggettività si uniscono a tecniche di counselling per le vittime.", "Si acquisiscono strategie concrete di prevenzione e gestione dei casi."],
+  "o": ["Comprendere le dinamiche del bullismo", "Riconoscere il cyberbullismo", "Sostenere le vittime", "Prevenire con azioni educative"],
+  "d": "Docenti, aspiranti docenti e figure scolastiche."
+ },
+ "il-docente-di-sostegno-dal-vero": {
+  "i": ["Un corso pratico, basato su casi reali, per chi vuole specializzarsi nel sostegno. Si studiano pedagogia speciale, certificazioni, disturbi del neurosviluppo, spettro autistico e disabilità intellettiva.", "Si impara a redigere PEI e PDP e a usare strategie didattiche e di potenziamento in classi eterogenee."],
+  "o": ["Conoscere diagnosi e certificazioni", "Redigere PEI e PDP efficaci", "Gestire classi eterogenee", "Applicare buone pratiche per la disabilità intellettiva"],
+  "d": "Insegnanti e aspiranti insegnanti di ogni ordine e grado."
+ },
+ "il-docente-di-sostegno-educare-allinclusione": {
+  "i": ["Un corso per docenti abilitati o specializzati sul sostegno che vogliono rafforzare il proprio ruolo. Competenze e strategie, diritto amministrativo per la scuola, psicologia clinica e sociologia della disabilità sono i temi del programma.", "Le strategie didattiche e di potenziamento rendono il corso subito applicabile."],
+  "o": ["Rafforzare il ruolo del docente di sostegno", "Conoscere psicologia e sociologia della disabilità", "Orientarsi nella normativa scolastica", "Applicare strategie di potenziamento"],
+  "d": "Insegnanti abilitati o specializzati sul sostegno."
+ },
+ "il-profilo-professionale-del-docente-abilitato-e-le-competenze-chiave": {
+  "i": ["Un corso sulle competenze chiave del docente abilitato. Strategie didattiche, diritto amministrativo per la scuola, tecniche di intervento relazionale e competenze emotive e motivazionali sono al centro del programma.", "Un aggiornamento utile per la professione e per il punteggio."],
+  "o": ["Aggiornare le competenze del docente", "Gestire la relazione con gli studenti", "Lavorare su motivazione ed emozioni", "Conoscere la normativa scolastica"],
+  "d": "Insegnanti abilitati o specializzati sul sostegno."
+ },
+ "la-buona-scuola-metodologie-didattiche": {
+  "i": ["Un corso per aggiornarsi sulle metodologie didattiche introdotte dalle riforme della scuola. Pedagogia, inclusione, valutazione del sistema scolastico, legislazione e apprendimento cooperativo sono i temi principali.", "L’obiettivo è rendere l’insegnamento più efficace e inclusivo."],
+  "o": ["Conoscere la normativa sulla scuola", "Applicare il cooperative learning", "Progettare didattica inclusiva", "Comprendere la valutazione del sistema scolastico"],
+  "d": "Docenti e formatori."
+ },
+ "la-figura-dellinsegnante-di-sostegno-nella-scuola": {
+  "i": ["Metodologie, strumenti e strategie per il sostegno e l’inclusione, con attenzione alla progettazione educativa e alle nuove tecnologie. Psicologia generale e della salute, informatica, pedagogia generale e speciale compongono il programma.", "Un percorso per una didattica moderna e inclusiva."],
+  "o": ["Conoscere la pedagogia speciale", "Progettare interventi educativi inclusivi", "Usare tecnologie a supporto del sostegno", "Comprendere i bisogni degli studenti con disabilità"],
+  "d": "Docenti, maestri, educatori e aspiranti insegnanti."
+ },
+ "la-scuola-delle-competenze-progettare-valutare-certificare": {
+  "i": ["Un corso biennale da 120 CFU per passare a una didattica per competenze, in linea con le indicazioni nazionali e le raccomandazioni europee. Il primo anno affronta educazione degli adulti, pedagogia, legislazione e didattica per competenze; il secondo la valutazione e la certificazione.", "Si impara a progettare, monitorare e valutare l’azione didattica insieme a famiglie e colleghi."],
+  "o": ["Progettare per competenze", "Valutare e certificare le competenze", "Usare metodologie collaborative e inclusive", "Collaborare con famiglie e altri soggetti"],
+  "d": "Docenti e operatori scolastici."
+ },
+ "le-funzioni-dellitp-nella-scuola-di-oggi": {
+  "i": ["Un corso dedicato agli insegnanti tecnico-pratici e al loro ruolo nei laboratori della scuola secondaria. Si studiano funzioni e strumenti dell’ITP, rapporto con il docente teorico, didattica, valutazione e inclusione.", "Un aggiornamento mirato per chi lavora nelle attività tecnico-pratiche."],
+  "o": ["Comprendere il ruolo dell’ITP", "Progettare attività di laboratorio", "Valutare gli apprendimenti pratici", "Includere studenti con DSA e disabilità"],
+  "d": "Insegnanti tecnico-pratici, docenti e aspiranti docenti."
+ },
+ "linsegnamento-della-lingua-italiana-agli-alunni-stranieri": {
+  "i": ["Un corso per insegnare l’italiano come seconda lingua e favorire l’integrazione degli studenti stranieri. Acquisizione del linguaggio, linguistica generale e italiana, antropologia e didattica della lingua seconda sono le materie principali.", "Si impara ad adattare la didattica ai diversi livelli e a correggere gli errori più frequenti."],
+  "o": ["Applicare metodologie per l’italiano L2", "Conoscere morfosintassi e lessico dell’italiano", "Adattare la didattica ai livelli linguistici", "Favorire l’integrazione culturale"],
+  "d": "Docenti, educatori e operatori scolastici."
+ },
+ "metodologie-didattiche-ed-apprendimento-integrato-di-competenze-clil": {
+  "i": ["Un corso per progettare e realizzare lezioni CLIL efficaci e coerenti con gli standard europei. Pedagogia interculturale, linguistica, psicologia del linguaggio e strumenti digitali si uniscono alla didattica in contesti plurilingui.", "Si impara a integrare competenze linguistiche e disciplinari in modo attivo e collaborativo."],
+  "o": ["Progettare lezioni CLIL", "Usare strumenti digitali per la didattica", "Insegnare in contesti plurilingui", "Valorizzare l’apprendimento attivo"],
+  "d": "Docenti e aspiranti docenti."
+ },
+ "metodologie-didattiche-integrate-e-buone-pratiche-nella-scuola-dellinnovazione-e-dellinclusione": {
+  "i": ["Un corso biennale da 120 CFU per affrontare le sfide della scuola di oggi: linguaggi diversi, bisogni educativi differenti e tecnologie in continua evoluzione. Il programma spazia da filosofia dell’educazione nell’era digitale a legislazione sull’integrazione, economia della conoscenza, relazione d’aiuto e didattica speciale.", "Si acquisiscono strumenti per progettare, gestire e valutare l’azione educativa."],
+  "o": ["Applicare metodologie collaborative e inclusive", "Progettare interventi mirati", "Gestire la relazione d’aiuto", "Valutare l’azione educativa"],
+  "d": "Docenti e operatori scolastici."
+ },
+ "metodologie-didattiche-per-lintegrazione-degli-alunni-con-dsa": {
+  "i": ["Conoscenze, strategie e strumenti pratici per favorire l’integrazione degli alunni con disturbi specifici dell’apprendimento. Psicologia scolastica e della disabilità si uniscono a didattica, pedagogia dell’inclusione e didattica dei DSA.", "Un approccio operativo per un insegnamento personalizzato."],
+  "o": ["Riconoscere le difficoltà degli studenti con DSA", "Predisporre strategie educative adeguate", "Personalizzare l’insegnamento", "Valorizzare le potenzialità di ogni studente"],
+  "d": "Dirigenti scolastici, staff, docenti e aspiranti docenti."
+ },
+ "metodologie-didattiche-linsegnamento-curriculare-e-lintegrazione-degli-alunni-con-bisogni-educativi-specialibes": {
+  "i": ["Un corso sulle metodologie per includere gli alunni con bisogni educativi speciali. Si studiano tipologie di BES, normativa, rapporto scuola-famiglia, collegamenti con il territorio e piano educativo individualizzato.", "Un modulo è dedicato alle nuove tecnologie al servizio della didattica per i BES."],
+  "o": ["Riconoscere le tipologie di BES", "Conoscere la normativa vigente", "Redigere il PEI", "Usare tecnologie per la didattica inclusiva"],
+  "d": "Docenti e aspiranti docenti."
+ },
+ "nuova-didattica-per-le-lingue-la-metodologia-clil": {
+  "i": ["Un corso per insegnare le lingue con l’approccio CLIL, integrando contenuti disciplinari e lingua straniera. Processi dell’apprendimento linguistico, didattica delle lingue e valutazione delle competenze si affiancano a strumenti digitali.", "Si imparano a progettare, gestire e valutare percorsi CLIL coinvolgenti e inclusivi."],
+  "o": ["Progettare percorsi CLIL", "Conoscere i principi della didattica delle lingue", "Valutare le competenze linguistiche", "Usare risorse digitali"],
+  "d": "Docenti, educatori e operatori scolastici."
+ }
+}

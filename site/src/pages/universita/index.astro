@@ -1,0 +1,83 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import HubTiles from '../../components/HubTiles.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Faq from '../../components/Faq.astro';
+import Icon from '../../components/Icon.astro';
+import { STATS, lauree, FACOLTA } from '../../lib/catalog';
+const facs = Object.keys(FACOLTA).map((f) => ({ f, n: lauree.filter((l) => l.facolta === f).length, ...FACOLTA[f] }));
+const perks = [
+  { icon: 'route', t: 'Orientamento strategico', d: 'Ti aiutiamo a scegliere l’indirizzo più vicino ai tuoi obiettivi, guardando alle reali prospettive di lavoro.' },
+  { icon: 'user', t: 'Tutor personale', d: 'Dall’immatricolazione alla tesi: metodo di studio, piano degli esami, gestione del tempo e dello stress.' },
+  { icon: 'laptop', t: 'Lezioni sempre online', d: 'Videolezioni e materiali disponibili 24 ore su 24, nessun test di ammissione e iscrizioni aperte tutto l’anno.' },
+  { icon: 'briefcase', t: 'Stage e lavoro', d: 'Tirocini e contatti con aziende che cercano profili specializzati per completare la formazione sul campo.' },
+];
+const faq = [
+  { q: 'Le lauree online hanno lo stesso valore di quelle tradizionali?', a: 'Sì. I titoli rilasciati dalle università telematiche riconosciute dal Ministero dell’Università e della Ricerca hanno lo stesso valore legale di quelli degli atenei tradizionali e sono validi per concorsi e abilitazioni.' },
+  { q: 'C’è un test di ammissione?', a: 'No, per i corsi proposti non è previsto un test di ammissione e le iscrizioni restano aperte durante tutto l’anno.' },
+  { q: 'Dove si sostengono gli esami?', a: 'Le lezioni si seguono online, mentre gli esami si sostengono nelle sedi d’esame dell’ateneo secondo il calendario delle sessioni. Ti indichiamo la sede più comoda.' },
+  { q: 'Posso farmi riconoscere gli esami già sostenuti?', a: 'Sì: con la valutazione CFU gratuita la commissione didattica dell’ateneo valuta la tua carriera precedente e ti dice quali crediti vengono riconosciuti, con un preventivo dei costi.' },
+  { q: 'Posso iscrivermi a un singolo esame?', a: 'Sì, con i corsi singoli puoi frequentare insegnamenti specifici e sostenerne l’esame, ad esempio per integrare crediti richiesti da concorsi o classi di concorso.' },
+];
+---
+<Base title="Università online: corsi di laurea triennali e magistrali" description={`Università online con ${STATS.lauree} corsi di laurea triennali e magistrali, tutor personale, esami in sede, corsi singoli e valutazione gratuita dei CFU già acquisiti.`} keywords="università online, università telematica, corsi di laurea online, laurea online Sicilia, riconoscimento CFU, corsi singoli, tutor universitario">
+  <PageHero
+    eyebrow="Università online"
+    title={`La laurea che <em class="serif" style="color:var(--c-amber)">si adatta a te</em>, non il contrario.`}
+    lead="Una laurea che si segue da casa, con un tutor personale che ti accompagna dall’iscrizione alla discussione della tesi."
+    crumbs={[{ label: 'Università' }]}
+  >
+    <div class="phero__chips"><span class="chip chip--dark">{STATS.triennali} triennali</span><span class="chip chip--dark">{STATS.magistrali} magistrali</span><span class="chip chip--dark">5 facoltà</span><span class="chip chip--dark">Nessun test d’ingresso</span></div>
+  </PageHero>
+  <section class="section--tight">
+    <div class="wrap">
+      <HubTiles tiles={[
+        { href: '/universita/lauree-triennali/', icon: 'grad', title: 'Lauree triennali', text: 'Il primo titolo universitario in tre anni, interamente online.', tag: `${STATS.triennali} corsi` },
+        { href: '/universita/lauree-magistrali/', icon: 'award', title: 'Lauree magistrali', text: 'Due anni per specializzarti, con un relatore che ti segue fino alla tesi.', tag: `${STATS.magistrali} corsi`, color: 'var(--c-violet)' },
+        { href: '/universita/valutazione-cfu/', icon: 'file', title: 'Valutazione CFU', text: 'Scopri gratis quali esami ti vengono riconosciuti e quanto costa iscriverti.', tag: 'Gratuita', color: 'var(--c-amber)' },
+      ]} />
+    </div>
+  </section>
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="section-head" data-reveal><p class="eyebrow">Facoltà</p><h2>Scegli la tua area di studio</h2></div>
+      <div class="facs">
+        {facs.map((f, i) => (
+          <a class="fac" href={`/universita/corsi-di-laurea/?facolta=${encodeURIComponent(f.f)}`} style={`--accent:${f.color};--d:${i}`} data-reveal>
+            <Icon name={f.icon} size={30} />
+            <strong>{f.f}</strong>
+            <span>{f.n} corsi</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal><p class="eyebrow">Perché con noi</p><h2>Non sei solo davanti a un catalogo</h2></div>
+      <div class="perks">
+        {perks.map((p, i) => (
+          <div class="perk" data-reveal style={`--d:${i}`}><span><Icon name={p.icon} size={26} /></span><h3>{p.t}</h3><p>{p.d}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+  <CtaBand variant="cfu" />
+  <Faq items={faq} />
+</Base>
+
+<style>
+  .facs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .fac { display: grid; gap: 8px; justify-items: start; padding: 26px 22px; border-radius: var(--r); text-decoration: none; background: var(--c-paper); color: var(--accent); border: 1.5px solid transparent; transition: transform 0.4s var(--ease), border-color 0.3s, background 0.3s; }
+  .fac:hover { transform: translateY(-4px); border-color: var(--accent); background: #fff; }
+  .fac strong { font: 700 1.2rem var(--f-display); color: var(--c-ink); margin-top: 8px; }
+  .fac span { color: var(--c-muted); font-size: 0.9rem; }
+  .perks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .perk { padding: 26px; background: #fff; border-radius: var(--r); box-shadow: var(--shadow-sm); }
+  .perk span { display: inline-grid; place-items: center; width: 54px; height: 54px; border-radius: 16px; background: var(--c-blue-soft); color: var(--c-blue); margin-bottom: 16px; }
+  .perk h3 { font-size: 1.15rem; }
+  .perk p { color: var(--c-muted); margin: 0; font-size: 0.97rem; }
+  @media (max-width: 1000px) { .facs { grid-template-columns: repeat(3, 1fr); } .perks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .facs, .perks { grid-template-columns: repeat(2, minmax(0, 1fr)); } .perks { grid-template-columns: minmax(0, 1fr); } }
+</style>

@@ -1,0 +1,24 @@
+---
+import Catalog from './Catalog.astro';
+import CourseCard from './CourseCard.astro';
+import { masters, AREE, ROUTES, type AreaKey } from '../lib/catalog';
+interface Props { area?: AreaKey }
+const { area } = Astro.props;
+const list = masters.filter((m) => !area || m.area === area);
+const filters = [
+  ...(area ? [] : [{ key: 'area', label: 'Area', options: (Object.keys(AREE) as AreaKey[]).map((a) => ({ v: a, label: AREE[a].short, n: masters.filter((m) => m.area === a).length })) }]),
+  { key: 'livello', label: 'Livello', options: [{ v: 'I', label: 'I livello', n: list.filter((m) => m.livello === 'I').length }, { v: 'II', label: 'II livello', n: list.filter((m) => m.livello === 'II').length }] },
+];
+---
+<Catalog filters={filters} total={list.length} placeholder="Cerca un master (es. sostegno, infermiere, appalti)…" noun={['master', 'master']}>
+  {list.map((m) => (
+    <CourseCard
+      href={ROUTES.master(m.slug)}
+      title={m.title}
+      accent={AREE[m.area].color}
+      chips={[{ t: `${m.livello} livello`, c: m.livello === 'I' ? 'blue' : 'violet' }, { t: AREE[m.area].short }]}
+      meta={[m.cfu && `${m.cfu} CFU`, m.durata].filter(Boolean).join(' · ')}
+      data={{ area: m.area, livello: m.livello }}
+    />
+  ))}
+</Catalog>

@@ -1,0 +1,38 @@
+---
+import Icon from './Icon.astro';
+interface Props { items: { q: string; a: string }[]; title?: string; eyebrow?: string }
+const { items, title = 'Domande frequenti', eyebrow = 'FAQ' } = Astro.props;
+const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map((i) => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })) };
+---
+<section class="section faq" id="faq">
+  <div class="wrap faq__grid">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">{eyebrow}</p>
+      <h2>{title}</h2>
+      <p>Non trovi la risposta? <a href="/contatti/">Scrivici</a>: un orientatore ti risponde personalmente.</p>
+    </div>
+    <div class="faq__list">
+      {items.map((i, n) => (
+        <details class="faq__item" data-reveal style={`--d:${n % 4}`} open={n === 0}>
+          <summary>{i.q}<span class="faq__ic"><Icon name="plus" size={18} stroke={2.2} /></span></summary>
+          <p>{i.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+</section>
+
+<style>
+  .faq__grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+  .faq__grid .section-head { position: sticky; top: calc(var(--header-h) + 24px); }
+  .faq__list { display: grid; gap: 12px; }
+  .faq__item { background: #fff; border-radius: var(--r); box-shadow: var(--shadow-sm); border: 1px solid rgb(13 26 58 / 0.06); transition: box-shadow 0.3s; }
+  .faq__item[open] { box-shadow: var(--shadow); }
+  .faq__item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 22px; font: 700 1.08rem/1.35 var(--f-display); color: var(--c-ink); letter-spacing: -0.01em; }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__ic { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--c-paper); transition: transform 0.4s var(--ease), background 0.3s, color 0.3s; }
+  .faq__item[open] .faq__ic { transform: rotate(45deg); background: var(--c-amber); }
+  .faq__item p { padding: 0 22px 22px; margin: 0; color: var(--c-muted); }
+  @media (max-width: 860px) { .faq__grid { grid-template-columns: minmax(0, 1fr); } .faq__grid .section-head { position: static; } }
+</style>

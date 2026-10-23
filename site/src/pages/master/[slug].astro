@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import GenericCourse from '../../components/GenericCourse.astro';
+import MasterList from '../../components/MasterList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { masters, AREE, ROUTES, type Master, type AreaKey } from '../../lib/catalog';
+import { SITE } from '../../site.config';
+
+export function getStaticPaths() {
+  return [
+    ...masters.map((m) => ({ params: { slug: m.slug }, props: { m, area: null } })),
+    ...(Object.keys(AREE) as AreaKey[]).map((a) => ({ params: { slug: AREE[a].slug }, props: { m: null, area: a } })),
+  ];
+}
+const { m, area } = Astro.props as { m: Master | null; area: AreaKey | null };
+const A = m ? AREE[m.area] : AREE[area!];
+const related = m
+  ? masters.filter((x) => x.area === m.area && x.slug !== m.slug).slice(0, 3).map((x) => ({
+      href: ROUTES.master(x.slug), title: x.title, accent: AREE[x.area].color,
+      chips: [{ t: `${x.livello} livello`, c: x.livello === 'I' ? 'blue' : 'violet' }, { t: `${x.cfu} CFU` }], meta: AREE[x.area].short,
+    }))
+  : [];
+const count = area ? masters.filter((x) => x.area === area).length : 0;
+---
+{m ? (
+  <GenericCourse
+    title={m.title}
+    kind={`Master di ${m.livello} livello`}
+    body={m.body}
+    program={m.insegnamenti}
+    url={ROUTES.master(m.slug)}
+    credits={m.cfu}
+    hours={m.durata}
+    crumbs={[{ label: 'Master', href: '/master/' }, { label: A.short, href: ROUTES.masterArea(m.area) }, { label: m.title }]}
+    chips={[`Master di ${m.livello} livello`, A.short, m.cfu && `${m.cfu} CFU`, m.durata, 'Online']}
+    facts={[
+      { icon: 'award', label: 'Titolo', value: `Master di ${m.livello} livello` },
+      { icon: 'layers', label: 'Area', value: A.short },
+      { icon: 'clock', label: 'Durata', value: m.durata },
+      { icon: 'grad', label: 'Crediti', value: m.cfu ? `${m.cfu} CFU` : '' },
+      { icon: 'laptop', label: 'Modalità', value: 'Online, piattaforma h24' },
+      { icon: 'calendar', label: 'Durata indicativa', value: 'Un anno accademico' },
+      ...(SITE.showPrices && m.prezzo ? [{ icon: 'euro', label: 'Quota', value: m.prezzo }] : []),
+    ]}
+    note="Quota rateizzabile: chiedici costi, modalità di pagamento e date della prossima sessione."
+    related={related}
+    relatedTitle={`Altri ${A.label.replace('Master', 'master')}`}
+    keywords={`master ${m.title.toLowerCase()}, master ${m.livello} livello online, ${A.label.toLowerCase()}, master 60 CFU, master online`}
+  />
+) : (
+  <Base title={`${A.label}: master online di I e II livello`} description={`${count} ${A.label.toLowerCase()} online di I e II livello. ${A.intro}`} keywords={`${A.label.toLowerCase()}, master online, master I livello, master II livello, master 60 CFU`}>
+    <PageHero
+      eyebrow="Master"
+      title={A.label}
+      lead={A.intro}
+      crumbs={[{ label: 'Master', href: '/master/' }, { label: A.short }]}
+    >
+      <div class="phero__chips"><span class="chip chip--dark">{count} master</span><span class="chip chip--dark">I e II livello</span><span class="chip chip--dark">60 CFU · online</span></div>
+    </PageHero>
+    <section class="section--tight"><div class="wrap"><MasterList area={area!} /></div></section>
+    <CtaBand />
+  </Base>
+)}

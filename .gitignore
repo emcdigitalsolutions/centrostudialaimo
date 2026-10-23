@@ -1,0 +1,11 @@
+# dipendenze e build
+site/node_modules/
+site/dist/
+site/.astro/
+# materiale locale (non pubblicare)
+_shots/
+tools/_locale/
+offertaformatica.png
+preview.log
+*.log
+.env

@@ -1,0 +1,15 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  href: string; title: string; sub?: string; chips?: { t: string; c?: string }[]; meta?: string; accent?: string;
+  data?: Record<string, string>;
+}
+const { href, title, sub, chips = [], meta, accent = 'var(--c-blue)', data = {} } = Astro.props;
+const attrs = Object.fromEntries(Object.entries(data).map(([k, v]) => [`data-${k}`, v]));
+---
+<a class="ccard" href={href} style={`--accent:${accent}`} {...attrs}>
+  {chips.length > 0 && <div class="ccard__top">{chips.map((c) => <span class:list={['chip', c.c && `chip--${c.c}`]}>{c.t}</span>)}</div>}
+  <h3>{title}</h3>
+  {sub && <p class="ccard__sub">{sub}</p>}
+  <div class="ccard__meta"><span>{meta}</span><span class="ccard__go"><Icon name="arrow" /></span></div>
+</a>

@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import HubTiles from '../../components/HubTiles.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Faq from '../../components/Faq.astro';
+import { masters, perfezionamenti, abilitanti, regionali } from '../../lib/catalog';
+const n = (a: string) => masters.filter((m) => m.area === a).length;
+const faq = [
+  { q: 'Come posso aumentare il mio punteggio in GPS?', a: 'Con titoli culturali valutabili: master di I e II livello, corsi di perfezionamento, certificazioni linguistiche (B2, C1, C2), CLIL e certificazioni informatiche. Analizziamo i titoli che hai già e ti proponiamo la combinazione che rende di più.' },
+  { q: 'Cos’è un master di completamento classe di concorso?', a: 'È un percorso che permette di integrare i crediti formativi mancanti alla propria laurea per ottenere i requisiti di accesso a una classe di concorso.' },
+  { q: 'Per il personale ATA quali titoli servono?', a: 'Per l’accesso e il punteggio nelle graduatorie ATA contano certificazioni informatiche come la Pekit Expert e qualifiche come ASACOM, OSA e OPI. Ti aiutiamo a capire cosa vale nel tuo profilo.' },
+  { q: 'I corsi sono riconosciuti dal Ministero?', a: 'I percorsi proposti sono erogati da università ed enti accreditati e sono valutabili secondo le tabelle ministeriali in vigore. Per ogni corso ti indichiamo come viene valutato.' },
+  { q: 'Posso seguire i corsi mentre lavoro a scuola?', a: 'Sì: lezioni e materiali sono online e sempre disponibili, così puoi organizzarti con orari di servizio e supplenze.' },
+];
+---
+<Base title="Area Scuola: master, perfezionamenti, abilitazioni e punteggio GPS" description="Tutto per docenti, aspiranti docenti e personale ATA: master Mondo Scuola, completamento classe di concorso, corsi di perfezionamento, percorsi abilitanti 30-60 CFU e pacchetti per il punteggio GPS." keywords="area scuola, punteggio GPS, graduatorie docenti, graduatorie ATA, master scuola, corsi di perfezionamento, percorsi abilitanti, classe di concorso">
+  <PageHero
+    eyebrow="Area Scuola"
+    title={`Per chi insegna, <em class="serif" style="color:var(--c-amber)">o vuole iniziare</em>.`}
+    lead="Formazione, graduatorie, abilitazioni e assistenza sul mondo della scuola: scegli il percorso, al resto pensiamo insieme."
+    crumbs={[{ label: 'Area Scuola' }]}
+  />
+  <section class="section--tight">
+    <div class="wrap">
+      <HubTiles tiles={[
+        { href: '/master/mondo-scuola/', icon: 'school', title: 'Master Mondo Scuola', text: 'Master da 60 CFU su inclusione, BES, DSA, didattica digitale e metodologie.', tag: `${n('scuola')} master` },
+        { href: '/master/completamento-classe-di-concorso/', icon: 'target', title: 'Completamento classe di concorso', text: 'Integra i crediti mancanti e accedi alle classi di concorso.', tag: `${n('completamento')} master`, color: 'var(--c-mint)' },
+        { href: '/area-scuola/punteggio-gps/', icon: 'chart', title: 'Aumenta i punti in GPS', text: 'Pacchetti di certificazioni informatiche, inglese e CLIL fino a 12 punti.', tag: '4 pacchetti', color: 'var(--c-amber)' },
+        { href: '/area-scuola/corsi-di-perfezionamento/', icon: 'award', title: 'Corsi di perfezionamento', text: 'Annuali da 60 CFU e biennali da 120 CFU per docenti di ogni ordine e grado.', tag: `${perfezionamenti.length} corsi`, color: 'var(--c-violet)' },
+        { href: '/area-scuola/percorsi-abilitanti/', icon: 'shield', title: 'Percorsi abilitanti', text: 'Abilitazione 30-36-60 CFU e preparazione al TFA sostegno.', tag: `${abilitanti.length} percorsi`, color: 'var(--c-coral)' },
+        { href: '/corsi-regionali/', icon: 'users', title: 'Personale ATA e corsi regionali', text: 'ASACOM, OSA, OPI e certificazioni informatiche per le graduatorie ATA.', tag: `${regionali.length} corsi`, color: 'var(--c-blue-2)' },
+      ]} />
+    </div>
+  </section>
+  <Faq items={faq} />
+  <CtaBand />
+</Base>

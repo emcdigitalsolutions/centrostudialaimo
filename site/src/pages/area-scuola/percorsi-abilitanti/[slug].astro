@@ -1,0 +1,27 @@
+---
+import GenericCourse from '../../../components/GenericCourse.astro';
+import { abilitanti, ROUTES, type Corso } from '../../../lib/catalog';
+export function getStaticPaths() {
+  return abilitanti.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Corso };
+const crediti = c.crediti && /\d/.test(c.crediti) ? c.crediti : '';
+---
+<GenericCourse
+  title={c.title}
+  kind="Percorso abilitante all’insegnamento"
+  body={c.body}
+  url={ROUTES.abil(c.slug)}
+  crumbs={[{ label: 'Area Scuola', href: '/area-scuola/' }, { label: 'Percorsi abilitanti', href: '/area-scuola/percorsi-abilitanti/' }, { label: c.title }]}
+  chips={['Percorso abilitante', crediti, c.durata ?? '']}
+  facts={[
+    { icon: 'shield', label: 'Tipologia', value: /preparazione/i.test(c.title) ? 'Corso di preparazione' : 'Percorso abilitante' },
+    { icon: 'grad', label: 'Crediti', value: crediti },
+    { icon: 'clock', label: 'Durata', value: c.durata ?? '' },
+    { icon: 'laptop', label: 'Modalità', value: c.modalita ?? '' },
+  ]}
+  note="Posti, classi di concorso e scadenze dipendono dai bandi degli atenei: contattaci per la situazione aggiornata."
+  related={abilitanti.filter((x) => x.slug !== c.slug).map((x) => ({ href: ROUTES.abil(x.slug), title: x.title, chips: [{ t: 'Abilitazione', c: 'amber' }], meta: x.crediti, accent: 'var(--c-amber)' }))}
+  relatedTitle="Altri percorsi abilitanti"
+  keywords="percorsi abilitanti, abilitazione insegnamento, 30 CFU, 60 CFU, 36 CFU, TFA sostegno, DPCM 4 agosto 2023"
+/>

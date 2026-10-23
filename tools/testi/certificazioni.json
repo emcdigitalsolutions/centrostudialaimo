@@ -1,0 +1,142 @@
+{
+ "certificazione-informatica-pekit": {
+  "b": [
+   {"h": "La certificazione", "c": [
+    {"t": "p", "x": "La Pekit Expert è una certificazione internazionale di alfabetizzazione digitale accreditata, richiesta come titolo di accesso per il personale ATA dal contratto del comparto Istruzione e Ricerca e valutabile nelle graduatorie."},
+    {"t": "p", "x": "Il programma segue il quadro europeo delle competenze digitali DigComp 2.2 ed è graduale: adatto a studenti, lavoratori e docenti, anche partendo da zero."}
+   ]},
+   {"h": "Le competenze", "c": [{"t": "ul", "items": [
+    "Cercare, gestire e valutare informazioni e dati",
+    "Comunicare e collaborare con strumenti digitali",
+    "Creare contenuti digitali",
+    "Proteggere dispositivi, dati e privacy",
+    "Risolvere problemi con le tecnologie"
+   ]}]},
+   {"h": "Gli esami", "c": [
+    {"t": "p", "x": "Si consegue superando quattro esami online: Cominciare le operazioni, Vivere in connessione, Esperienza multimediale, Diventare esperti. Ogni prova prevede 36 domande da completare in 45 minuti."}
+   ]},
+   {"h": "Punteggio", "c": [{"t": "ul", "items": ["+0,25 punti nelle graduatorie ATA", "Valutabile anche per il personale docente, secondo le tabelle in vigore"]}]}
+  ]
+ },
+ "certificazione-inglese-b2-c1-e-c2-con-corso-online": {
+  "b": [
+   {"h": "Il percorso", "c": [
+    {"t": "p", "x": "Un corso di inglese online che prepara all’esame per la certificazione del livello scelto: B2, C1 o C2 del Quadro comune europeo di riferimento per le lingue. Studi quando vuoi e arrivi all’esame preparato."},
+    {"t": "p", "x": "Le certificazioni riconosciute ai sensi della normativa ministeriale sono valutabili nelle graduatorie del personale scolastico."}
+   ]},
+   {"h": "A chi serve", "c": [{"t": "ul", "items": [
+    "Docenti e aspiranti docenti che vogliono aumentare il punteggio nelle GPS",
+    "Docenti CLIL e insegnanti di inglese nella scuola primaria",
+    "Candidati ai concorsi pubblici che valutano le lingue straniere",
+    "Studenti universitari e lavoratori che vogliono certificare il proprio livello"
+   ]}]},
+   {"h": "Quale livello scegliere", "c": [{"t": "ul", "items": [
+    "B2: livello intermedio superiore, richiesto da molti concorsi",
+    "C1: livello avanzato, richiesto per l’insegnamento con metodologia CLIL",
+    "C2: padronanza piena della lingua, il punteggio più alto"
+   ]}]}
+  ]
+ },
+ "clil-corso-di-inglese-online-certificazione-linguistica": {
+  "b": [
+   {"h": "Il pacchetto", "c": [
+    {"t": "p", "x": "Il corso di perfezionamento CLIL, il corso di inglese online e la certificazione linguistica B2, C1 o C2 in un unico percorso. È la combinazione che, nelle tabelle di valutazione delle GPS, fa crescere di più il punteggio."}
+   ]},
+   {"h": "Punteggio", "c": [{"t": "ul", "items": [
+    "6 punti nelle GPS con CLIL e certificazione B2",
+    "7 punti nelle GPS con CLIL e certificazione C1",
+    "9 punti nelle GPS con CLIL e certificazione C2",
+    "3 punti nelle graduatorie a esaurimento di terza e quarta fascia",
+    "1 punto nelle GPS con il solo CLIL",
+    "1 punto nelle graduatorie di mobilità e per il personale perdente posto",
+    "1 punto nelle graduatorie per incarichi dirigenziali e da 0,50 a 3 punti nel concorso per dirigenti scolastici"
+   ]}]},
+   {"h": "Requisiti di ammissione", "c": [{"t": "p", "x": "Diploma di scuola secondaria superiore, laurea triennale, magistrale o specialistica."}]},
+   {"h": "A chi si rivolge", "c": [{"t": "p", "x": "Docenti, maestri ed educatori."}]}
+  ]
+ },
+ "corso-di-coding": {
+  "b": [
+   {"h": "Il corso", "c": [
+    {"t": "p", "x": "Coding vuol dire programmare, ma prima ancora imparare a ragionare per risolvere problemi: è il pensiero computazionale. Il corso introduce la programmazione in modo pratico e progressivo."},
+    {"t": "p", "x": "È utile ai docenti che vogliono portarlo in classe, anche in versione unplugged senza computer già dalla scuola dell’infanzia, e a chi vuole avvicinarsi al lavoro digitale."}
+   ]},
+   {"h": "Obiettivi", "c": [{"t": "ul", "items": [
+    "Sviluppare competenze informatiche di base",
+    "Imparare i concetti fondamentali della programmazione",
+    "Conoscere i principali linguaggi",
+    "Realizzare piccoli progetti con il coding"
+   ]}]}
+  ]
+ },
+ "corso-di-dattilografia": {
+  "b": [
+   {"h": "Il corso", "c": [
+    {"t": "p", "x": "Un corso online per imparare a scrivere alla tastiera in modo corretto, veloce e senza guardare i tasti: una competenza utile in ufficio e richiesta per il profilo di assistente amministrativo."},
+    {"t": "p", "x": "Al termine si riceve un attestato di 200 ore valido per l’aggiornamento delle graduatorie del personale ATA."}
+   ]},
+   {"h": "Punteggio", "c": [{"t": "ul", "items": ["1 punto nelle graduatorie ATA per il profilo di assistente amministrativo"]}]},
+   {"h": "Requisiti di ammissione", "c": [{"t": "p", "x": "Diploma di scuola secondaria superiore o laurea, anche conseguita all’estero e riconosciuta in Italia."}]}
+  ]
+ },
+ "corso-di-formazione-lim": {
+  "b": [
+   {"h": "Il corso", "c": [
+    {"t": "p", "x": "La lavagna interattiva multimediale è presente in quasi tutte le scuole, ma spesso viene usata solo in minima parte. Il corso aiuta i docenti a sfruttarla davvero, trovando il giusto equilibrio tra tecnologia e metodo."},
+    {"t": "p", "x": "Un percorso pensato anche per chi si sente poco sicuro con la tecnologia: si parte dalle basi per arrivare a lezioni ricche e interattive."}
+   ]},
+   {"h": "Cosa imparerai", "c": [{"t": "ul", "items": [
+    "Usare con sicurezza le funzioni della LIM",
+    "Trovare e utilizzare risorse didattiche digitali",
+    "Integrare oggetti di apprendimento nelle lezioni",
+    "Progettare attività coerenti con gli obiettivi didattici"
+   ]}]}
+  ]
+ },
+ "corso-di-formazione-tablet": {
+  "b": [
+   {"h": "Il corso", "c": [
+    {"t": "p", "x": "Una guida all’uso didattico del tablet, strumento semplice e intuitivo che, se usato bene, rende l’apprendimento più coinvolgente senza sostituire i libri e migliora il rapporto tra studenti e insegnanti."},
+    {"t": "p", "x": "Si parte dalle funzioni di base per arrivare alla progettazione di vere unità di apprendimento con le tecnologie."}
+   ]},
+   {"h": "Programma", "c": [{"t": "ul", "items": [
+    "Interfaccia e strumenti del tablet",
+    "Strumenti di produttività per la didattica",
+    "App da usare in classe",
+    "Risorse digitali per l’insegnamento",
+    "Metodologia, setting e progettazione di unità di apprendimento"
+   ]}]}
+  ]
+ },
+ "alfabetizzazione-digitale": {
+  "b": [
+   {"h": "La certificazione", "c": [
+    {"t": "p", "x": "Una certificazione accreditata che attesta le competenze digitali fondamentali secondo il quadro europeo DigComp 2.2: saper usare le tecnologie in modo critico e consapevole, a scuola, al lavoro e nella vita di tutti i giorni."},
+    {"t": "p", "x": "Il percorso è online e accessibile a qualsiasi ora."}
+   ]},
+   {"h": "Le cinque aree", "c": [{"t": "ul", "items": [
+    "Alfabetizzazione su informazioni e dati",
+    "Comunicazione e collaborazione",
+    "Creazione di contenuti digitali",
+    "Sicurezza e protezione dei dati",
+    "Risoluzione di problemi"
+   ]}]},
+   {"h": "Punteggio", "c": [{"t": "p", "x": "Valutabile nelle graduatorie del personale scolastico secondo le tabelle in vigore. Insieme alla certificazione DigCompEdu compone il pacchetto Basic per il punteggio GPS."}]}
+  ]
+ },
+ "digcompedu-certificazione-delle-competenze-digitali": {
+  "b": [
+   {"h": "La certificazione", "c": [
+    {"t": "p", "x": "La certificazione accreditata delle competenze digitali per l’insegnamento, basata sul quadro europeo DigCompEdu. È pensata per docenti, educatori e formatori del primo e del secondo ciclo."},
+    {"t": "p", "x": "Attesta la capacità di usare le tecnologie nella progettazione didattica, nella gestione delle risorse e nella creazione di ambienti di apprendimento innovativi e inclusivi."}
+   ]},
+   {"h": "Livelli e validità", "c": [{"t": "ul", "items": [
+    "Livelli da A1 (Novizio) a C2 (Pioniere)",
+    "Esame online in due fasi",
+    "Validità di quattro anni, aggiornabile in qualsiasi momento",
+    "Attestato rilasciato rapidamente dopo l’esame"
+   ]}]},
+   {"h": "Punteggio", "c": [{"t": "ul", "items": ["2 punti nelle GPS, secondo le tabelle di valutazione in vigore"]}]}
+  ]
+ }
+}

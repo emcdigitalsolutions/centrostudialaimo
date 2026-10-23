@@ -1,0 +1,93 @@
+---
+import type { Esame } from '../lib/catalog';
+interface Props { anni: { anno: string; esami: Esame[] }[]; scelta?: Esame[] }
+const { anni, scelta = [] } = Astro.props;
+
+type Blk = { kind: 'exam'; e: Esame } | { kind: 'group'; label: string; items: Esame[] };
+function toBlocks(list: Esame[]): Blk[] {
+  const out: Blk[] = [];
+  let g: Extract<Blk, { kind: 'group' }> | null = null;
+  for (const e of list) {
+    if (e.gruppo) {
+      if (/scelta/i.test(e.gruppo)) { g = { kind: 'group', label: e.gruppo, items: [] }; out.push(g); }
+      else g = null; // «Obbligatori» e simili chiudono il gruppo
+      continue;
+    }
+    if (g) g.items.push(e); else out.push({ kind: 'exam', e });
+  }
+  return out.filter((b) => b.kind === 'exam' || b.items.length);
+}
+const cfuOf = (e: Esame) => parseFloat((e.cfu || '0').replace(',', '.')) || 0;
+function total(blocks: Blk[]) {
+  return blocks.reduce((s, b) => s + (b.kind === 'exam' ? cfuOf(b.e) : cfuOf(b.items[0])), 0);
+}
+const years = anni.map((a) => { const blocks = toBlocks(a.esami); return { ...a, blocks, tot: total(blocks) }; });
+const opt = toBlocks(scelta);
+const nice = (s: string) => s.replace(/(\d)°/, '$1°').replace(/ di corso/i, '');
+---
+<div class="sp-plan">
+  {years.map((y, i) => (
+    <details class="yr" open={i === 0} data-reveal style={`--d:${i}`}>
+      <summary>
+        <span class="yr__n">{i + 1}</span>
+        <span class="yr__t">{nice(y.anno)}</span>
+        <span class="yr__meta">{y.blocks.length} {y.blocks.length === 1 ? 'insegnamento' : 'insegnamenti'}{y.tot >= 30 && y.tot <= 75 && ` · ${y.tot} CFU`}</span>
+        <span class="yr__ch" aria-hidden="true"></span>
+      </summary>
+      <ul class="ex">
+        {y.blocks.map((b) => b.kind === 'exam' ? (
+          <li class="ex__row"><span class="ex__ssd">{b.e.ssd || '—'}</span><span class="ex__name">{b.e.nome}</span><span class="ex__cfu">{b.e.cfu} <small>CFU</small></span></li>
+        ) : (
+          <li class="ex__grp">
+            <p class="ex__grp-h">Un insegnamento a scelta tra</p>
+            <ul>{b.items.map((e) => <li class="ex__row"><span class="ex__ssd">{e.ssd || '—'}</span><span class="ex__name">{e.nome}</span><span class="ex__cfu">{e.cfu} <small>CFU</small></span></li>)}</ul>
+          </li>
+        ))}
+      </ul>
+    </details>
+  ))}
+  {opt.length > 0 && (
+    <details class="yr yr--opt" data-reveal>
+      <summary><span class="yr__n">+</span><span class="yr__t">Esami a scelta dello studente</span><span class="yr__meta">{opt.length} proposte</span><span class="yr__ch" aria-hidden="true"></span></summary>
+      <ul class="ex">
+        {opt.map((b) => b.kind === 'exam' ? (
+          <li class="ex__row"><span class="ex__ssd">{b.e.ssd || '—'}</span><span class="ex__name">{b.e.nome}</span><span class="ex__cfu">{b.e.cfu} <small>CFU</small></span></li>
+        ) : (
+          <li class="ex__grp"><p class="ex__grp-h">{b.label}</p><ul>{b.items.map((e) => <li class="ex__row"><span class="ex__ssd">{e.ssd || '—'}</span><span class="ex__name">{e.nome}</span><span class="ex__cfu">{e.cfu} <small>CFU</small></span></li>)}</ul></li>
+        ))}
+      </ul>
+    </details>
+  )}
+  <p class="sp-plan__note">SSD = settore scientifico-disciplinare. Il piano di studi è indicativo e può essere aggiornato dall’ateneo per ogni anno accademico: chiedici la versione in vigore.</p>
+</div>
+
+<style>
+  .sp-plan { display: grid; gap: 12px; }
+  .yr { background: #fff; border-radius: var(--r); box-shadow: var(--shadow-sm); border: 1px solid rgb(13 26 58 / 0.06); overflow: hidden; }
+  .yr summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 14px; padding: 16px 20px; }
+  .yr summary::-webkit-details-marker { display: none; }
+  .yr__n { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--c-blue); color: #fff; font: 800 1.1rem var(--f-display); }
+  .yr--opt .yr__n { background: var(--c-amber); color: var(--c-ink); }
+  .yr__t { font: 700 1.15rem/1.2 var(--f-display); color: var(--c-ink); }
+  .yr__meta { font-size: 0.86rem; color: var(--c-muted); }
+  .yr__ch { width: 12px; height: 12px; border-right: 2px solid var(--c-ink); border-bottom: 2px solid var(--c-ink); transform: rotate(45deg) translateY(-3px); transition: transform 0.35s var(--ease); }
+  .yr[open] .yr__ch { transform: rotate(-135deg) translateY(-3px); }
+  .ex { list-style: none; margin: 0; padding: 0 12px 14px; }
+  .ex ul { list-style: none; margin: 0; padding: 0; }
+  .ex__row { display: grid; grid-template-columns: 112px 1fr auto; gap: 14px; align-items: center; padding: 10px 8px; border-top: 1px solid var(--c-paper-2); }
+  .ex__ssd { font: 600 0.74rem/1 var(--f-body); letter-spacing: 0.04em; color: var(--c-blue); background: var(--c-blue-soft); padding: 5px 8px; border-radius: 6px; justify-self: start; }
+  .ex__name { font-weight: 500; color: var(--c-ink); line-height: 1.35; }
+  .ex__cfu { font: 800 1rem var(--f-display); color: var(--c-ink); white-space: nowrap; }
+  .ex__cfu small { font: 600 0.7rem var(--f-body); color: var(--c-muted); }
+  .ex__grp { margin: 8px 0; padding: 4px 10px 6px; border-radius: 14px; background: var(--c-amber-soft); border: 1px dashed #f0c46a; }
+  .ex__grp .ex__row { border-top-color: rgb(240 196 106 / 0.45); }
+  .ex__grp-h { margin: 8px 8px 4px; font: 700 0.74rem/1 var(--f-body); text-transform: uppercase; letter-spacing: 0.1em; color: #8a5a00; }
+  .sp-plan__note { font-size: 0.85rem; color: var(--c-muted); margin: 6px 4px 0; }
+  @media (max-width: 600px) {
+    .yr summary { grid-template-columns: auto 1fr auto; }
+    .yr__meta { grid-column: 2; grid-row: 2; }
+    .yr__ch { grid-row: 1 / span 2; grid-column: 3; }
+    .ex__row { grid-template-columns: 1fr auto; gap: 6px 12px; }
+    .ex__ssd { grid-column: 1 / -1; }
+  }
+</style>

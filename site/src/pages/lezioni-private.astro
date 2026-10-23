@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import MailForm from '../components/MailForm.astro';
+import Faq from '../components/Faq.astro';
+import Icon from '../components/Icon.astro';
+const groups = [
+  { id: 'scuola', icon: 'school', color: 'var(--c-blue)', t: 'Scuola media e superiore', d: 'Ripetizioni, metodo di studio, compiti e preparazione a verifiche, interrogazioni ed esami di Stato.', items: ['Matematica, fisica e chimica', 'Italiano, latino e greco', 'Inglese e lingue straniere', 'Economia aziendale e diritto', 'Informatica', 'Preparazione esame di terza media e maturità'] },
+  { id: 'universita', icon: 'grad', color: 'var(--c-violet)', t: 'Università', d: 'Supporto mirato agli esami universitari, anche per chi studia online e vuole recuperare il ritmo.', items: ['Preparazione esami universitari', 'Statistica, analisi e materie quantitative', 'Diritto ed economia', 'Psicologia e pedagogia', 'Metodo di studio e piano degli esami', 'Assistenza alla tesi di laurea'] },
+  { id: 'percorsi', icon: 'target', color: 'var(--c-amber)', t: 'Percorsi speciali', d: 'Obiettivi precisi con un piano su misura e verifiche periodiche dei progressi.', items: ['Recupero anni scolastici', 'Preparazione concorsi pubblici', 'Preparazione concorso docenti e TFA', 'Inglese per certificazioni B2, C1, C2', 'Informatica di base e certificazioni', 'Studenti con DSA e BES'] },
+];
+const how = [
+  { icon: 'users', t: 'Individuali o in piccoli gruppi', d: 'Lezioni uno a uno oppure in gruppi ridotti per lavorare con il ritmo giusto.' },
+  { icon: 'monitor', t: 'In sede oppure online', d: 'Scegli la modalità più comoda: in presenza o a distanza con lavagna condivisa.' },
+  { icon: 'calendar', t: 'Orari flessibili', d: 'Pomeriggio, sera o weekend: costruiamo il calendario insieme a te.' },
+  { icon: 'chart', t: 'Progressi misurabili', d: 'Un piano chiaro con obiettivi e verifiche, condiviso anche con la famiglia.' },
+];
+const faq = [
+  { q: 'Le lezioni private si fanno in sede o online?', a: 'Entrambe le modalità: puoi scegliere lezioni in presenza oppure online, con materiali condivisi e lavagna digitale.' },
+  { q: 'Per quali materie?', a: 'Per le principali materie della scuola media e superiore, per gli esami universitari, per i concorsi e per le certificazioni di inglese e informatica.' },
+  { q: 'Seguite studenti con DSA o BES?', a: 'Sì, con strategie e strumenti compensativi adatti a ciascuno studente, in accordo con la famiglia.' },
+  { q: 'Come si prenota la prima lezione?', a: 'Scrivici indicando materia, classe o esame e disponibilità: ti proponiamo il docente e l’orario più adatti.' },
+];
+---
+<Base title="Lezioni private e ripetizioni: scuola, università e concorsi" description="Lezioni private e ripetizioni individuali o in piccoli gruppi, in sede o online: scuola media e superiore, esami universitari, tesi, recupero anni scolastici, concorsi e certificazioni." keywords="lezioni private, ripetizioni, ripetizioni matematica, preparazione esami universitari, recupero anni scolastici, preparazione concorsi, lezioni online, aiuto tesi">
+  <PageHero
+    eyebrow="Lezioni private"
+    title={`Il docente giusto, <em class="serif" style="color:var(--c-amber)">al momento giusto</em>.`}
+    lead="Lezioni individuali e in piccoli gruppi, in sede o online: dalla verifica di domani all’esame universitario, dal recupero degli anni scolastici alla preparazione dei concorsi."
+    crumbs={[{ label: 'Lezioni private' }]}
+  >
+    <div class="phero__chips"><span class="chip chip--dark">Individuali o in gruppo</span><span class="chip chip--dark">In sede o online</span><span class="chip chip--dark">Orari flessibili</span></div>
+  </PageHero>
+  <section class="section">
+    <div class="wrap lp">
+      {groups.map((g, i) => (
+        <article id={g.id} class="lpg" style={`--accent:${g.color};--d:${i}`} data-reveal>
+          <span class="lpg__ic"><Icon name={g.icon} size={28} /></span>
+          <h2>{g.t}</h2>
+          <p>{g.d}</p>
+          <ul>{g.items.map((it) => <li><Icon name="check" size={17} stroke={2.4} />{it}</li>)}</ul>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="section section--ink grain">
+    <div class="wrap">
+      <div class="section-head" data-reveal><p class="eyebrow eyebrow--light">Come lavoriamo</p><h2>Un percorso costruito intorno allo studente</h2></div>
+      <div class="how">
+        {how.map((h, i) => <div class="how__i" data-reveal style={`--d:${i}`}><Icon name={h.icon} size={28} /><h3>{h.t}</h3><p>{h.d}</p></div>)}
+      </div>
+    </div>
+  </section>
+  <section class="section section--white" id="prenota">
+    <div class="wrap narrow">
+      <p class="eyebrow">Prenota</p>
+      <h2>Raccontaci di cosa hai bisogno</h2>
+      <p class="lead">Indica materia, classe o esame e le tue disponibilità: ti ricontattiamo con la proposta più adatta.</p>
+      <MailForm kind="lezioni" id="lezioni" />
+    </div>
+  </section>
+  <Faq items={faq} title="Lezioni private: domande frequenti" />
+</Base>
+
+<style>
+  .lp { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .lpg { padding: 30px; border-radius: var(--r-lg); background: #fff; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent); scroll-margin-top: calc(var(--header-h) + 20px); }
+  .lpg__ic { display: inline-grid; place-items: center; width: 58px; height: 58px; border-radius: 18px; background: var(--accent); color: #fff; margin-bottom: 18px; }
+  .lpg h2 { font-size: 1.5rem; }
+  .lpg > p { color: var(--c-muted); }
+  .lpg ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .lpg li { display: flex; gap: 10px; align-items: flex-start; }
+  .lpg li :global(svg) { color: var(--accent); flex: none; margin-top: 3px; }
+  .how { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .how__i { padding: 26px; border-radius: var(--r); background: rgb(255 255 255 / 0.05); border: 1px solid rgb(255 255 255 / 0.1); color: var(--c-amber); }
+  .how__i h3 { margin: 16px 0 8px; font-size: 1.15rem; }
+  .how__i p { margin: 0; color: #aeb8d3; }
+  .narrow { max-width: 820px; }
+  .lead { color: var(--c-muted); font-size: 1.1rem; }
+  @media (max-width: 1000px) { .lp { grid-template-columns: minmax(0, 1fr); } .how { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) { .how { grid-template-columns: minmax(0, 1fr); } }
+</style>

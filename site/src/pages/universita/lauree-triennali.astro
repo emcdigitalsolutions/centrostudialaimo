@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import LaureeList from '../../components/LaureeList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { STATS } from '../../lib/catalog';
+---
+<Base title="Lauree triennali online" description={`${STATS.triennali} corsi di laurea triennale online: il primo titolo universitario in tre anni, 180 CFU, senza test di ammissione e con iscrizioni aperte tutto l’anno.`} keywords="laurea triennale online, corsi di laurea triennale, università telematica, 180 CFU, laurea senza test di ingresso">
+  <PageHero
+    eyebrow="Lauree triennali"
+    title={`Il primo titolo universitario, <em class="serif" style="color:var(--c-amber)">in tre anni</em>.`}
+    lead={`${STATS.triennali} corsi di laurea triennale (180 CFU) interamente online: scegli la facoltà, studia quando vuoi e sostieni gli esami in sede. Nessun test di ammissione.`}
+    crumbs={[{ label: 'Università', href: '/universita/' }, { label: 'Lauree triennali' }]}
+  />
+  <section class="section--tight"><div class="wrap"><LaureeList livello="triennale" /></div></section>
+  <CtaBand variant="cfu" />
+</Base>

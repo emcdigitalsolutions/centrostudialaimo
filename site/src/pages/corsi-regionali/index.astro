@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { regionali, ROUTES, excerpt } from '../../lib/catalog';
+---
+<Base title="Corsi regionali: ASACOM, OSA, OPI e Segretario amministrativo" description="Corsi regionali con qualifica professionale: ASACOM (assistente all’autonomia e alla comunicazione), OSA (operatore socio assistenziale), OPI (operatore per l’infanzia) e Segretario coordinatore amministrativo." keywords="corsi regionali, ASACOM, OSA operatore socio assistenziale, OPI operatore infanzia, segretario coordinatore amministrativo, punteggio ATA">
+  <PageHero
+    eyebrow="Qualifiche professionali"
+    title={`Corsi regionali per <em class="serif" style="color:var(--c-amber)">lavorare nel sociale</em> e nella scuola`}
+    lead="Qualifiche professionali per assistere persone con disabilità, bambini e anziani o per lavorare in segreteria: utili per il lavoro e per il punteggio ATA."
+    crumbs={[{ label: 'Corsi regionali' }]}
+  />
+  <section class="section--tight">
+    <div class="wrap grid-cards">
+      {regionali.map((r) => <CourseCard href={ROUTES.reg(r.slug)} title={r.title} sub={excerpt(r.body, 120)} accent="var(--c-violet)" chips={[{ t: 'Regionale', c: 'violet' }]} meta={r.durata} />)}
+    </div>
+  </section>
+  <CtaBand />
+</Base>

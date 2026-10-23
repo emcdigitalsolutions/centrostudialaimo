@@ -1,0 +1,31 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import CourseCard from '../../../components/CourseCard.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import Faq from '../../../components/Faq.astro';
+import { abilitanti, ROUTES, excerpt } from '../../../lib/catalog';
+const faq = [
+  { q: 'Chi può accedere al percorso da 30 CFU?', a: 'Docenti già abilitati su un’altra classe di concorso o grado, docenti specializzati sul sostegno che vogliono l’abilitazione su materia, docenti con almeno tre anni di servizio negli ultimi cinque (di cui uno sulla classe di concorso) e vincitori di concorso non abilitati.' },
+  { q: 'Che differenza c’è tra i percorsi da 30, 36 e 60 CFU?', a: 'Il percorso da 60 CFU è il percorso abilitante completo per laureati e diplomati ITP. Quello da 36 CFU è riservato a chi aveva i 24 CFU entro il 31 ottobre 2022 e ha superato un concorso; quello da 30 CFU è per chi è già abilitato o ha i requisiti di servizio.' },
+  { q: 'Le lezioni sono online?', a: 'I percorsi possono svolgersi in modalità telematica, ad eccezione del tirocinio e delle attività di laboratorio, secondo quanto previsto dal DPCM del 4 agosto 2023.' },
+  { q: 'Quanto costano?', a: 'I costi sono stabiliti dalle università che attivano i percorsi. Ti aiutiamo a confrontare bandi, classi di concorso attivate e scadenze.' },
+];
+---
+<Base title="Percorsi abilitanti 30-36-60 CFU e TFA sostegno" description="Percorsi abilitanti all’insegnamento da 30, 36 e 60 CFU (DPCM 4 agosto 2023), corsi di preparazione al TFA sostegno e TFA summer: requisiti, classi di concorso e iscrizione." keywords="percorsi abilitanti, 60 CFU, 30 CFU, 36 CFU, abilitazione insegnamento, TFA sostegno, preparazione TFA, DPCM 4 agosto 2023">
+  <PageHero
+    eyebrow="Area Scuola"
+    title={`Abilitati <em class="serif" style="color:var(--c-amber)">all’insegnamento</em>`}
+    lead="Percorsi da 30, 36 e 60 CFU previsti dal DPCM 4 agosto 2023 e corsi di preparazione al TFA sostegno: ti aiutiamo a capire quale fa per te e a non perdere le scadenze."
+    crumbs={[{ label: 'Area Scuola', href: '/area-scuola/' }, { label: 'Percorsi abilitanti' }]}
+  />
+  <section class="section--tight">
+    <div class="wrap grid-cards">
+      {abilitanti.map((a, i) => (
+        <CourseCard href={ROUTES.abil(a.slug)} title={a.title} sub={excerpt(a.body, 120)} accent="var(--c-amber)" chips={[{ t: /preparazione/i.test(a.title) ? 'Preparazione' : 'Abilitazione', c: 'amber' }]} meta={a.crediti && /\d/.test(a.crediti) ? a.crediti : a.durata || 'Scopri requisiti e scadenze'} />
+      ))}
+    </div>
+  </section>
+  <Faq items={faq} title="Abilitazione: le domande più comuni" />
+  <CtaBand />
+</Base>

@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { SITE } from '../site.config';
+const titolare = [SITE.name, SITE.address.street, [SITE.address.cap, SITE.address.city].filter(Boolean).join(' '), SITE.vat && `P.IVA ${SITE.vat}`].filter(Boolean).join(' · ');
+---
+<Base title="Privacy e cookie policy" description={`Informativa sul trattamento dei dati personali e cookie policy del sito ${SITE.name}.`} noindex>
+  <PageHero title="Privacy e cookie policy" lead="Informativa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)." crumbs={[{ label: 'Privacy e cookie' }]} />
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="prose legal">
+        <h2>1. Titolare del trattamento</h2>
+        <p>Titolare del trattamento è {titolare}. Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a <a href={`mailto:${SITE.email.amministrazione}`}>{SITE.email.amministrazione}</a>.</p>
+
+        <h2>2. Quali dati trattiamo</h2>
+        <p>Il sito non utilizza moduli che inviano dati a server: i moduli di contatto, di richiesta informazioni e di valutazione CFU aprono il programma di posta del tuo dispositivo con un messaggio precompilato. I dati (nome, telefono, email, corso di interesse, informazioni sulla carriera universitaria ed eventuali allegati) ci arrivano solo se decidi di inviare quella email.</p>
+        <p>Il sito non utilizza sistemi di analisi statistica né strumenti di profilazione. I server che ospitano il sito possono registrare in forma tecnica dati di navigazione (indirizzo IP, data e ora, pagina richiesta) necessari al funzionamento e alla sicurezza del servizio.</p>
+
+        <h2>3. Finalità e base giuridica</h2>
+        <ul>
+          <li>Rispondere alle tue richieste di informazioni, orientamento e preventivo: misure precontrattuali adottate su tua richiesta (art. 6.1.b GDPR).</li>
+          <li>Valutare la carriera universitaria ai fini del riconoscimento dei CFU e trasmetterla all’ateneo prescelto: misure precontrattuali su tua richiesta (art. 6.1.b GDPR).</li>
+          <li>Gestire iscrizioni, pagamenti e adempimenti amministrativi e fiscali: esecuzione del contratto e obblighi di legge (art. 6.1.b e 6.1.c GDPR).</li>
+          <li>Garantire la sicurezza del sito: legittimo interesse del titolare (art. 6.1.f GDPR).</li>
+        </ul>
+
+        <h2>4. Modalità e conservazione</h2>
+        <p>I dati sono trattati con strumenti elettronici e misure di sicurezza adeguate, solo da personale autorizzato. Le richieste di informazioni sono conservate per il tempo necessario a rispondere e, al massimo, per 24 mesi; i dati relativi a iscrizioni e pagamenti per il tempo previsto dalla normativa fiscale (10 anni).</p>
+
+        <h2>5. Destinatari</h2>
+        <p>I dati possono essere comunicati, solo se necessario per il servizio richiesto, alle università e agli enti formativi che erogano il corso scelto, al fornitore del servizio di posta elettronica e ai consulenti per gli adempimenti amministrativi e fiscali. Il sito è ospitato da un fornitore di hosting che tratta i dati di navigazione tecnici. Eventuali trasferimenti fuori dall’Unione europea avvengono sulla base di decisioni di adeguatezza o clausole contrattuali standard.</p>
+
+        <h2>6. I tuoi diritti</h2>
+        <p>Puoi chiedere in ogni momento l’accesso, la rettifica, la cancellazione, la limitazione del trattamento, la portabilità dei dati e opporti al trattamento (artt. 15-22 GDPR), scrivendo a <a href={`mailto:${SITE.email.amministrazione}`}>{SITE.email.amministrazione}</a>. Hai inoltre il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
+
+        <h2>7. Cookie policy</h2>
+        <p>Il sito <strong>non utilizza cookie di profilazione, di marketing o analitici</strong> e non incorpora contenuti di terze parti che installano cookie (come mappe o video). I caratteri tipografici sono ospitati direttamente sul sito. Per questo non è necessario un banner per il consenso.</p>
+        <p>Il sito può memorizzare nel browser solo informazioni tecniche strettamente necessarie al suo funzionamento. Puoi comunque gestire o cancellare cookie e dati dei siti dalle impostazioni del tuo browser.</p>
+
+        <h2>8. Modifiche</h2>
+        <p>Questa informativa può essere aggiornata. La versione in vigore è sempre pubblicata in questa pagina. Ultimo aggiornamento: ottobre 2026.</p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .legal { background: #fff; border-radius: var(--r-lg); padding: clamp(24px, 5vw, 56px); box-shadow: var(--shadow-sm); max-width: 900px; }
+  .legal a { color: var(--c-blue); }
+</style>

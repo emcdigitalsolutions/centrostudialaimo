@@ -1,0 +1,127 @@
+{
+ "addetto-ufficio-del-processo-ministero-della-giustizia-2-livello": {
+  "i": ["L’Ufficio per il processo affianca i magistrati nello studio dei fascicoli, nella ricerca giurisprudenziale e nella preparazione delle bozze dei provvedimenti. Il master prepara ai concorsi per questa figura e ai ruoli amministrativi della giustizia.", "Il programma copre diritto costituzionale, amministrativo e ordinamento giudiziario, i tre processi, civile, penale e amministrativo, il processo telematico e la normativa anticorruzione."],
+  "o": ["Prepararsi ai concorsi del Ministero della Giustizia", "Conoscere ordinamento giudiziario e diritto processuale", "Usare gli strumenti del processo telematico", "Supportare il lavoro dei magistrati nella gestione dei fascicoli"],
+  "d": "Laureati che vogliono lavorare nell’amministrazione della giustizia o prepararsi ai concorsi pubblici di area giuridica."
+ },
+ "ai-engineering-i-livello": {
+  "i": ["Un master per imparare a progettare, sviluppare e mettere in produzione applicazioni di intelligenza artificiale. Dalle basi matematiche e statistiche si arriva al machine learning, all’IA generativa e alla realizzazione di soluzioni complete.", "Chatbot, assistenti vocali, visione artificiale e automazioni per le aziende: il percorso è orientato a casi reali e si chiude con un tirocinio."],
+  "o": ["Comprendere i modelli matematici alla base dell’IA", "Sviluppare modelli di machine learning", "Utilizzare sistemi di IA generativa", "Realizzare applicazioni di IA dalla progettazione al rilascio"],
+  "d": "Laureati di area tecnica, informatica o economica che vogliono specializzarsi nello sviluppo di soluzioni di intelligenza artificiale."
+ },
+ "amministrazione-aziende-sanitarie-i-livello": {
+  "i": ["Un master per lavorare negli uffici amministrativi della sanità pubblica. Economia e management sanitario, contabilità e finanza del settore, organizzazione delle aziende sanitarie si uniscono a diritto amministrativo, legislazione sanitaria e contratti pubblici.", "È pensato sia per chi prepara i concorsi da funzionario amministrativo sia per chi lavora già in sanità e vuole crescere."],
+  "o": ["Conoscere organizzazione e finanziamento delle aziende sanitarie", "Applicare diritto amministrativo e legislazione sanitaria", "Gestire contratti e rapporti di lavoro pubblico", "Prepararsi ai concorsi per funzionario amministrativo"],
+  "d": "Laureati che puntano ai concorsi pubblici in ambito sanitario e funzionari già in servizio che vogliono aggiornarsi."
+ },
+ "amministrazione-aziende-sanitarie-ii-livello": {
+  "i": ["La versione di II livello del master in amministrazione delle aziende sanitarie, per chi ha già una laurea magistrale. Il programma approfondisce economia e organizzazione della sanità, diritto dei contratti pubblici e sanitari, diritto pubblico e amministrativo digitale.", "Un titolo utile per la preparazione ai concorsi e per la progressione di carriera nelle amministrazioni sanitarie."],
+  "o": ["Approfondire management ed economia della sanità", "Gestire contratti pubblici e appalti sanitari", "Applicare il diritto amministrativo digitale", "Prepararsi ai concorsi per i ruoli amministrativi"],
+  "d": "Laureati magistrali e funzionari delle aziende sanitarie che vogliono assumere ruoli di maggiore responsabilità."
+ },
+ "arteterapia": {
+  "i": ["Le arti visive e i linguaggi espressivi come strumenti di cura e di relazione. Il master integra discipline psicologiche, artistiche ed educative per usare la creatività nei percorsi di accompagnamento della persona.", "Al termine i partecipanti sanno progettare e condurre interventi di arteterapia in contesti sanitari, sociali ed educativi."],
+  "o": ["Conoscere i modelli teorici dell’arteterapia", "Utilizzare tecniche espressive e creative", "Progettare interventi individuali e di gruppo", "Collaborare con équipe sanitarie e sociali"],
+  "d": "Professionisti sanitari, psicologi, educatori e laureati in discipline artistiche e umanistiche."
+ },
+ "aspetti-giuridici-medico-legali-e-relazionali-della-professione-sanitaria": {
+  "i": ["Una cassetta degli attrezzi per il professionista sanitario di oggi: responsabilità civile e penale, assicurazioni, protezione dei dati e gestione del rischio. Grande attenzione è data al danno alla persona e agli aspetti medico-legali.", "Il master sviluppa anche le capacità comunicative che aiutano a prevenire i contenziosi e approfondisce il ruolo del consulente tecnico d’ufficio."],
+  "o": ["Conoscere i profili di responsabilità civile e penale", "Gestire privacy e sicurezza dei dati sanitari", "Prevenire il contenzioso con una comunicazione efficace", "Comprendere il ruolo del consulente tecnico"],
+  "d": "Professionisti sanitari che vogliono tutelarsi e aggiornarsi sugli aspetti giuridici della propria attività."
+ },
+ "assistenza-in-pneumologia-e-della-riabilitazione-respiratoria": {
+  "i": ["Nuove terapie, apparecchiature a domicilio e telemedicina hanno trasformato l’assistenza alle malattie respiratorie. Il master porta infermieri e fisioterapisti a un livello specialistico, in ospedale e sul territorio.", "Si studiano anatomia e fisiopatologia respiratoria, rischio e sicurezza delle cure, ventilazione e riabilitazione, insieme all’educazione del paziente e del caregiver."],
+  "o": ["Conoscere anatomia e fisiopatologia respiratoria", "Gestire le tecnologie per la ventilazione e la terapia domiciliare", "Impostare percorsi di riabilitazione respiratoria", "Educare paziente e caregiver"],
+  "d": "Infermieri e fisioterapisti che lavorano o vogliono lavorare in pneumologia, terapia intensiva respiratoria e assistenza domiciliare."
+ },
+ "assistenza-infermieristica-in-terapia-intensiva": {
+  "i": ["Il paziente critico richiede competenze avanzate e decisioni rapide. Il master offre una formazione specialistica per chi lavora in terapia intensiva, con attenzione alla qualità e alla sicurezza delle cure.", "Il programma unisce responsabilità e gestione del rischio, innovazione e tecniche assistenziali per affrontare situazioni cliniche complesse."],
+  "o": ["Valutare e monitorare il paziente critico", "Gestire tecnologie e procedure della terapia intensiva", "Prevenire rischi ed eventi avversi", "Lavorare in équipe nelle emergenze"],
+  "d": "Infermieri che operano o desiderano operare nelle aree critiche e di terapia intensiva."
+ },
+ "autismo-dalla-diagnosi-allintervento-psicoeducativo": {
+  "i": ["Un master per capire l’autismo e accompagnare al meglio gli studenti nello spettro. Si studiano strumenti di diagnosi e valutazione, modelli evolutivi e comportamentali, normativa sull’inclusione e pedagogia speciale.", "Il percorso porta fino alla costruzione dell’intervento psicoeducativo e del progetto di vita, con pratiche didattiche concrete per la scuola."],
+  "o": ["Conoscere caratteristiche e diagnosi dello spettro autistico", "Applicare modelli di intervento evolutivi e comportamentali", "Progettare interventi psicoeducativi a scuola", "Collaborare con famiglia e servizi al progetto di vita"],
+  "d": "Docenti e aspiranti docenti di ogni ordine e grado, educatori e operatori dei servizi per l’inclusione."
+ },
+ "biomeccanica-e-interferenze-neurofisiologiche-alla-postura": {
+  "i": ["Come nasce una postura e cosa la altera. Il master studia i meccanismi che regolano l’equilibrio del corpo e le relazioni tra postura e sistemi visivo, vestibolare, podalico, gnatologico e viscerale.", "Una parte è dedicata alla crescita dello scheletro e alle sue possibili alterazioni, temi utili a chi lavora con bambini e ragazzi."],
+  "o": ["Conoscere la biomeccanica della postura", "Valutare le interferenze neurofisiologiche", "Riconoscere le alterazioni posturali in età evolutiva", "Collaborare con altri specialisti nella presa in carico"],
+  "d": "Fisioterapisti, laureati in scienze motorie, osteopati, medici e professionisti che si occupano di postura."
+ },
+ "business-administration-i-e-ii-livello": {
+  "i": ["Il classico percorso di formazione manageriale, per avere una visione completa dell’azienda. Contabilità, revisione, finanza, marketing, strategia e gestione delle risorse umane vengono affrontati con un approccio per processi.", "Change management e strumenti di controllo manageriale preparano a guidare il cambiamento in contesti nazionali e internazionali."],
+  "o": ["Integrare le principali funzioni aziendali", "Prendere decisioni basate su dati e analisi", "Gestire strategia, finanza e marketing", "Guidare persone e processi di cambiamento"],
+  "d": "Laureati e professionisti che aspirano a ruoli manageriali o vogliono avviare un’attività imprenditoriale."
+ },
+ "case-manager": {
+  "i": ["Il case manager prende in carico il paziente e la sua famiglia e garantisce continuità di cura tra ospedale, domicilio e strutture residenziali. Il master forma infermieri e fisioterapisti a questa funzione specialistica.", "Il programma unisce norme e responsabilità, metodologia e gestione, innovazione digitale, competenze relazionali e comunicative."],
+  "o": ["Gestire la presa in carico e la continuità assistenziale", "Utilizzare strumenti di valutazione e indicatori", "Coordinare la rete dei servizi", "Comunicare con pazienti fragili e familiari"],
+  "d": "Infermieri, fisioterapisti e professionisti sanitari che vogliono specializzarsi nel coordinamento dei percorsi di cura."
+ },
+ "competenze-e-metodologie-didattiche-dellanimatore-digitale": {
+  "i": ["L’animatore digitale guida la scuola nell’innovazione tecnologica. Il master fornisce strumenti, strategie e metodi per la didattica digitale e a distanza, dalla progettazione alla valutazione.", "Si studiano nuovi media e linguaggi, tecniche di formazione a distanza e il ruolo dell’animatore nella rete professionale della scuola."],
+  "o": ["Progettare attività didattiche con le tecnologie", "Guidare la digitalizzazione della propria scuola", "Gestire la didattica a distanza", "Formare e supportare i colleghi"],
+  "d": "Docenti e aspiranti docenti di ogni ordine e grado, animatori digitali e membri dei team per l’innovazione."
+ },
+ "competenze-non-cognitive-e-life-skills-in-ambito-scolastico": {
+  "i": ["Le life skills sono le abilità che aiutano a gestire le sfide di ogni giorno: emozioni, relazioni, decisioni. Il master insegna a svilupparle a scuola, attraverso l’intelligenza emotiva e metodologie innovative e inclusive.", "Si lavora su relazione educativa, comunicazione efficace e stimolazione del pensiero divergente."],
+  "o": ["Applicare l’intelligenza emotiva alla didattica", "Sviluppare le competenze non cognitive degli studenti", "Usare metodologie inclusive e innovative", "Gestire le emozioni e la comunicazione in classe"],
+  "d": "Docenti, aspiranti docenti, educatori e operatori della formazione."
+ },
+ "competenze-per-sviluppare-il-pensiero-computazionale-con-il-coding": {
+  "i": ["Il coding come strumento per insegnare a ragionare. Il master unisce fondamenti di informatica ed elementi di programmazione, anche mobile, a progettazione didattica e innovazione nella scuola.", "Un modulo è dedicato alle tecnologie per l’inclusione degli alunni con bisogni educativi speciali."],
+  "o": ["Conoscere le basi della programmazione", "Progettare attività di coding in classe", "Sviluppare il pensiero computazionale degli studenti", "Usare le tecnologie per l’inclusione"],
+  "d": "Docenti di ogni ordine e grado e aspiranti insegnanti interessati alla didattica digitale."
+ },
+ "comunicazione-digitale-in-medicina": {
+  "i": ["Telemedicina, intelligenza artificiale, social media e piattaforme di formazione stanno cambiando il rapporto tra professionisti, pazienti e istituzioni. Il master forma esperti della comunicazione sanitaria digitale.", "Si integrano conoscenze cliniche, tecnologiche, comunicative ed etiche per divulgare in modo corretto e gestire la comunicazione nei sistemi sanitari."],
+  "o": ["Progettare la comunicazione sanitaria multicanale", "Utilizzare strumenti digitali e di telemedicina", "Divulgare contenuti scientifici in modo corretto", "Gestire gli aspetti etici e normativi"],
+  "d": "Medici, professionisti sanitari, comunicatori e laureati che vogliono lavorare nella comunicazione della salute."
+ },
+ "criminologia-indirizzo-psicologia-giuridica-e-forense-ii-livello": {
+  "i": ["Un master di II livello per chi vuole lavorare come consulente tecnico o perito in ambito civile e penale. Dopo una parte comune su criminologia, ordinamento giudiziario e processo penale, il percorso approfondisce vittimologia, violenza intrafamiliare e stalking.", "Lo studio di casi reali di indagine collega le competenze psicologiche al contesto giudiziario."],
+  "o": ["Conoscere criminologia e psicologia giuridica", "Comprendere i modelli del comportamento criminale", "Analizzare casi di indagine e dibattimento", "Operare come consulente tecnico e perito"],
+  "d": "Laureati magistrali in psicologia, giurisprudenza e discipline affini."
+ },
+ "criminologia-indirizzo-scienze-forensi-e-investigative-i-e-ii-livello": {
+  "i": ["Le scienze forensi al servizio delle indagini. Una prima parte fornisce le basi giuridiche e psicologiche, ordinamento giudiziario, processo penale, psicopatologia; la seconda si concentra sull’indirizzo investigativo.", "Lo studio di casi concreti mostra come le discipline tecnico-scientifiche guidano oggi le investigazioni e le consulenze."],
+  "o": ["Conoscere processo penale e ordinamento giudiziario", "Comprendere metodi e strumenti delle scienze forensi", "Analizzare casi investigativi", "Collaborare con avvocati, periti e inquirenti"],
+  "d": "Laureati in psicologia, giurisprudenza e discipline affini interessati a investigazione e consulenza tecnica."
+ },
+ "didattica-italiana-come-lingua-seconda-l2": {
+  "i": ["Le classi sono sempre più multiculturali e servono docenti capaci di insegnare l’italiano a chi lo impara come seconda lingua. Il master unisce basi psicopedagogiche, legislazione scolastica e pedagogia speciale a linguistica e glottodidattica.", "L’obiettivo è progettare interventi personalizzati, tenendo conto della lingua di origine di ogni studente."],
+  "o": ["Conoscere linguistica e sociolinguistica dell’italiano", "Applicare la glottodidattica dell’italiano L2", "Progettare percorsi personalizzati e interculturali", "Favorire l’integrazione degli studenti stranieri"],
+  "d": "Docenti e aspiranti docenti, educatori e operatori che lavorano con studenti stranieri."
+ },
+ "didattica-e-arti-terapie-tecniche-creative-in-ambito-scolastico": {
+  "i": ["Arte, musica, teatro e danza come mezzi per educare e includere. Il master forma insegnanti ed educatori capaci di usare le tecniche delle arti terapie in classe.", "Si impara ad analizzare il gruppo, progettare interventi creativi e gestire le dinamiche relazionali, con attenzione agli alunni con DSA."],
+  "o": ["Conoscere i modelli delle arti terapie", "Progettare attività creative ed espressive", "Usare la creatività per l’inclusione", "Gestire le dinamiche di gruppo"],
+  "d": "Docenti e aspiranti docenti di ogni ordine e grado, educatori e operatori della formazione."
+ },
+ "didattica-integrale-per-il-nuovo-ambiente-di-apprendimento": {
+  "i": ["Un master per ripensare l’ambiente di apprendimento, tra pedagogia, psicologia e tecnologie. Pedagogia integrale, docimologia e didattica con i media digitali si affiancano a informatica per l’educazione e creazione di contenuti multimediali.", "Il risultato è una didattica capace di valorizzare tutti i canali dell’apprendimento."],
+  "o": ["Conoscere i principi della didattica integrale", "Creare contenuti multimediali per la classe", "Valutare apprendimenti e competenze", "Progettare ambienti di apprendimento digitali"],
+  "d": "Docenti, aspiranti docenti e operatori della formazione."
+ },
+ "diritto-amministrativo-master-pubblica-amministrazione-i-livello": {
+  "i": ["Il diritto amministrativo è la materia chiave di quasi tutti i concorsi pubblici. Il master la affronta in modo completo: ordinamento, soggetti, provvedimenti, processo amministrativo, anticorruzione e trasparenza.", "Completano il programma rapporto di lavoro pubblico, beni pubblici, governo del territorio e contratti pubblici."],
+  "o": ["Padroneggiare il diritto amministrativo generale", "Conoscere provvedimenti e procedimento", "Orientarsi tra anticorruzione, trasparenza e appalti", "Prepararsi ai concorsi pubblici"],
+  "d": "Laureati che preparano concorsi pubblici e dipendenti della pubblica amministrazione."
+ },
+ "diritto-amministrativo-master-pubblica-amministrazione-ii-livello": {
+  "i": ["Il master di II livello per approfondire il diritto amministrativo in vista dei concorsi più selettivi e degli incarichi di responsabilità. Ordinamento, azione amministrativa, processo, anticorruzione e trasparenza sono trattati in profondità.", "Il programma include rapporto di lavoro pubblico, contratti pubblici e processo telematico."],
+  "o": ["Approfondire azione e provvedimenti amministrativi", "Conoscere il processo amministrativo e telematico", "Gestire contratti pubblici e trasparenza", "Prepararsi ai concorsi per ruoli direttivi"],
+  "d": "Laureati magistrali e dipendenti pubblici che puntano a ruoli di maggiore responsabilità."
+ },
+ "disturbi-del-comportamento-alimentare": {
+  "i": ["Anoressia, bulimia e alimentazione incontrollata sono in crescita, anche per effetto dei modelli proposti da media e social. Il master offre ai professionisti strumenti specifici per riconoscere e affrontare questi disturbi.", "Si studiano normativa e responsabilità, fisiologia della nutrizione e approcci multidisciplinari alla presa in carico."],
+  "o": ["Riconoscere i disturbi del comportamento alimentare", "Conoscere fisiologia della nutrizione e fattori di rischio", "Collaborare a un trattamento multidisciplinare", "Sostenere pazienti e famiglie"],
+  "d": "Professionisti sanitari, psicologi, nutrizionisti, educatori e laureati interessati al tema."
+ },
+ "educare-in-istituti-penitenziari": {
+  "i": ["Educare in carcere significa offrire una seconda possibilità. Il master fornisce strumenti pedagogici, psicologici, sociologici e giuridici per progettare interventi educativi nel rispetto della dignità e dei diritti della persona detenuta.", "Si studiano modelli educativi per contesti complessi, formazione professionale, orientamento e reinserimento sociale, anche attraverso arte e creatività."],
+  "o": ["Progettare interventi educativi in contesti penitenziari", "Collaborare con l’amministrazione penitenziaria", "Favorire orientamento e reinserimento sociale", "Usare arte e creatività per la riabilitazione"],
+  "d": "Docenti, educatori, operatori sociali e laureati che vogliono lavorare in contesti penitenziari e a rischio."
+ }
+}

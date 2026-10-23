@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { STATS } from '../lib/catalog';
+import { SITE } from '../site.config';
+const values = [
+  { icon: 'route', t: 'Orientamento personalizzato', d: 'Ogni progetto parte da te: titolo di studio, esperienza, tempo a disposizione e obiettivi. Costruiamo un percorso coerente, che valorizza le competenze che hai già e guarda agli sbocchi che ti interessano.' },
+  { icon: 'user', t: 'Tutoraggio dedicato', d: 'Non ti consegniamo un catalogo: ti accompagniamo nella scelta, nell’iscrizione e in tutte le fasi del percorso, con un tutor che ti aiuta a organizzare lo studio e a preparare gli esami.' },
+  { icon: 'laptop', t: 'Formazione online e innovazione', d: 'Lezioni e materiali online sempre disponibili, per conciliare studio, lavoro e vita privata, con la sede come punto di riferimento quando serve.' },
+  { icon: 'shield', t: 'Percorsi riconosciuti', d: 'Proponiamo corsi di università ed enti accreditati: per ognuno ti diciamo con chiarezza che valore ha, anche ai fini del punteggio nelle graduatorie.' },
+];
+---
+<Base title="Chi siamo" description={`${SITE.name}: orientamento, formazione universitaria, master, certificazioni e lezioni private per studenti, lavoratori, docenti e personale ATA.`}>
+  <PageHero
+    eyebrow="Chi siamo"
+    title={`Mettiamo al centro <em class="serif" style="color:var(--c-amber)">la persona</em>, non il corso.`}
+    lead={`${SITE.name} è un punto di riferimento per chi vuole investire nella propria formazione: studenti, lavoratori, docenti, aspiranti insegnanti e personale ATA.`}
+    crumbs={[{ label: 'Chi siamo' }]}
+  />
+  <section class="section">
+    <div class="wrap about">
+      <div data-reveal>
+        <p class="eyebrow">La nostra missione</p>
+        <h2>Rendere la formazione accessibile, flessibile e concreta</h2>
+        <p class="lead">Crediamo che la crescita professionale nasca dall’incontro tra formazione di qualità, orientamento consapevole e assistenza continua. Per questo affianchiamo ogni persona prima, durante e dopo il percorso.</p>
+        <p>Che tu voglia conseguire una laurea, specializzarti nell’insegnamento, aggiornare le tue competenze o recuperare una materia, ti aiutiamo a individuare la strada più adatta e a percorrerla fino in fondo.</p>
+      </div>
+      <div class="nums" data-reveal>
+        <div><strong>{STATS.lauree}</strong><span>corsi di laurea</span></div>
+        <div><strong>{STATS.master}</strong><span>master di I e II livello</span></div>
+        <div><strong>{STATS.perfezionamenti}</strong><span>corsi di perfezionamento</span></div>
+        <div><strong>{STATS.totale}+</strong><span>percorsi in catalogo</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="section-head" data-reveal><p class="eyebrow">Cosa facciamo</p><h2>Quattro impegni con chi si affida a noi</h2></div>
+      <div class="vals">
+        {values.map((v, i) => <div class="val" data-reveal style={`--d:${i}`}><span><Icon name={v.icon} size={26} /></span><h3>{v.t}</h3><p>{v.d}</p></div>)}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+
+<style>
+  .about { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .lead { font-size: 1.2rem; color: var(--c-ink); }
+  .nums { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .nums div { padding: 26px; border-radius: var(--r-lg); background: var(--c-ink); color: #aeb8d3; display: grid; gap: 4px; }
+  .nums div:nth-child(2) { background: var(--c-blue); color: #dfe5ff; }
+  .nums div:nth-child(3) { background: var(--c-amber); color: var(--c-ink); }
+  .nums div:nth-child(4) { background: #fff; color: var(--c-muted); box-shadow: var(--shadow-sm); }
+  .nums strong { font: 800 clamp(2.4rem, 4vw, 3.4rem)/1 var(--f-display); letter-spacing: -0.04em; color: #fff; }
+  .nums div:nth-child(3) strong, .nums div:nth-child(4) strong { color: var(--c-ink); }
+  .vals { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .val { padding: 30px; border-radius: var(--r-lg); background: var(--c-paper); }
+  .val span { display: inline-grid; place-items: center; width: 54px; height: 54px; border-radius: 16px; background: var(--c-blue); color: #fff; margin-bottom: 16px; }
+  .val p { color: var(--c-muted); margin: 0; }
+  @media (max-width: 860px) { .about, .vals { grid-template-columns: minmax(0, 1fr); } }
+</style>

@@ -1,0 +1,127 @@
+{
+ "esperto-in-assistenza-e-gestione-del-paziente-con-disturbi-respiratori-del-sonno": {
+  "i": ["Le apnee ostruttive del sonno e gli altri disturbi respiratori notturni sono sempre più diffusi e si associano spesso ad altre malattie. Il master forma professionisti capaci di riconoscerli, assistere il paziente e seguirlo nel tempo.", "Si studiano fisiologia respiratoria e del sonno, strumenti diagnostici, terapie ventilatorie ed educazione del paziente all’uso dei dispositivi."],
+  "o": ["Conoscere la fisiologia della respirazione e del sonno", "Riconoscere i disturbi respiratori del sonno", "Gestire la terapia ventilatoria e i dispositivi", "Educare il paziente e monitorare l’aderenza"],
+  "d": "Infermieri, fisioterapisti, tecnici e professionisti sanitari che lavorano in pneumologia, neurologia o assistenza domiciliare."
+ },
+ "esperto-in-comunicazione-e-relazioni-nella-realta-fisica-e-virtuale-in-sanita": {
+  "i": ["Una buona cura passa anche da come si comunica. Il master sviluppa le competenze per gestire la relazione con pazienti, familiari e colleghi, sia in presenza sia attraverso telemedicina, piattaforme online e social media.", "Empatia, ascolto ed etica guidano un percorso che prepara a comunicare in modo efficace nella sanità che cambia."],
+  "o": ["Gestire la relazione di cura con empatia e chiarezza", "Comunicare attraverso canali digitali e telemedicina", "Usare i social media professionali in modo etico", "Prevenire conflitti e incomprensioni"],
+  "d": "Professionisti sanitari e sociosanitari, comunicatori e coordinatori di servizi."
+ },
+ "esperto-in-psicogeriatria": {
+  "i": ["La popolazione invecchia e cresce il bisogno di professionisti preparati sulla salute mentale degli anziani. Il master approfondisce demenze, depressione e altri disturbi frequenti in età avanzata.", "Si impara a comunicare con la persona anziana, a progettare interventi mirati e a sostenere famiglie e caregiver."],
+  "o": ["Conoscere i disturbi mentali dell’anziano", "Valutare le funzioni cognitive ed emotive", "Progettare interventi assistenziali e riabilitativi", "Sostenere famiglie e caregiver"],
+  "d": "Infermieri, psicologi, educatori, operatori sanitari e sociosanitari che lavorano con gli anziani."
+ },
+ "esperto-in-salute-sicurezza-e-ambiente-nei-luoghi-di-lavoro-pubblici-e-privati-hse-management": {
+  "i": ["Il professionista HSE aiuta le organizzazioni a gestire in modo integrato salute, sicurezza e ambiente. Il master fa riferimento alla norma UNI 11720:2025, che definisce i profili di HSE Specialist e HSE Manager.", "Il programma è diviso in un’area di governance e gestione e in un’area di conformità normativa e amministrativa."],
+  "o": ["Conoscere i requisiti professionali della figura HSE", "Gestire sistemi integrati di salute, sicurezza e ambiente", "Garantire la conformità normativa", "Valutare e ridurre i rischi nei luoghi di lavoro"],
+  "d": "Laureati magistrali, tecnici della sicurezza, responsabili e addetti dei servizi di prevenzione e protezione."
+ },
+ "esperto-in-tutela-giuridica-medicina-legale-e-gestione-del-rischio": {
+  "i": ["Un percorso per affrontare con consapevolezza i rischi giuridici e organizzativi della professione sanitaria. Responsabilità civile, assicurazioni, medicina legale e danno alla persona sono il cuore del programma.", "Il master integra competenze organizzative e digitali per gestire contenziosi e decisioni con maggiore sicurezza."],
+  "o": ["Conoscere responsabilità sanitaria e tutele assicurative", "Comprendere gli aspetti medico-legali del danno", "Applicare strumenti di gestione del rischio", "Gestire in modo consapevole il contenzioso"],
+  "d": "Medici, infermieri, professionisti sanitari e operatori del risk management."
+ },
+ "esperto-management-del-turismo-e-strategie-digitali-per-il-patrimonio-culturale-i-livello": {
+  "i": ["Tutela del patrimonio, promozione turistica e digitale sono ormai strettamente collegate. Il master forma esperti capaci di gestire beni e servizi culturali con competenze aziendali, di marketing e di comunicazione.", "Dopo una parte comune su management, economia della cultura, legislazione dei beni culturali e mercato dell’arte, si sceglie un indirizzo, ad esempio la progettazione di itinerari turistici."],
+  "o": ["Gestire organizzazioni culturali e turistiche", "Progettare strategie di marketing e comunicazione", "Raccontare il patrimonio con lo storytelling digitale", "Organizzare eventi e itinerari"],
+  "d": "Laureati in discipline umanistiche, economiche, turistiche e della comunicazione."
+ },
+ "etnomedicina": {
+  "i": ["Come le diverse culture interpretano salute, malattia e cura. Il master studia i sistemi terapeutici tradizionali, i rimedi e le piante medicinali, mettendoli in dialogo con la ricerca scientifica.", "Antropologia, biologia e farmacologia offrono gli strumenti per una lettura critica e consapevole di queste conoscenze."],
+  "o": ["Conoscere storia della medicina e medicine tradizionali", "Analizzare pratiche e rimedi con metodo scientifico", "Comprendere il ruolo delle piante medicinali", "Lavorare in contesti multiculturali di cura"],
+  "d": "Professionisti sanitari, farmacisti, biologi, antropologi e laureati interessati alle medicine tradizionali."
+ },
+ "fitoterapia-clinica": {
+  "i": ["Un master di II livello sull’uso clinico delle piante medicinali, basato sulle evidenze scientifiche. Si studiano principi attivi, effetti sull’organismo, indicazioni, sicurezza e interazioni con i farmaci.", "L’obiettivo è integrare la fitoterapia nella pratica sanitaria in modo consapevole e appropriato."],
+  "o": ["Conoscere botanica farmaceutica e principi attivi", "Valutare efficacia e sicurezza dei fitoterapici", "Riconoscere le interazioni con i farmaci", "Integrare la fitoterapia nei percorsi di cura"],
+  "d": "Medici, farmacisti, biologi e professionisti sanitari con laurea magistrale."
+ },
+ "fitoterapia-generale-e-clinica": {
+  "i": ["Il master di I livello per conoscere le piante medicinali e il loro impiego preventivo e clinico. Proprietà, principi attivi, sicurezza e interazioni sono affrontati con un approccio scientifico.", "Si impara a valutare e consigliare i prodotti fitoterapici in modo corretto e responsabile."],
+  "o": ["Conoscere le proprietà delle piante medicinali", "Valutare sicurezza ed efficacia dei prodotti", "Riconoscere possibili interazioni", "Consigliare i fitoterapici in modo appropriato"],
+  "d": "Professionisti sanitari, erboristi, farmacisti e laureati in discipline scientifiche."
+ },
+ "formazione-infermieristica-di-ambito-psichiatrico": {
+  "i": ["Un master per gli infermieri che vogliono specializzarsi in psichiatria. Si studiano evoluzione storica e legislazione, inquadramento diagnostico e classificazione dei disturbi, terapie e management dei servizi.", "Grande attenzione è data alla relazione con il paziente, con la famiglia e con l’équipe."],
+  "o": ["Conoscere classificazione e trattamento dei disturbi psichiatrici", "Gestire la relazione con paziente e famiglia", "Lavorare nell’équipe dei servizi di salute mentale", "Conoscere la normativa di riferimento"],
+  "d": "Infermieri che lavorano o vogliono lavorare nei servizi di salute mentale."
+ },
+ "funzionario-amministrativo-enti-locali-e-amministrazione-centrale-i-livello": {
+  "i": ["Il master per prepararsi ai concorsi da funzionario amministrativo in comuni, regioni, ministeri ed enti pubblici. Il programma copre le materie più richieste: diritto amministrativo, contabilità pubblica, contratti pubblici, anticorruzione e trasparenza.", "Completano il percorso organizzazione della PA, rapporto di lavoro pubblico, diritto dell’Unione europea e diritto penale della pubblica amministrazione."],
+  "o": ["Padroneggiare le materie dei concorsi da funzionario", "Conoscere contabilità pubblica e contratti", "Comprendere organizzazione e management della PA", "Prepararsi alle prove scritte e orali"],
+  "d": "Laureati che preparano i concorsi pubblici e dipendenti che vogliono aggiornarsi."
+ },
+ "funzionario-amministrativo-enti-locali-e-amministrazione-centrale-ii-livello": {
+  "i": ["La versione di II livello per chi ha una laurea magistrale e punta ai concorsi da funzionario nelle amministrazioni centrali e locali. Diritto amministrativo, contabilità pubblica, contratti e organizzazione della PA sono trattati in profondità.", "Un modulo è dedicato al trattamento dei dati personali dei lavoratori pubblici secondo il regolamento europeo sulla protezione dei dati."],
+  "o": ["Approfondire diritto amministrativo e contratti pubblici", "Conoscere contabilità e organizzazione della PA", "Applicare la normativa sulla protezione dei dati", "Prepararsi ai concorsi e alla progressione di carriera"],
+  "d": "Laureati magistrali e funzionari pubblici."
+ },
+ "funzionario-tributario-i-livello": {
+  "i": ["Un master per chi vuole lavorare nelle amministrazioni fiscali e prepararsi ai relativi concorsi. Diritto tributario, amministrativo, civile e commerciale si affiancano a scienza delle finanze, ragioneria, organizzazione aziendale e statistica.", "Forma una figura capace di predisporre atti amministrativi e di controllo nel rispetto della normativa."],
+  "o": ["Conoscere il diritto tributario", "Leggere bilanci e contabilità aziendale", "Predisporre atti amministrativi e di controllo", "Prepararsi ai concorsi in ambito fiscale"],
+  "d": "Laureati in discipline giuridiche ed economiche e dipendenti pubblici."
+ },
+ "funzionario-tributario-ii-livello": {
+  "i": ["Il master di II livello per la figura del funzionario tributario. Il programma unisce discipline giuridiche, diritto tributario, amministrativo, civile e commerciale, e discipline economiche, ragioneria, economia d’impresa, scienza delle finanze e statistica.", "Prepara ai concorsi delle amministrazioni fiscali e alle attività di controllo."],
+  "o": ["Approfondire il diritto tributario", "Analizzare imprese e bilanci", "Gestire attività di controllo fiscale", "Prepararsi ai concorsi pubblici"],
+  "d": "Laureati magistrali in discipline giuridiche ed economiche."
+ },
+ "gestione-degli-appalti-pubblici-i-livello": {
+  "i": ["Gli appalti pubblici sono una delle attività più delicate della pubblica amministrazione. Il master copre normativa nazionale ed europea, gare telematiche, contratti pubblici, project management e fondi comunitari.", "È utile per i concorsi e per chi già lavora negli uffici gare e contratti."],
+  "o": ["Conoscere la normativa sugli appalti", "Gestire gare telematiche e contratti", "Applicare il project management agli appalti", "Programmare l’uso dei fondi europei"],
+  "d": "Laureati che preparano i concorsi e dipendenti di enti pubblici e imprese che partecipano alle gare."
+ },
+ "gestione-degli-appalti-pubblici-ii-livello": {
+  "i": ["La versione di II livello del master sugli appalti pubblici. Normativa italiana ed europea, gare telematiche, project management e fondi comunitari sono affiancati dalla digitalizzazione della PA.", "Pensato per chi vuole assumere ruoli di responsabilità negli acquisti pubblici."],
+  "o": ["Approfondire normativa e contrattualistica pubblica", "Gestire procedure digitali di gara", "Coordinare progetti finanziati", "Prevenire corruzione e garantire trasparenza"],
+  "d": "Laureati magistrali e funzionari delle amministrazioni centrali e locali."
+ },
+ "gestione-degli-enti-sportivi-diritto-fiscalita-e-lavoro-del-mondo-dello-sport": {
+  "i": ["La riforma dello sport ha cambiato regole, contratti e adempimenti delle società sportive. Il master fornisce le competenze giuridiche, fiscali e organizzative per gestire enti e associazioni sportive.", "Si studiano ordinamento sportivo, rapporti di lavoro nello sport, fiscalità e gestione amministrativa delle società dilettantistiche."],
+  "o": ["Applicare la nuova normativa sullo sport", "Gestire contratti e rapporti di lavoro sportivo", "Conoscere la fiscalità degli enti sportivi", "Organizzare e amministrare una società sportiva"],
+  "d": "Dirigenti, collaboratori e consulenti di società e associazioni sportive, laureati interessati al settore."
+ },
+ "gestione-della-violenza-in-ambito-sociale-sanitario-ed-educativo": {
+  "i": ["Riconoscere la violenza e sapere come intervenire è una competenza essenziale per chi lavora con persone fragili. Il master affronta la violenza sulle donne, sui minori, sulle persone disabili e anziane, anche psicologica e online.", "Si studiano aspetti giuridici, segnalazione, presa in carico e prevenzione nei servizi sanitari, sociali ed educativi."],
+  "o": ["Riconoscere le diverse forme di violenza", "Conoscere obblighi di segnalazione e tutele", "Intervenire in modo adeguato nei servizi", "Progettare azioni di prevenzione"],
+  "d": "Professionisti sanitari, assistenti sociali, educatori, docenti e operatori dei servizi."
+ },
+ "gestione-delle-cure-palliative-e-della-terapia-del-dolore": {
+  "i": ["Le cure palliative si prendono cura della persona anche quando non si può guarire. Il master trasferisce le competenze per migliorare la qualità della vita dei malati inguaribili e controllare il dolore, soprattutto cronico.", "Si studiano la rete dei servizi, i diritti del paziente previsti dalla legge e l’approccio multidisciplinare."],
+  "o": ["Conoscere la rete delle cure palliative", "Gestire il dolore e i sintomi", "Sostenere paziente e famiglia", "Lavorare in équipe multidisciplinare"],
+  "d": "Infermieri, medici, psicologi e professionisti sanitari che operano in hospice, domicilio e ospedale."
+ },
+ "gestione-dellantibioticoresistenza-e-delle-infezioni-acquisite-in-comunita": {
+  "i": ["L’antibioticoresistenza è una delle grandi emergenze sanitarie del nostro tempo. Il master forma professionisti capaci di prevenire e gestire le infezioni acquisite in comunità e di promuovere un uso corretto degli antibiotici.", "Si studiano legislazione sanitaria, agenti patogeni e malattie infettive, sorveglianza e misure di controllo."],
+  "o": ["Conoscere agenti patogeni e malattie infettive", "Promuovere l’uso appropriato degli antibiotici", "Applicare misure di prevenzione e controllo", "Partecipare a programmi di sorveglianza"],
+  "d": "Infermieri, medici, farmacisti, biologi e professionisti sanitari."
+ },
+ "gestione-dellarea-socio-educativa-e-socio-sanitaria": {
+  "i": ["Un master per i laureati non sanitari che lavorano o vogliono lavorare nell’area sociale e sociosanitaria. Etica, legislazione e innovazione sono la base di un percorso che approfondisce ruoli e competenze del professionista in questi servizi.", "Si considerano i diversi ambiti operativi e le diverse fasce d’età a cui si rivolge l’intervento."],
+  "o": ["Conoscere organizzazione e normativa dei servizi", "Progettare interventi sociali e sociosanitari", "Lavorare con diverse fasce d’età", "Crescere professionalmente in enti pubblici e privati"],
+  "d": "Laureati magistrali non sanitari che operano in ambito sociale e sociosanitario."
+ },
+ "gestione-e-coordinamento-dellarea-socio-sanitaria": {
+  "i": ["Il master prepara alle funzioni di coordinamento in strutture e servizi sociali e sanitari privati o accreditati. Si acquisiscono competenze di direzione, programmazione e controllo.", "Grande attenzione è data alla comunicazione e agli aspetti normativi, etici e deontologici del ruolo di coordinatore."],
+  "o": ["Programmare e coordinare servizi sociosanitari", "Gestire équipe e risorse", "Comunicare in modo chiaro ed efficace", "Rispettare norme, etica e deontologia"],
+  "d": "Professionisti sanitari e sociali che vogliono assumere ruoli di coordinamento."
+ },
+ "gestione-coordinamento-e-innovazione-dei-servizi-per-la-disabilita": {
+  "i": ["Servizi per la disabilità più inclusivi, integrati e innovativi. Il master forma professionisti capaci di progettare, organizzare e coordinare interventi che favoriscano autonomia e partecipazione delle persone con disabilità.", "Il programma parte dai fondamenti teorici, normativi e organizzativi per arrivare alla gestione della qualità e all’innovazione dei servizi."],
+  "o": ["Conoscere la normativa sulla disabilità", "Progettare servizi orientati all’autonomia", "Coordinare interventi educativi, sociali e sanitari", "Introdurre innovazione nei servizi"],
+  "d": "Operatori, educatori, coordinatori e professionisti dei servizi per la disabilità."
+ },
+ "glottodidattica-infantile": {
+  "i": ["Come i bambini imparano le lingue e come insegnargliele al meglio. Il master unisce basi psicopedagogiche, psicologia dello sviluppo e psicobiologia a fondamenti di linguistica, acquisizione e didattica del linguaggio.", "Lo studente costruisce una vera cassetta degli attrezzi per progettare, realizzare e valutare percorsi di apprendimento linguistico."],
+  "o": ["Conoscere l’acquisizione del linguaggio nell’infanzia", "Progettare attività linguistiche per i bambini", "Valutare i progressi linguistici", "Integrare approcci pedagogici e psicologici"],
+  "d": "Docenti e aspiranti docenti della scuola dell’infanzia e primaria, educatori e insegnanti di lingue."
+ },
+ "governance-e-management-della-pa-ii-livello": {
+  "i": ["Innovazione, governance e management nelle amministrazioni pubbliche. Il master forma figure capaci di guidare la digitalizzazione, gestire i fondi europei e lavorare negli staff di direzione.", "Diritto pubblico e amministrativo digitale, anticorruzione, contratti pubblici e protezione dei dati completano il programma."],
+  "o": ["Guidare processi di digitalizzazione della PA", "Gestire organizzazione e management pubblico", "Applicare anticorruzione e trasparenza", "Prepararsi ai concorsi per ruoli direttivi"],
+  "d": "Laureati magistrali e dipendenti pubblici che puntano a ruoli di responsabilità."
+ }
+}

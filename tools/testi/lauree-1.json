@@ -1,0 +1,102 @@
+{
+ "ingegneria-industriale-indirizzo-progettuale-meccanico": {
+  "i": ["Una magistrale per chi vuole progettare macchine, impianti e prodotti industriali, anche ad alta complessità tecnologica. Progettazione meccanica, termotecnica e funzionale si studiano insieme alle tecniche virtuali di progettazione, agli studi di fabbricazione, all’aerodinamica e alla metallurgia.", "Completano il percorso strategia d’impresa e organizzazione industriale: il laureato sa innovare un prodotto e seguirlo fino alla produzione."],
+  "o": ["Progettare macchine, componenti e impianti", "Usare strumenti di progettazione e simulazione virtuale", "Conoscere metallurgia, fabbricazione e aerodinamica", "Gestire manutenzione e organizzazione degli impianti", "Collegare scelte tecniche e strategia d’impresa"],
+  "s": ["Progettista meccanico in industrie meccaniche ed elettromeccaniche", "Ingegnere in aziende per la conversione dell’energia", "Tecnico di imprese impiantistiche e di automazione", "Responsabile di produzione, installazione e collaudo", "Libero professionista, previo esame di Stato"]
+ },
+ "ingegneria-industriale-indirizzo-tecnologico-gestionale": {
+  "i": ["L’ingegnere che fa da ponte tra reparto tecnico e direzione. Questa magistrale unisce progettazione meccanica e di impianti, sistemi integrati di produzione e metallurgia alla gestione aziendale e all’energetica ambientale.", "Forma figure capaci di ottimizzare processi, impianti e sistemi industriali complessi con un approccio orientato all’innovazione, alla sostenibilità e alla digitalizzazione."],
+  "o": ["Analizzare e progettare sistemi industriali", "Ottimizzare processi produttivi e impianti", "Controllare la qualità con misure e metodi adeguati", "Gestire aspetti economici e organizzativi dell’impresa", "Ridurre l’impatto ambientale della produzione"],
+  "s": ["Ingegnere di processo e di produzione", "Responsabile tecnico e di impianto", "Supply chain manager", "Ingegnere gestionale", "Consulente per l’organizzazione e l’innovazione industriale"]
+ },
+ "ingegneria-industriale-indirizzo-termomeccanico": {
+  "i": ["Energia, calore e meccanica in un unico percorso biennale. L’indirizzo termomeccanico prepara a progettare e gestire macchine, impianti termotecnici e reti elettriche, con un’attenzione particolare alla pianificazione energetica sostenibile.", "Il laureato può assumere ruoli di responsabilità nell’industria meccanica, energetica e impiantistica e nei servizi."],
+  "o": ["Progettare macchine e impianti termomeccanici", "Conoscere progettazione termotecnica e reti elettriche", "Pianificare l’uso sostenibile dell’energia", "Controllare la qualità di processi e prodotti", "Integrare scelte tecniche e organizzazione industriale"],
+  "s": ["Progettista in industrie meccaniche ed elettromeccaniche", "Ingegnere in aziende ed enti per la conversione dell’energia", "Responsabile di impianti termici ed energetici", "Energy manager", "Libero professionista, previo esame di Stato"]
+ },
+ "ingegneria-informatica-e-dellautomazione": {
+  "i": ["Una magistrale ad ampio spettro per chi vuole progettare sistemi informatici e di automazione avanzati. Linguaggi di programmazione, simulazione, ricerca operativa e intelligenza artificiale si combinano con strumentazione, sistemi di controllo distribuiti e data mining.", "Lo studio dell’organizzazione aziendale permette di dialogare con le aree economico-gestionali e di guidare progetti di innovazione."],
+  "o": ["Progettare software e sistemi di controllo avanzati", "Simulare e ottimizzare sistemi complessi", "Applicare intelligenza artificiale e data mining", "Progettare interfacce uomo-macchina", "Gestire progetti tecnologici nelle organizzazioni"],
+  "s": ["Ingegnere informatico e dell’automazione in imprese industriali e di servizi", "Progettista nei settori elettronico, elettromeccanico, aeronautico e spaziale", "Responsabile di sistemi di produzione automatizzati", "Consulente per l’innovazione tecnologica", "Funzionario tecnico nella pubblica amministrazione"]
+ },
+ "ingegneria-informatica-e-dellautomazione-indirizzo-artificial-intelligence": {
+  "i": ["L’indirizzo dedicato all’intelligenza artificiale: reti neurali e deep learning, computer vision e sistemi intelligenti, su una base solida di programmazione, simulazione e controllo.", "Il laureato sa progettare e integrare soluzioni di IA in industria, sanità, finanza, logistica e pubblica amministrazione, con attenzione a efficienza ed etica digitale."],
+  "o": ["Progettare modelli di machine learning e deep learning", "Sviluppare applicazioni di visione artificiale", "Integrare sistemi intelligenti e autonomi", "Gestire dati e simulazioni", "Valutare gli aspetti etici delle soluzioni di IA"],
+  "s": ["AI engineer e machine learning engineer", "Data scientist e data analyst", "Specialista di computer vision", "Esperto di IA per l’industria e la robotica", "Consulente per le tecnologie intelligenti"]
+ },
+ "ingegneria-informatica-e-dellautomazione-indirizzo-cybersecurity": {
+  "i": ["Proteggere dati, reti e impianti è diventato essenziale per ogni organizzazione. Questo indirizzo forma ingegneri capaci di progettare sistemi informatici sicuri e di prevenire e gestire gli attacchi.", "Accanto alla base comune su programmazione, simulazione e controllo, si studiano crittografia, sicurezza del software e manutenzione predittiva."],
+  "o": ["Analizzare vulnerabilità di sistemi e reti", "Progettare architetture software sicure", "Applicare codifica e crittografia", "Proteggere le reti industriali", "Gestire gli incidenti informatici"],
+  "s": ["Cybersecurity engineer", "Security analyst e analista SOC", "Ethical hacker e penetration tester", "Responsabile della sicurezza ICT", "Esperto di sicurezza delle reti industriali"]
+ },
+ "ingegneria-informatica-e-dellautomazione-indirizzo-robotica": {
+  "i": ["Robot industriali, collaborativi, medicali e logistici: l’indirizzo Robotica insegna a progettarli, programmarli e farli interagire con le persone e con altre macchine.", "Programmazione di robot, reti neurali e interazione uomo-robot si innestano sulla base comune di informatica e automazione, per preparare professionisti pronti per l’Industria 4.0."],
+  "o": ["Programmare e controllare sistemi robotici", "Applicare reti neurali e deep learning ai robot", "Progettare l’interazione uomo-robot", "Integrare sensori e strumentazione", "Simulare e ottimizzare impianti automatizzati"],
+  "s": ["Ingegnere robotico", "Progettista di sistemi automatici e meccatronici", "Sviluppatore di soluzioni per la robotica industriale e collaborativa", "System integrator di impianti automatizzati", "Consulente per l’automazione in manifattura, sanità, agricoltura e logistica"]
+ },
+ "ingegneria-informatica-indirizzo-droni": {
+  "i": ["L’ingegneria informatica applicata ai sistemi autonomi. Dopo le basi di matematica, fisica, programmazione e reti, il corso approfondisce architettura, programmazione e controllo dei droni, i sistemi embedded e la gestione dei dati dei sensori.", "Prepara a lavorare in un settore in crescita: monitoraggio ambientale, sicurezza, agricoltura di precisione, aerospazio."],
+  "o": ["Programmare e controllare aeromobili a pilotaggio remoto", "Conoscere calcolatori, sistemi operativi e reti", "Gestire dati da sensori e sistemi embedded", "Applicare i fondamenti dell’automatica", "Conoscere la compatibilità elettromagnetica"],
+  "s": ["Tecnico in aziende che progettano o impiegano droni", "Sviluppatore di software e sistemi embedded", "Operatore per monitoraggio ambientale e agricoltura di precisione", "Addetto alla sicurezza e sorveglianza con sistemi autonomi", "Collaboratore in start-up di robotica e aerospazio"]
+ },
+ "ingegneria-informatica-indirizzo-ingegneria-app": {
+  "i": ["App, cloud e Internet delle cose: questo indirizzo forma ingegneri capaci di progettare e realizzare soluzioni software e hardware per smart city, reti intelligenti e servizi digitali.", "Oltre alle basi di ingegneria informatica si studiano modellistica, simulazione e programmazione di app: competenze richieste sia dalle imprese produttive sia da quelle di servizi e consulenza."],
+  "o": ["Sviluppare app e servizi in cloud", "Progettare sistemi IoT e di controllo", "Simulare e modellare sistemi informatici", "Conoscere reti, calcolatori e sistemi operativi", "Gestire e manutenere sistemi informatici"],
+  "s": ["Sviluppatore di app e software", "Tecnico di sistemi cloud e IoT", "Addetto a sistemi informativi e reti", "Consulente ICT per piccole e medie imprese", "Ingegnere iunior dell’informazione, previo esame di Stato"]
+ },
+ "ingegneria-informatica-indirizzo-intelligenza-artificiale-e-data-science": {
+  "i": ["Dai dati alle decisioni: il corso insegna a raccogliere, archiviare, analizzare e visualizzare grandi quantità di informazioni con modelli matematici, statistici e di apprendimento automatico.", "Basi di dati, elettronica digitale e algoritmi si affiancano allo studio dell’etica e della protezione dei dati, per formare ingegneri capaci di governare l’intero ciclo dell’analisi."],
+  "o": ["Progettare e gestire basi di dati", "Applicare algoritmi di machine learning", "Costruire modelli statistici e predittivi", "Visualizzare e comunicare i risultati", "Trattare i dati nel rispetto della privacy"],
+  "s": ["Data analyst e data engineer", "Sviluppatore di soluzioni di intelligenza artificiale", "Analista di business intelligence", "Consulente per la trasformazione digitale", "Accesso a magistrali in data science e IA"]
+ },
+ "ingegneria-informatica-indirizzo-sicurezza-informatica": {
+  "i": ["Le basi dell’ingegneria dell’informazione con una specializzazione in cybersecurity. Programmazione, architetture hardware e software, sistemi operativi e reti si studiano con un occhio costante alla sicurezza.", "L’indirizzo sviluppa competenze pratiche in analisi delle vulnerabilità, ethical hacking, analisi dei malware e gestione degli incidenti, fino al ruolo di specialista del Security Operation Center."],
+  "o": ["Comprendere il funzionamento dei sistemi informatici", "Analizzare vulnerabilità e malware", "Proteggere reti e infrastrutture IT", "Gestire gli incidenti di sicurezza", "Operare in un Security Operation Center"],
+  "s": ["Analista SOC", "Tecnico della sicurezza informatica", "Penetration tester iunior", "Amministratore di reti e sistemi", "Consulente per la sicurezza IT"]
+ },
+ "ingegneria-informatica-indirizzo-sistemi-di-elaborazione-e-controllo": {
+  "i": ["Un indirizzo che unisce informatica, automatica e telecomunicazioni per progettare sistemi hardware e software che controllano macchine e processi. Si studiano modellistica, simulazione, basi di dati, calcolatori e reti.", "È una formazione molto richiesta dalle piccole e medie imprese italiane, sia nella produzione sia nei servizi di consulenza."],
+  "o": ["Progettare sistemi di elaborazione e controllo", "Modellare e simulare sistemi", "Conoscere calcolatori, sistemi operativi e reti", "Progettare e gestire basi di dati", "Integrare dispositivi hardware e software"],
+  "s": ["Tecnico di sistemi informatici e di automazione", "Sviluppatore software e hardware", "Addetto a sistemi informativi e reti", "Consulente ICT per le imprese", "Ingegnere iunior dell’informazione, previo esame di Stato"]
+ },
+ "letteratura-arte-musica-e-spettacolo-indirizzo-artistico-audiovisivo-e-dello-spettacolo": {
+  "i": ["Per chi ama letteratura, cinema, teatro e musica e vuole farne un lavoro. Alla formazione letteraria e linguistica si affiancano storia del cinema, della televisione e del teatro, drammaturgia musicale e linguaggi dei nuovi media.", "Il corso prepara anche sul piano pratico, con l’organizzazione di eventi e l’ufficio stampa."],
+  "o": ["Analizzare testi letterari, audiovisivi e teatrali", "Conoscere storia del cinema, della televisione e del teatro", "Comprendere i linguaggi dei nuovi media", "Organizzare eventi e gestire la comunicazione", "Scrivere per il palcoscenico, lo schermo e i media"],
+  "s": ["Redattore e correttore di testi", "Organizzatore e curatore di eventi culturali", "Autore di testi per teatro, musica e audiovisivi", "Addetto ufficio stampa e comunicazione culturale", "Consulente per lo storytelling di enti e brand"]
+ },
+ "letteratura-arte-musica-e-spettacolo-indirizzo-letterario": {
+  "i": ["Una formazione umanistica ampia e solida: letteratura italiana e latina, linguistica, storia dall’antichità a oggi, storia dell’arte e della musica.", "L’indirizzo letterario allena alla lettura critica e alla scrittura, mettendo in dialogo letteratura, arti visive, musica e spettacolo per valorizzare il patrimonio culturale italiano ed europeo."],
+  "o": ["Analizzare e interpretare testi letterari", "Conoscere la storia dall’età medievale a quella contemporanea", "Collegare letteratura, arte, musica e spettacolo", "Scrivere testi chiari e argomentati", "Comunicare e valorizzare il patrimonio culturale"],
+  "s": ["Redattore e correttore di bozze", "Operatore culturale in enti, biblioteche e fondazioni", "Collaboratore di case editrici e riviste", "Curatore di eventi letterari", "Accesso alle lauree magistrali per l’insegnamento"]
+ },
+ "letteratura-lingua-e-cultura-italiana-indirizzo-filologico": {
+  "i": ["Una magistrale per approfondire lingua e letteratura italiana con il rigore della filologia. Filologia italiana e romanza, paleografia, letterature latina e greca, critica letteraria e linguistica testuale sono il cuore del percorso.", "Gli esami a scelta permettono di orientarsi verso l’insegnamento, la ricerca o l’editoria."],
+  "o": ["Studiare i testi con metodo filologico", "Leggere e interpretare manoscritti e fonti antiche", "Conoscere le letterature classiche e moderne", "Applicare critica letteraria e analisi del testo", "Usare strumenti digitali per lo studio dei testi"],
+  "s": ["Docente di materie letterarie, con i requisiti previsti", "Redattore e consulente editoriale", "Ricercatore e collaboratore in archivi e biblioteche", "Esperto di edizioni critiche", "Accesso a dottorati di ricerca"]
+ },
+ "letteratura-lingua-e-cultura-italiana-indirizzo-promozione-culturale": {
+  "i": ["Conoscere la cultura italiana e saperla far conoscere. L’indirizzo unisce letteratura, linguistica e storia a estetica, sociologia dei processi culturali, antropologia, musicologia, museologia e gestione delle risorse digitali.", "Prepara a lavorare nella valorizzazione e nella comunicazione del patrimonio culturale, in Italia e all’estero."],
+  "o": ["Approfondire letteratura e lingua italiana", "Conoscere museologia e critica d’arte", "Gestire biblioteche e risorse digitali", "Progettare iniziative di promozione culturale", "Comunicare la cultura anche in lingua straniera"],
+  "s": ["Esperto di promozione e divulgazione culturale", "Redattore editoriale e consulente letterario", "Addetto stampa e comunicazione in ambito culturale", "Operatore in musei, biblioteche, archivi e fondazioni", "Docente di lingua e letteratura italiana, con i requisiti previsti"]
+ },
+ "lingue-e-culture-europee-del-resto-del-mondo-indirizzo-comunicazione-interculturale": {
+  "i": ["Lingue straniere, culture e mediazione: il corso forma professionisti capaci di comunicare in contesti multiculturali. Si studiano due lingue tra inglese, francese, spagnolo, tedesco, russo, arabo e cinese, insieme ad antropologia, storia e geografia delle lingue.", "L’indirizzo Comunicazione interculturale prepara a gestire relazioni tra persone e gruppi di culture diverse in scuole, istituzioni e aziende."],
+  "o": ["Padroneggiare due lingue straniere e le relative letterature", "Conoscere culture europee ed extraeuropee", "Mediare tra persone e gruppi di culture diverse", "Gestire processi comunicativi complessi", "Usare strumenti informatici per la comunicazione"],
+  "s": ["Esperto di comunicazione interculturale", "Operatore in progetti di integrazione e cooperazione internazionale", "Mediatore linguistico e culturale", "Addetto alle relazioni internazionali di aziende ed enti", "Collaboratore nel turismo e nell’accoglienza"]
+ },
+ "lingue-e-culture-europee-del-resto-del-mondo-indirizzo-editoriale-e-multimediale": {
+  "i": ["Le lingue al servizio dell’editoria, tradizionale e digitale. Lo studio di due lingue e delle loro letterature si unisce a linguistica testuale, letteratura per l’editoria, traduzione e scrittura professionale.", "Il percorso prepara a redigere, tradurre, revisionare e adattare contenuti per libri, web, social e media."],
+  "o": ["Tradurre e revisionare testi in due lingue", "Scrivere e redigere contenuti editoriali", "Gestire contenuti multicanale e digitali", "Localizzare contenuti per mercati diversi", "Conoscere le letterature straniere e comparate"],
+  "s": ["Redattore e assistente editoriale", "Traduttore editoriale e revisore linguistico", "Content editor e copywriter multilingue", "Addetto alla comunicazione culturale", "Collaboratore di agenzie di traduzione e localizzazione"]
+ },
+ "lingue-e-culture-europee-del-resto-del-mondo-indirizzo-pedagogico-didattico": {
+  "i": ["Per chi vuole insegnare le lingue o lavorare nella formazione. Lo studio di due lingue straniere e delle loro culture si affianca a linguistica e letteratura italiana, geografia, storia e diritto della scuola.", "Ampio spazio è dato alla gestione di classi multiculturali, alla didattica inclusiva e al dialogo interculturale."],
+  "o": ["Padroneggiare due lingue straniere", "Conoscere le basi della didattica delle lingue", "Gestire classi multiculturali e inclusive", "Conoscere l’organizzazione e il diritto della scuola", "Progettare materiali didattici"],
+  "s": ["Educatore e formatore linguistico", "Assistente all’insegnamento delle lingue straniere", "Esperto di didattica interculturale", "Collaboratore per materiali didattici ed editoria scolastica", "Accesso alle magistrali per l’insegnamento delle lingue"]
+ },
+ "lingue-e-culture-europee-del-resto-del-mondo-indirizzo-tecnico-computazionale": {
+  "i": ["Lingue straniere e tecnologia: un indirizzo per chi vuole lavorare dove il linguaggio incontra il digitale. Allo studio di due lingue si aggiungono logica, filosofia del linguaggio, linguistica generale e informatica.", "Si acquisiscono le basi per l’elaborazione del linguaggio naturale, la traduzione assistita e la localizzazione di software e contenuti."],
+  "o": ["Padroneggiare due lingue straniere", "Conoscere linguistica e logica", "Usare strumenti di traduzione assistita", "Comprendere le basi dell’elaborazione del linguaggio naturale", "Localizzare software, siti e contenuti digitali"],
+  "s": ["Esperto di comunicazione multilingue digitale", "Tecnico della localizzazione di software e siti web", "Redattore tecnico multilingue", "Linguista per progetti di intelligenza artificiale", "Collaboratore di aziende IT e agenzie di traduzione"]
+ }
+}

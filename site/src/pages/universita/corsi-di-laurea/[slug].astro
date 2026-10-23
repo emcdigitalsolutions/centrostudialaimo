@@ -1,0 +1,110 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import CourseDetail from '../../../components/CourseDetail.astro';
+import StudyPlan from '../../../components/StudyPlan.astro';
+import Prose from '../../../components/Prose.astro';
+import CourseCard from '../../../components/CourseCard.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { lauree, excerpt, lead, splitIndirizzo, cfuLaurea, anniLaurea, countEsami, ROUTES, FACOLTA, type Laurea } from '../../../lib/catalog';
+import { SITE } from '../../../site.config';
+
+export function getStaticPaths() {
+  return lauree.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+}
+const { l } = Astro.props as { l: Laurea };
+const { nome, indirizzo } = splitIndirizzo(l.title);
+const tipo = l.livello === 'triennale' ? 'Laurea triennale' : /LMG/.test(l.classe) ? 'Laurea magistrale a ciclo unico' : 'Laurea magistrale';
+const body = l.body.map((s) => ({ ...s, h: s.h === 'Corso' ? 'Il corso' : s.h === 'Durata corso' ? 'Durata' : s.h }));
+const overview = body.filter((s) => !/sbocchi/i.test(s.h));
+const sbocchi = body.filter((s) => /sbocchi/i.test(s.h));
+const desc = excerpt(l.body) || `${tipo} online in ${l.title}, classe ${l.classe}: piano di studi, sbocchi e iscrizione con ${SITE.name}.`;
+
+const sameBase = lauree.filter((x) => x.slug !== l.slug && splitIndirizzo(x.title).nome === nome);
+const related = [...sameBase, ...lauree.filter((x) => x.slug !== l.slug && x.facolta === l.facolta && !sameBase.includes(x))].slice(0, 3);
+const fac = FACOLTA[l.facolta] ?? FACOLTA.Ingegneria;
+
+const sections = [
+  { id: 'panoramica', label: 'Panoramica' },
+  ...(l.anni.length ? [{ id: 'piano-di-studi', label: 'Piano di studi' }] : []),
+  ...(sbocchi.length ? [{ id: 'sbocchi', label: 'Sbocchi' }] : []),
+];
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Course', name: l.title, description: desc,
+  url: new URL(ROUTES.laurea(l.slug), SITE.url).href, inLanguage: 'it',
+  educationalCredentialAwarded: `${tipo} (classe ${l.classe})`,
+  numberOfCredits: { '@type': 'StructuredValue', value: cfuLaurea(l), unitText: 'CFU' },
+  timeRequired: `P${anniLaurea(l)}Y`,
+  provider: { '@id': `${SITE.url}/#org` },
+  hasCourseInstance: { '@type': 'CourseInstance', courseMode: 'online', courseWorkload: `P${anniLaurea(l)}Y` },
+  offers: { '@type': 'Offer', category: 'Paid', availability: 'https://schema.org/InStock', url: new URL(ROUTES.laurea(l.slug), SITE.url).href },
+};
+---
+<Base title={`${l.title} – ${tipo} online (${l.classe})`} description={desc} jsonld={ld} keywords={`${nome}, laurea online ${nome.toLowerCase()}, ${l.classe}, ${tipo.toLowerCase()} online, piano di studi ${nome.toLowerCase()}, università telematica`}>
+  <PageHero
+    title={indirizzo ? `${nome}<br><em class="serif" style="color:var(--c-amber)">${indirizzo}</em>` : nome}
+    lead={lead(l.body) || desc}
+    long={l.title.length > 60}
+    crumbs={[{ label: 'Università', href: '/universita/' }, { label: 'Corsi di laurea', href: '/universita/corsi-di-laurea/' }, { label: l.title }]}
+  >
+    <div class="phero__chips">
+      <span class="chip chip--dark">{tipo}</span>
+      <span class="chip chip--dark">Classe {l.classe}</span>
+      <span class="chip chip--dark">Facoltà di {l.facolta}</span>
+      <span class="chip chip--dark">{cfuLaurea(l)} CFU · {anniLaurea(l)} anni</span>
+    </div>
+  </PageHero>
+
+  <CourseDetail
+    course={l.title}
+    cfuLink
+    sections={sections}
+    facts={[
+      { icon: 'grad', label: 'Titolo', value: tipo },
+      { icon: 'layers', label: 'Classe di laurea', value: l.classe },
+      { icon: 'book', label: 'Facoltà', value: l.facolta },
+      { icon: 'clock', label: 'Durata', value: `${anniLaurea(l)} anni` },
+      { icon: 'award', label: 'Crediti', value: `${cfuLaurea(l)} CFU` },
+      { icon: 'laptop', label: 'Modalità', value: 'Online, esami in sede' },
+      { icon: 'list', label: 'Insegnamenti', value: countEsami(l) ? `${countEsami(l)} nel piano` : '' },
+    ]}
+    note="Nessun test di ammissione, iscrizioni aperte tutto l’anno. Puoi farti riconoscere gli esami già sostenuti."
+  >
+    <section id="panoramica" data-reveal>
+      <Prose body={overview} />
+    </section>
+    {l.anni.length > 0 && (
+      <section id="piano-di-studi">
+        <p class="eyebrow">Piano di studi</p>
+        <h2 style="font-size:clamp(1.6rem,2.6vw,2.2rem)">Gli esami, anno per anno</h2>
+        <StudyPlan anni={l.anni} scelta={l.scelta} />
+      </section>
+    )}
+    {sbocchi.length > 0 && (
+      <section id="sbocchi" data-reveal>
+        <div class="sbocchi" style={`--accent:${fac.color}`}>
+          <Prose body={sbocchi} />
+        </div>
+      </section>
+    )}
+  </CourseDetail>
+
+  {related.length > 0 && (
+    <section class="section--tight">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Potrebbe interessarti</p><h2>Altri corsi di laurea</h2></div>
+        <div class="grid-cards">
+          {related.map((r) => {
+            const s = splitIndirizzo(r.title);
+            return <CourseCard href={ROUTES.laurea(r.slug)} title={s.nome} sub={s.indirizzo && `Indirizzo ${s.indirizzo}`} accent={FACOLTA[r.facolta]?.color} chips={[{ t: r.livello === 'triennale' ? 'Triennale' : 'Magistrale', c: r.livello === 'triennale' ? 'blue' : 'violet' }, { t: r.classe }]} meta={`Facoltà di ${r.facolta}`} />;
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+  <CtaBand variant="cfu" />
+</Base>
+
+<style>
+  .sbocchi { background: #fff; border-radius: var(--r-lg); padding: clamp(22px, 4vw, 40px); border-top: 5px solid var(--accent); box-shadow: var(--shadow-sm); }
+</style>

@@ -1,0 +1,59 @@
+---
+import type { Esame } from '../lib/catalog';
+interface Props { items: Esame[]; title?: string }
+const { items, title = 'Programma del corso' } = Astro.props;
+// Le righe «gruppo» (es. «Parte normativa») raccolgono i moduli che seguono
+type Blk = { gruppo?: string; cfu?: string; rows: Esame[] };
+const blocks: Blk[] = [];
+for (const e of items) {
+  if (e.gruppo !== undefined) blocks.push({ gruppo: e.gruppo, cfu: e.cfu, rows: [] });
+  else if (e.nome) {
+    if (!blocks.length) blocks.push({ rows: [] });
+    blocks[blocks.length - 1].rows.push(e);
+  }
+}
+const num = (s?: string) => parseFloat((s || '0').replace(',', '.')) || 0;
+const rows = blocks.flatMap((b) => b.rows);
+const grouped = blocks.some((b) => b.gruppo);
+const tot = grouped ? blocks.reduce((s, b) => s + (b.gruppo ? num(b.cfu) : b.rows.reduce((t, e) => t + num(e.cfu), 0)), 0) : rows.reduce((s, e) => s + num(e.cfu), 0);
+let n = 0;
+---
+<div class="prog" data-reveal>
+  <div class="prog__h">
+    <p>{title}</p>
+    <span>{rows.length} {grouped ? 'insegnamenti' : 'moduli'}{tot > 0 && tot <= 130 && ` · ${tot} CFU`}</span>
+  </div>
+  {blocks.map((b) => (
+    <div class="prog__b">
+      {b.gruppo && <p class="prog__g"><span>{b.gruppo}</span>{b.cfu && <small>{b.cfu} CFU</small>}</p>}
+      <ol>
+        {b.rows.map((e) => (
+          <li>
+            <span class="prog__i">{String(++n).padStart(2, '0')}</span>
+            <span class="prog__n">{e.nome}{e.ssd && <small>{e.ssd}</small>}</span>
+            {e.cfu && !grouped && <span class="prog__c">{e.cfu}<small>CFU</small></span>}
+            {e.cfu && grouped && <span class="prog__c prog__c--s">{e.cfu}<small>CFU</small></span>}
+          </li>
+        ))}
+      </ol>
+    </div>
+  ))}
+</div>
+
+<style>
+  .prog { background: #fff; border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border: 1px solid rgb(13 26 58 / 0.06); overflow: hidden; }
+  .prog__h { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 22px; background: var(--c-ink); color: #c9d1e6; }
+  .prog__h p { margin: 0; font: 700 1.1rem var(--f-display); color: #fff; }
+  .prog__h span { font-size: 0.86rem; }
+  .prog__g { display: flex; justify-content: space-between; gap: 12px; margin: 12px 14px 0; padding: 10px 12px; border-radius: 12px; background: var(--c-blue-soft); font: 700 0.95rem/1.3 var(--f-display); color: var(--c-ink); }
+  .prog__g small { font: 700 0.78rem var(--f-body); color: var(--c-blue); white-space: nowrap; }
+  ol { list-style: none; margin: 0; padding: 6px 14px 12px; }
+  li { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 11px 6px; border-bottom: 1px solid var(--c-paper-2); }
+  li:last-child { border-bottom: 0; }
+  .prog__i { font: 800 0.85rem var(--f-display); color: var(--c-blue); }
+  .prog__n { color: var(--c-ink); font-weight: 500; line-height: 1.35; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+  .prog__n small { font-size: 0.72rem; font-weight: 600; color: var(--c-blue); background: var(--c-blue-soft); padding: 3px 7px; border-radius: 6px; }
+  .prog__c { font: 800 1rem var(--f-display); color: var(--c-ink); display: flex; gap: 3px; align-items: baseline; }
+  .prog__c--s { font-size: 0.9rem; color: var(--c-muted); }
+  .prog__c small { font: 600 0.68rem var(--f-body); color: var(--c-muted); }
+</style>

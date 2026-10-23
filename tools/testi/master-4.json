@@ -1,0 +1,122 @@
+{
+ "operatore-sanitario-specializzato-nellassistenza-cardiovascolare": {
+  "i": ["Un master per specializzarsi nell’assistenza ai pazienti cardiologici. Si parte dalla fisiopatologia cardiovascolare per arrivare alla gestione del paziente in unità di terapia intensiva coronarica, con le tecnologie e le metodiche più recenti.", "Il titolo apre la strada a ruoli più specializzati, come il coordinamento di unità cardiologiche o la ricerca clinica."],
+  "o": ["Conoscere la fisiopatologia cardiovascolare", "Gestire il paziente in terapia intensiva coronarica", "Utilizzare tecnologie e monitoraggio cardiologico", "Lavorare in équipe multidisciplinare"],
+  "d": "Infermieri e professionisti sanitari di cardiologia, UTIC ed emodinamica."
+ },
+ "organizzazione-e-innovazione-nella-pa-i-livello": {
+  "i": ["Un master interdisciplinare per comprendere e gestire l’innovazione nelle amministrazioni pubbliche. Diritto pubblico e amministrativo digitale, contratti, contabilità pubblica e lavoro nella PA si affiancano a innovazione, digitalizzazione, gestione del rischio e sistemi informativi.", "Utile per i concorsi e per la riqualificazione di chi lavora già nella pubblica amministrazione."],
+  "o": ["Comprendere i processi di innovazione nella PA", "Conoscere gli aspetti giuridici della digitalizzazione", "Gestire il rischio organizzativo", "Usare sistemi ed elaborazione delle informazioni"],
+  "d": "Laureati e dipendenti pubblici."
+ },
+ "osteopatia": {
+  "i": ["Un master che introduce alla visione sistemica dell’osteopatia, con un approccio alla persona nella sua globalità. Concetti teorici e tecniche manuali sono approfonditi in un contesto di collaborazione multiprofessionale.", "Si sviluppano abilità di valutazione e trattamento delle alterazioni funzionali, integrando le competenze già possedute dalle professioni sanitarie."],
+  "o": ["Conoscere i principi dell’approccio osteopatico", "Valutare le alterazioni funzionali", "Applicare tecniche manuali di base", "Collaborare con altri professionisti sanitari"],
+  "d": "Fisioterapisti, laureati in scienze motorie e professionisti sanitari."
+ },
+ "profili-pedagogici-e-didattici-dellinsengnamento-di-scienze-motorie-nella-scuola-primaria": {
+  "i": ["Un master sull’educazione motoria nella scuola primaria. Didattica e aspetti psicopedagogici delle scienze motorie, psicomotricità, gioco e animazione si uniscono a legislazione, nuova valutazione nella primaria, politiche sportive scolastiche, informatica e inglese.", "L’obiettivo è sviluppare il potenziale motorio, cognitivo e sociale dei bambini con un approccio inclusivo."],
+  "o": ["Programmare attività motorie per la primaria", "Applicare la psicomotricità e il gioco", "Conoscere progetti nazionali di sport a scuola", "Valutare in modo coerente con la normativa"],
+  "d": "Insegnanti e aspiranti insegnanti, educatori e laureati in scienze motorie."
+ },
+ "psicologia-scolastica": {
+  "i": ["La psicologia al servizio della scuola: osservazione, consulenza e supporto nelle diverse fasi dello sviluppo. Il master unisce psicologia dell’apprendimento, dello sviluppo e scolastica a pedagogia, stili di pensiero e competenze emotive e motivazionali.", "Un modulo è dedicato agli aspetti psicologici dell’educazione online e al lavoro di rete tra scuola, famiglia e territorio."],
+  "o": ["Osservare e monitorare i processi di apprendimento", "Riconoscere stili cognitivi e di apprendimento", "Gestire emozioni e motivazione in classe", "Lavorare in rete con famiglie e servizi"],
+  "d": "Docenti, aspiranti docenti, educatori e laureati in psicologia."
+ },
+ "risk-management-e-total-quality-management": {
+  "i": ["Rendere le cure più sicure è un obiettivo prioritario per ogni azienda sanitaria. Il master di II livello fornisce metodi e strumenti per gestire il rischio clinico, prima e dopo l’errore, e per costruire sistemi di qualità totale.", "Si parte dalla legislazione sanitaria per arrivare a strumenti di analisi, prevenzione e miglioramento continuo."],
+  "o": ["Conoscere metodi e strumenti di risk management", "Analizzare eventi avversi e quasi errori", "Costruire sistemi di gestione della qualità", "Promuovere la sicurezza di pazienti e operatori"],
+  "d": "Medici, professionisti sanitari e dirigenti con laurea magistrale."
+ },
+ "risk-management-in-sanita": {
+  "i": ["La sicurezza del paziente è al centro della sanità moderna. Il master di I livello insegna a prevenire gli errori, a gestirli quando avvengono e a evitare che si ripetano.", "Il programma comprende legislazione sanitaria, strumenti di analisi del rischio e cultura della sicurezza."],
+  "o": ["Conoscere i fondamenti della gestione del rischio", "Applicare strumenti di prevenzione degli errori", "Analizzare gli eventi avversi", "Diffondere la cultura della sicurezza"],
+  "d": "Infermieri e professionisti sanitari."
+ },
+ "risorse-umane-lavoro-e-organizzazione-i-livello": {
+  "i": ["Un master completo sulla gestione delle persone nelle organizzazioni. Reclutamento, selezione ed employer branding, progettazione organizzativa, pianificazione del personale, smart working, motivazione e leadership sono i temi principali.", "Si sviluppano anche competenze di team building, problem solving e decision making."],
+  "o": ["Gestire selezione, formazione e valutazione", "Progettare strutture e ruoli organizzativi", "Introdurre nuove forme di lavoro", "Motivare e guidare persone e gruppi"],
+  "d": "Laureati in discipline economiche, giuridiche, psicologiche e sociali, professionisti delle risorse umane."
+ },
+ "sanita-4-0-esperto-nella-gestione-dello-spettro-autistico": {
+  "i": ["Diagnosi, trattamento e sostegno delle persone nello spettro autistico, con l’aiuto delle tecnologie della sanità 4.0. Il master parte dai diritti del paziente e dalle basi biologiche e neurofisiologiche dell’autismo.", "Si lavora sul piano clinico e terapeutico e sul supporto alla famiglia, per favorire inclusione e qualità della vita."],
+  "o": ["Conoscere le basi biologiche dell’autismo", "Riconoscere e valutare la neuroatipicità", "Utilizzare tecnologie innovative nel trattamento", "Sostenere famiglie e caregiver"],
+  "d": "Professionisti sanitari, psicologi, terapisti ed educatori."
+ },
+ "scienze-informative-per-la-sicurezza-ii-livello": {
+  "i": ["Un master di II livello su sicurezza nazionale, intelligence e minacce transnazionali. Diritto internazionale, protezione delle infrastrutture critiche, analisi informativa, terrorismo e conflitti non convenzionali, finanziamenti illeciti e riciclaggio compongono il programma.", "Si acquisiscono strumenti teorici e pratici per valutare e mitigare i rischi."],
+  "o": ["Conoscere normative e strutture della sicurezza", "Applicare metodi di analisi informativa", "Comprendere terrorismo e minacce ibride", "Contrastare finanziamenti illeciti e riciclaggio"],
+  "d": "Laureati magistrali, appartenenti alle forze dell’ordine e alle forze armate, professionisti della sicurezza."
+ },
+ "scienze-motorie-in-sanita": {
+  "i": ["Un master che apre ai laureati in scienze motorie il lavoro nelle équipe sanitarie, soprattutto territoriali. Il focus è l’attività motoria adattata per le persone fragili e con disabilità.", "Un percorso per contribuire concretamente al benessere e alla qualità della vita delle persone."],
+  "o": ["Progettare attività motoria adattata", "Lavorare in équipe multidisciplinari", "Intervenire sulle fragilità", "Collaborare con i servizi sanitari territoriali"],
+  "d": "Laureati in scienze motorie."
+ },
+ "social-media-digital-manager-comunicazione-pubblica-digitale-e-intelligenza-artificiale-applicata-ed-etica-2": {
+  "i": ["Un master di II livello sulla gestione strategica della comunicazione digitale, dei social media e dell’intelligenza artificiale, con un’attenzione particolare alla pubblica amministrazione. Comunicazione pubblica, public management e media management si uniscono a IA, etica e regolamentazione.", "Forma professionisti capaci di comunicare con cittadini e utenti in modo efficace e responsabile."],
+  "o": ["Gestire la comunicazione digitale di enti e aziende", "Pianificare strategie social", "Usare l’intelligenza artificiale in modo etico", "Conoscere le regole su IA e media digitali"],
+  "d": "Laureati magistrali, comunicatori e dipendenti pubblici."
+ },
+ "specialista-in-mercato-e-servizi-per-il-lavoro-nei-cpi-ii-livello": {
+  "i": ["Un master per prepararsi ai concorsi dei centri per l’impiego delle diverse regioni. Diritto del lavoro e legislazione sociale, normativa dei servizi per il lavoro e fondi comunitari si affiancano a diritto amministrativo, anticorruzione e ordinamento degli enti locali.", "Utile anche a chi lavora già nella pubblica amministrazione e vuole aggiornarsi."],
+  "o": ["Conoscere la normativa dei servizi per il lavoro", "Applicare diritto del lavoro e legislazione sociale", "Gestire programmi finanziati dai fondi europei", "Prepararsi ai concorsi nei centri per l’impiego"],
+  "d": "Laureati magistrali e dipendenti pubblici."
+ },
+ "storytelling-scrivere-un-film-un-romanzo-realizzare-un-podcast-i-livello": {
+  "i": ["Un master per imparare a riconoscere, analizzare e creare storie, partendo da tre modelli: letteratura, teatro e cinema. Si scrive un romanzo, una sceneggiatura e un podcast, e si scopre il mestiere dell’editor.", "Un percorso pratico per chi vuole lavorare con la scrittura in ambito artistico e creativo."],
+  "o": ["Conoscere i principi della narrazione", "Scrivere romanzi, sceneggiature e podcast", "Analizzare generi e strutture narrative", "Comprendere il lavoro dell’editor"],
+  "d": "Laureati che vogliono lavorare nella scrittura, nell’editoria, nel cinema e nei media."
+ },
+ "tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-formazione-continua-e-nei-contesti-professionali": {
+  "i": ["La didattica digitale applicata alla formazione degli adulti e ai contesti professionali. Il master unisce pedagogia, informatica per l’educazione, coding e media education a tecniche di formazione a distanza, diritto digitale ed etica della comunicazione.", "Uno strumento per progettare corsi online efficaci in aziende, enti e scuole."],
+  "o": ["Progettare percorsi di formazione a distanza", "Usare strumenti digitali per l’apprendimento", "Valutare nella media education", "Conoscere diritto ed etica del digitale"],
+  "d": "Docenti, formatori, educatori e operatori della formazione professionale."
+ },
+ "tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-insegnamento-di-sostegno": {
+  "i": ["Tecnologie e didattica digitale al servizio dell’inclusione. Alla parte comune su pedagogia, informatica per l’educazione, coding e media education si aggiunge un indirizzo dedicato al sostegno.", "Si studiano tecnologie per i bisogni educativi speciali e tecniche di didattica online in presenza di deficit."],
+  "o": ["Usare le tecnologie per l’inclusione", "Progettare didattica online accessibile", "Conoscere la pedagogia dell’intervento speciale", "Supportare studenti con bisogni educativi speciali"],
+  "d": "Insegnanti di sostegno e curricolari, aspiranti docenti ed educatori."
+ },
+ "tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-dellinfanzia": {
+  "i": ["La didattica digitale pensata per i più piccoli. Alla parte comune su pedagogia, informatica per l’educazione, coding e media education si aggiunge un indirizzo dedicato alla scuola dell’infanzia.", "Si approfondiscono educazione mediale, didattica digitale e fondamenti pedagogici per la fascia 0-3 anni."],
+  "o": ["Progettare attività digitali per l’infanzia", "Introdurre il coding in modo giocoso", "Educare a un uso consapevole dei media", "Conoscere la pedagogia della prima infanzia"],
+  "d": "Docenti della scuola dell’infanzia, educatori e aspiranti insegnanti."
+ },
+ "tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-primaria": {
+  "i": ["La didattica digitale e a distanza per la scuola primaria. Alla parte comune su pedagogia, informatica per l’educazione, coding e media education si aggiunge un indirizzo dedicato alla primaria.", "Storytelling, cultura visuale ed educazione mediale aiutano a coinvolgere i bambini anche online."],
+  "o": ["Progettare attività digitali per la primaria", "Usare storytelling e cultura visuale", "Introdurre il coding", "Gestire la didattica a distanza"],
+  "d": "Docenti della scuola primaria e aspiranti insegnanti."
+ },
+ "tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-secondaria-di-i-e-ii-grado": {
+  "i": ["La didattica digitale e a distanza per la scuola secondaria. Alla parte comune su pedagogia, informatica per l’educazione, coding e media education si aggiunge un indirizzo dedicato alla secondaria di primo e secondo grado.", "Storytelling, cultura visuale e tecniche di formazione a distanza completano il percorso."],
+  "o": ["Progettare lezioni digitali per la secondaria", "Gestire la didattica a distanza", "Usare storytelling e media education", "Valutare gli apprendimenti online"],
+  "d": "Docenti della scuola secondaria e aspiranti insegnanti."
+ },
+ "transizione-ambientale-i-livello": {
+  "i": ["Le competenze economiche, giuridiche e tecniche per gestire la transizione ambientale, con un’attenzione particolare alla pubblica amministrazione. Diritto ambientale, economia circolare, gestione dei rifiuti, certificazioni ambientali e fondi comunitari sono al centro del programma.", "Utile per i concorsi e per l’aggiornamento di chi lavora negli enti."],
+  "o": ["Conoscere il diritto ambientale", "Applicare i principi dell’economia circolare", "Gestire rifiuti e politiche urbane sostenibili", "Programmare progetti finanziati"],
+  "d": "Laureati e dipendenti pubblici."
+ },
+ "transizione-ambientale-ii-livello": {
+  "i": ["La versione di II livello del master sulla transizione ambientale. Al diritto e all’economia ambientale si aggiungono beni pubblici, governo del territorio, economia circolare, certificazioni e fondi comunitari.", "Pensato per chi vuole guidare progetti di sostenibilità negli enti pubblici."],
+  "o": ["Approfondire diritto ed economia dell’ambiente", "Gestire il governo del territorio", "Applicare strumenti di transizione ecologica", "Coordinare progetti finanziati"],
+  "d": "Laureati magistrali e funzionari pubblici."
+ },
+ "transizione-digitale-nella-pa-i-livello": {
+  "i": ["Un master per gestire la digitalizzazione della pubblica amministrazione, in una prospettiva tecnica, giuridica ed economica. Economia e diritto della digitalizzazione, protezione dei dati, piattaforme abilitanti e comunicazione digitale sono i temi principali.", "Utile per chi vuole lavorare negli uffici per la transizione digitale o aggiornare le proprie competenze."],
+  "o": ["Conoscere la normativa sulla digitalizzazione", "Gestire piattaforme e servizi digitali", "Applicare la protezione dei dati", "Comunicare con i cittadini attraverso il digitale"],
+  "d": "Laureati e dipendenti pubblici."
+ },
+ "trasparenza-e-anticorruzione-nella-pa-ii-livello": {
+  "i": ["Trasparenza dell’azione amministrativa e correttezza negli appalti pubblici. Il master di II livello approfondisce anticorruzione, contratti pubblici e normativa europea, governance e gestione del rischio, digitalizzazione e protezione dei dati.", "Utile per i concorsi e per i funzionari che seguono gare e contratti."],
+  "o": ["Applicare la normativa su trasparenza e anticorruzione", "Gestire procedure di appalto corrette", "Valutare e prevenire i rischi", "Proteggere i dati personali"],
+  "d": "Laureati magistrali e funzionari pubblici."
+ },
+ "valutazione-motoria-e-posturale": {
+  "i": ["Un master per rilevare e correggere le alterazioni della postura. Si studiano posturologia generale e sportiva, valutazione posturale con strumenti computerizzati e attività motoria preventiva, compensativa e rieducativa.", "Si impara a usare sistemi avanzati di analisi statica e dinamica del movimento."],
+  "o": ["Conoscere la posturologia clinica e sportiva", "Usare sistemi di analisi posturale", "Valutare la persona nella sua globalità", "Progettare programmi di rieducazione posturale"],
+  "d": "Laureati in scienze motorie, fisioterapisti e professionisti sanitari."
+ }
+}

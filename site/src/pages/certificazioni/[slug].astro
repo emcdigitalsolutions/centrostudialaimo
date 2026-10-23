@@ -1,0 +1,30 @@
+---
+import GenericCourse from '../../components/GenericCourse.astro';
+import { certificazioni, ROUTES, type Corso } from '../../lib/catalog';
+import { SITE } from '../../site.config';
+export function getStaticPaths() {
+  return certificazioni.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Corso };
+const ling = c.tipo === 'linguistica';
+const tipo = ling ? 'Certificazione linguistica' : 'Certificazione informatica';
+---
+<GenericCourse
+  title={c.title}
+  kind={tipo}
+  body={c.body}
+  url={ROUTES.cert(c.slug)}
+  hours={c.durata}
+  crumbs={[{ label: 'Certificazioni', href: '/certificazioni/' }, { label: c.title }]}
+  chips={[tipo, c.durata ?? '', 'Online']}
+  facts={[
+    { icon: ling ? 'language' : 'monitor', label: 'Tipologia', value: tipo },
+    { icon: 'clock', label: 'Durata', value: c.durata ?? '' },
+    { icon: 'laptop', label: 'Modalità', value: 'Online, piattaforma h24' },
+    ...(SITE.showPrices && c.prezzo ? [{ icon: 'euro', label: 'Quota', value: c.prezzo }] : []),
+  ]}
+  note={ling ? 'Certificazione valida per il punteggio docenti secondo le tabelle ministeriali: ti diciamo quanti punti vale nel tuo caso.' : 'Esami online. Valida per il punteggio nelle graduatorie dove prevista dalle tabelle ministeriali.'}
+  related={certificazioni.filter((x) => x.slug !== c.slug && x.tipo === c.tipo).slice(0, 3).map((x) => ({ href: ROUTES.cert(x.slug), title: x.title, chips: [{ t: x.tipo === 'linguistica' ? 'Linguistica' : 'Informatica', c: x.tipo === 'linguistica' ? 'coral' : 'blue' }], meta: x.durata || 'Online', accent: x.tipo === 'linguistica' ? 'var(--c-coral)' : 'var(--c-blue)' }))}
+  relatedTitle={ling ? 'Altre certificazioni linguistiche' : 'Altre certificazioni informatiche'}
+  keywords={`${c.title.toLowerCase()}, ${tipo.toLowerCase()}, certificazione punteggio GPS, certificazione docenti, certificazione ATA`}
+/>

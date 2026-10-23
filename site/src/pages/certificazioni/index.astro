@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Faq from '../../components/Faq.astro';
+import Icon from '../../components/Icon.astro';
+import { certificazioni, pacchetti, ROUTES, excerpt } from '../../lib/catalog';
+const inf = certificazioni.filter((c) => c.tipo === 'informatica');
+const lin = certificazioni.filter((c) => c.tipo === 'linguistica');
+const faq = [
+  { q: 'Le certificazioni informatiche valgono per il punteggio ATA e docenti?', a: 'Sì, le certificazioni riconosciute come la Pekit Expert, DigComp 2.2 e DigCompEdu sono valutabili nelle graduatorie ATA e, dove previsto, nelle GPS dei docenti, secondo le tabelle ministeriali in vigore.' },
+  { q: 'Gli esami si svolgono online?', a: 'Sì: corso e prove d’esame si svolgono online, su piattaforma accessibile 24 ore su 24.' },
+  { q: 'Quale livello di inglese mi serve?', a: 'Dipende dall’obiettivo: B2 è il livello minimo per molti concorsi e per l’inglese alla primaria, C1 è richiesto per i docenti CLIL. Ti aiutiamo a scegliere il livello giusto.' },
+  { q: 'Posso combinare più certificazioni?', a: 'Sì, con i pacchetti punteggio GPS unisci certificazioni informatiche, linguistiche e il perfezionamento CLIL a condizioni più vantaggiose.' },
+];
+---
+<Base title="Certificazioni informatiche e linguistiche" description="Certificazioni informatiche (Pekit Expert, DigComp 2.2, DigCompEdu, LIM, Tablet, Coding, Dattilografia) e linguistiche (Inglese B2, C1, C2 e CLIL) online, valide per il punteggio di docenti e personale ATA." keywords="certificazioni informatiche, certificazione Pekit, DigComp 2.2, DigCompEdu, certificazione inglese B2 C1 C2, CLIL, punteggio ATA, punteggio GPS">
+  <PageHero
+    eyebrow="Corsi e certificazioni"
+    title={`Competenze certificate, <em class="serif" style="color:var(--c-amber)">punti che contano</em>.`}
+    lead="Certificazioni informatiche e linguistiche riconosciute, con corso ed esame online: per il punteggio ATA e GPS, per i concorsi e per il curriculum."
+    crumbs={[{ label: 'Certificazioni' }]}
+  />
+  <section class="section--tight" id="informatiche">
+    <div class="wrap">
+      <div class="cert-h" data-reveal><span class="cert-ic" style="--c:var(--c-blue)"><Icon name="monitor" size={28} /></span><div><h2>Certificazioni informatiche</h2><p>Alfabetizzazione digitale, didattica con LIM e tablet, coding e dattilografia.</p></div></div>
+      <div class="grid-cards">
+        {inf.map((c) => <CourseCard href={ROUTES.cert(c.slug)} title={c.title} sub={excerpt(c.body, 110)} accent="var(--c-blue)" chips={[{ t: 'Informatica', c: 'blue' }]} meta={c.durata || 'Online h24'} />)}
+      </div>
+    </div>
+  </section>
+  <section class="section--tight" id="linguistiche">
+    <div class="wrap">
+      <div class="cert-h" data-reveal><span class="cert-ic" style="--c:var(--c-coral)"><Icon name="language" size={28} /></span><div><h2>Certificazioni linguistiche</h2><p>Inglese B2, C1 e C2 con corso online e il percorso CLIL per i docenti.</p></div></div>
+      <div class="grid-cards">
+        {lin.map((c) => <CourseCard href={ROUTES.cert(c.slug)} title={c.title} sub={excerpt(c.body, 110)} accent="var(--c-coral)" chips={[{ t: 'Linguistica', c: 'coral' }]} meta={c.durata || 'Corso online + esame'} />)}
+        <CourseCard href="/area-scuola/punteggio-gps/" title="Pacchetti punteggio GPS" sub={`${pacchetti.length} combinazioni di certificazioni informatiche, linguistiche e CLIL per salire in graduatoria.`} accent="var(--c-amber)" chips={[{ t: 'Pacchetti', c: 'amber' }]} meta="Fino a 12 punti" />
+      </div>
+    </div>
+  </section>
+  <Faq items={faq} />
+  <CtaBand />
+</Base>
+
+<style>
+  .cert-h { display: flex; gap: 18px; align-items: center; margin-bottom: 26px; }
+  .cert-h h2 { margin: 0 0 4px; font-size: clamp(1.6rem, 2.8vw, 2.3rem); }
+  .cert-h p { margin: 0; color: var(--c-muted); }
+  .cert-ic { flex: none; width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: var(--c); color: #fff; box-shadow: 0 12px 24px -10px var(--c); }
+</style>

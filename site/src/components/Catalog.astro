@@ -1,0 +1,112 @@
+---
+// Catalogo filtrabile lato client: le card sono già nell'HTML (SEO), i filtri le mostrano/nascondono.
+import Icon from './Icon.astro';
+interface Filter { key: string; label: string; options: { v: string; label: string; n?: number }[] }
+interface Props { filters?: Filter[]; total: number; placeholder?: string; noun?: [string, string] }
+const { filters = [], total, placeholder = 'Filtra per nome…', noun = ['corso', 'corsi'] } = Astro.props;
+---
+<div class="cat" data-catalog data-noun1={noun[0]} data-noun2={noun[1]}>
+  <div class="cat__bar">
+    <label class="cat__search">
+      <Icon name="search" size={20} />
+      <span class="sr-only">Filtra</span>
+      <input type="search" placeholder={placeholder} data-cat-q autocomplete="off" />
+    </label>
+    {filters.map((f) => (
+      <div class="cat__group" role="group" aria-label={f.label} data-cat-filter={f.key}>
+        <button type="button" class="cat__opt is-on" data-v="">Tutti</button>
+        {f.options.map((o) => <button type="button" class="cat__opt" data-v={o.v}>{o.label}{o.n != null && <small>{o.n}</small>}</button>)}
+      </div>
+    ))}
+    <p class="cat__count" aria-live="polite"><strong data-cat-n>{total}</strong> <span data-cat-noun>{total === 1 ? noun[0] : noun[1]}</span></p>
+  </div>
+  <div class="grid-cards" data-cat-grid>
+    <slot />
+  </div>
+  <div class="cat__empty" data-cat-empty hidden>
+    <p>Nessun risultato con questi filtri.</p>
+    <button type="button" class="btn btn--ghost btn--sm" data-cat-reset>Azzera i filtri</button>
+  </div>
+</div>
+
+<style>
+  .cat__bar { position: sticky; top: calc(var(--header-h) + 10px); z-index: 20; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; padding: 14px; margin-bottom: 26px; background: rgb(255 255 255 / 0.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 20px; box-shadow: var(--shadow); border: 1px solid rgb(13 26 58 / 0.06); transition: top 0.4s var(--ease); }
+  :global(.hdr.is-hidden) ~ main .cat__bar { top: 10px; }
+  .cat__search { flex: 1 1 260px; display: flex; align-items: center; gap: 10px; padding: 0 14px; height: 46px; border-radius: 14px; background: var(--c-paper); color: var(--c-muted); }
+  .cat__search input { flex: 1; min-width: 0; border: 0; background: none; outline: none; font: 500 1rem var(--f-body); color: var(--c-ink); }
+  .cat__group { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cat__opt { display: inline-flex; align-items: center; gap: 6px; border: 0; padding: 9px 14px; border-radius: 999px; background: var(--c-paper); font: 600 0.88rem/1 var(--f-body); color: var(--c-ink); transition: background 0.2s, color 0.2s, transform 0.2s; }
+  .cat__opt small { font-size: 0.72rem; opacity: 0.6; }
+  .cat__opt:hover { background: var(--c-paper-2); }
+  .cat__opt.is-on { background: var(--c-ink); color: #fff; }
+  .cat__count { margin: 0 0 0 auto; font-size: 0.92rem; color: var(--c-muted); white-space: nowrap; }
+  .cat__count strong { color: var(--c-ink); font: 800 1.15rem var(--f-display); }
+  .cat__empty { text-align: center; padding: 48px 16px; color: var(--c-muted); }
+  :global([data-cat-grid] > .is-hidden) { display: none !important; }
+  @media (max-width: 760px) {
+    .cat__bar { position: static; }
+    .cat__group { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 4px; scrollbar-width: none; }
+    .cat__opt { flex: none; }
+    .cat__count { margin-left: 0; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-catalog]').forEach((root) => {
+    const q = root.querySelector<HTMLInputElement>('[data-cat-q]')!;
+    const cards = [...root.querySelectorAll<HTMLElement>('[data-cat-grid] > *')];
+    const groups = [...root.querySelectorAll<HTMLElement>('[data-cat-filter]')];
+    const nEl = root.querySelector('[data-cat-n]')!;
+    const nounEl = root.querySelector('[data-cat-noun]')!;
+    const empty = root.querySelector<HTMLElement>('[data-cat-empty]')!;
+    const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const text = cards.map((c) => norm(c.textContent || ''));
+    const state: Record<string, string> = {};
+
+    const params = new URLSearchParams(location.search);
+    groups.forEach((g) => {
+      const k = g.dataset.catFilter!;
+      const v = params.get(k) || '';
+      state[k] = v;
+      g.querySelectorAll<HTMLButtonElement>('.cat__opt').forEach((b) => {
+        b.classList.toggle('is-on', b.dataset.v === v);
+        b.setAttribute('aria-pressed', String(b.dataset.v === v));
+        b.addEventListener('click', () => {
+          state[k] = b.dataset.v || '';
+          g.querySelectorAll('.cat__opt').forEach((x) => { x.classList.toggle('is-on', x === b); x.setAttribute('aria-pressed', String(x === b)); });
+          apply(true);
+        });
+      });
+    });
+    q.value = params.get('q') || '';
+
+    function apply(push = false) {
+      const words = norm(q.value.trim()).split(/\s+/).filter(Boolean);
+      let n = 0;
+      cards.forEach((c, i) => {
+        const okF = Object.entries(state).every(([k, v]) => !v || (c.dataset[k] || '').split(' ').includes(v));
+        const okQ = words.every((w) => text[i].includes(w));
+        const show = okF && okQ;
+        c.classList.toggle('is-hidden', !show);
+        if (show) n++;
+      });
+      nEl.textContent = String(n);
+      nounEl.textContent = n === 1 ? root.dataset.noun1! : root.dataset.noun2!;
+      empty.hidden = n > 0;
+      if (push) {
+        const p = new URLSearchParams();
+        Object.entries(state).forEach(([k, v]) => v && p.set(k, v));
+        if (q.value.trim()) p.set('q', q.value.trim());
+        history.replaceState(null, '', `${location.pathname}${p.toString() ? '?' + p : ''}`);
+      }
+    }
+    let t: number | undefined;
+    q.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(() => apply(true), 120); });
+    root.querySelector('[data-cat-reset]')!.addEventListener('click', () => {
+      q.value = '';
+      groups.forEach((g) => { state[g.dataset.catFilter!] = ''; g.querySelectorAll('.cat__opt').forEach((b, i) => b.classList.toggle('is-on', i === 0)); });
+      apply(true);
+    });
+    apply();
+  });
+</script>

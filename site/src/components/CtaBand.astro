@@ -1,0 +1,31 @@
+---
+import Icon from './Icon.astro';
+interface Props { variant?: 'cfu' | 'orienta' }
+const { variant = 'orienta' } = Astro.props;
+const c = variant === 'cfu'
+  ? { eyebrow: 'Valutazione gratuita', title: 'Hai già sostenuto esami all’università?', text: 'Mandaci la tua carriera: la commissione didattica dell’ateneo valuta quali crediti (CFU) ti vengono riconosciuti e ricevi un preventivo dei costi. Gratis e senza impegno.', cta: 'Richiedi la valutazione CFU', href: '/universita/valutazione-cfu/', icon: 'file' }
+  : { eyebrow: 'Orientamento gratuito', title: 'Non sai quale percorso scegliere?', text: 'Un orientatore analizza titolo di studio, obiettivi e punteggio in graduatoria e ti propone il percorso più adatto, con tempi e costi chiari.', cta: 'Prenota una consulenza', href: '/contatti/', icon: 'route' };
+---
+<section class="section--tight">
+  <div class="wrap">
+    <div class="band grain" data-reveal>
+      <div class="band__ic"><Icon name={c.icon} size={34} /></div>
+      <div class="band__txt">
+        <p class="eyebrow eyebrow--light">{c.eyebrow}</p>
+        <h2>{c.title}</h2>
+        <p>{c.text}</p>
+      </div>
+      <a href={c.href} class="btn btn--amber">{c.cta} <Icon name="arrow" class="arrow" /></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .band { position: relative; overflow: hidden; isolation: isolate; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 28px; padding: clamp(28px, 4vw, 48px); border-radius: var(--r-lg); background: linear-gradient(120deg, var(--c-blue), var(--c-ink) 70%); color: #c9d1e6; }
+  .band::after { content: ''; position: absolute; z-index: -1; width: 380px; height: 380px; right: -100px; bottom: -200px; border-radius: 50%; background: radial-gradient(circle, rgb(255 178 30 / 0.45), transparent 70%); }
+  .band h2 { color: #fff; font-size: clamp(1.5rem, 2.6vw, 2.2rem); margin-bottom: 0.3em; }
+  .band p:last-child { margin: 0; max-width: 60ch; }
+  .band .eyebrow { margin-bottom: 0.6rem; }
+  .band__ic { width: 76px; height: 76px; border-radius: 22px; display: grid; place-items: center; background: rgb(255 255 255 / 0.1); color: var(--c-amber); border: 1px solid rgb(255 255 255 / 0.15); }
+  @media (max-width: 860px) { .band { grid-template-columns: minmax(0, 1fr); } }
+</style>

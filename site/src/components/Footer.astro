@@ -1,0 +1,67 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { SITE, phoneHref, waHref } from '../site.config';
+const cols = [
+  { t: 'Università', l: [['Lauree triennali', '/universita/lauree-triennali/'], ['Lauree magistrali', '/universita/lauree-magistrali/'], ['Corsi singoli', '/universita/corsi-singoli/'], ['Valutazione CFU', '/universita/valutazione-cfu/']] },
+  { t: 'Formazione', l: [['Master', '/master/'], ['Corsi di perfezionamento', '/area-scuola/corsi-di-perfezionamento/'], ['Percorsi abilitanti', '/area-scuola/percorsi-abilitanti/'], ['Punteggio GPS', '/area-scuola/punteggio-gps/'], ['Corsi regionali', '/corsi-regionali/']] },
+  { t: 'Centro Studi', l: [['Certificazioni', '/certificazioni/'], ['Lezioni private', '/lezioni-private/'], ['Chi siamo', '/chi-siamo/'], ['Contatti', '/contatti/'], ['Privacy e cookie', '/privacy/']] },
+];
+const addr = [SITE.address.street, [SITE.address.cap, SITE.address.city, SITE.address.province && `(${SITE.address.province})`].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+---
+<footer class="ftr grain">
+  <div class="wrap">
+    <div class="ftr__cta">
+      <p class="ftr__big">Il tuo prossimo traguardo<br /><em class="serif">comincia da una scelta.</em></p>
+      <a href="/contatti/" class="btn btn--amber">Parla con un orientatore <Icon name="arrow" class="arrow" /></a>
+    </div>
+    <div class="ftr__grid">
+      <div class="ftr__brand">
+        <a href="/" aria-label="Centro Studi Alaimo, home"><Logo variant="light" size={48} /></a>
+        <p>{SITE.tagline}: corsi di laurea online, master, perfezionamenti, certificazioni e lezioni private, con un orientatore che ti segue dall’iscrizione al traguardo.</p>
+        <ul class="ftr__contacts">
+          <li><Icon name="mail" size={18} /><a href={`mailto:${SITE.email.info}`}>{SITE.email.info}</a></li>
+          <li><Icon name="file" size={18} /><a href={`mailto:${SITE.email.valutazioni}`}>{SITE.email.valutazioni}</a></li>
+          <li><Icon name="briefcase" size={18} /><a href={`mailto:${SITE.email.amministrazione}`}>{SITE.email.amministrazione}</a></li>
+          {SITE.phone && <li><Icon name="phone" size={18} /><a href={phoneHref}>{SITE.phone}</a></li>}
+          {waHref && <li><Icon name="whatsapp" size={18} /><a href={waHref} target="_blank" rel="noopener">WhatsApp</a></li>}
+          {addr && <li><Icon name="pin" size={18} /><span>{addr}</span></li>}
+        </ul>
+      </div>
+      {cols.map((c) => (
+        <nav aria-label={c.t}>
+          <p class="ftr__h">{c.t}</p>
+          <ul>{c.l.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul>
+        </nav>
+      ))}
+    </div>
+    <div class="ftr__bottom">
+      <p>© <span data-year>{new Date().getFullYear()}</span> {SITE.name}{SITE.vat && ` · P.IVA ${SITE.vat}`} · <a href="/privacy/">Privacy e cookie</a></p>
+      <p>Sito realizzato da <a href="https://emcdigitalsolutions.it" target="_blank" rel="noopener">EMC Digital Solutions</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('[data-year]').forEach((e) => (e.textContent = String(new Date().getFullYear())));
+</script>
+
+<style>
+  .ftr { position: relative; background: var(--c-ink); color: #a9b4d0; padding: clamp(56px, 8vw, 96px) 0 28px; overflow: hidden; isolation: isolate; }
+  .ftr::after { content: ''; position: absolute; z-index: -1; width: 700px; height: 700px; right: -260px; top: -320px; background: radial-gradient(circle, rgb(40 72 216 / 0.55), transparent 65%); }
+  .ftr__cta { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: clamp(40px, 6vw, 64px); border-bottom: 1px solid rgb(255 255 255 / 0.1); }
+  .ftr__big { font: 800 clamp(2rem, 4.6vw, 3.6rem)/1.02 var(--f-display); letter-spacing: -0.04em; color: #fff; margin: 0; }
+  .ftr__big em { color: var(--c-amber); }
+  .ftr__grid { display: grid; grid-template-columns: 1.6fr repeat(3, 1fr); gap: 40px; padding: 48px 0; }
+  .ftr__brand p { margin: 20px 0; max-width: 42ch; font-size: 0.97rem; }
+  .ftr__contacts { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 0.95rem; }
+  .ftr__contacts li { display: flex; gap: 10px; align-items: center; }
+  .ftr__contacts :global(svg) { color: var(--c-amber); flex: none; }
+  .ftr a:not(.btn) { color: #dfe5f4; text-decoration: none; transition: color 0.2s; }
+  .ftr a:not(.btn):hover { color: var(--c-amber); }
+  .ftr__h { font: 700 0.78rem/1 var(--f-body); text-transform: uppercase; letter-spacing: 0.14em; color: #fff; margin-bottom: 18px; }
+  .ftr nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ftr__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-top: 24px; border-top: 1px solid rgb(255 255 255 / 0.1); font-size: 0.86rem; }
+  .ftr__bottom p { margin: 0; }
+  @media (max-width: 900px) { .ftr__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ftr__brand { grid-column: 1 / -1; } }
+  @media (max-width: 480px) { .ftr__grid { grid-template-columns: minmax(0, 1fr); } }
+</style>

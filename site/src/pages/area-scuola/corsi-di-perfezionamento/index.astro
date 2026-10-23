@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import Catalog from '../../../components/Catalog.astro';
+import CourseCard from '../../../components/CourseCard.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { perfezionamenti, ROUTES } from '../../../lib/catalog';
+const n60 = perfezionamenti.filter((p) => p.cfu === '60').length;
+const n120 = perfezionamenti.filter((p) => p.cfu === '120').length;
+---
+<Base title="Corsi di perfezionamento per docenti 60 e 120 CFU" description={`${perfezionamenti.length} corsi di perfezionamento online per docenti: annuali da 60 CFU e biennali da 120 CFU su sostegno, inclusione, CLIL, BES, DSA, coding e didattica digitale. Validi per il punteggio in graduatoria.`} keywords="corsi di perfezionamento docenti, perfezionamento 60 CFU, perfezionamento 120 CFU, punteggio GPS, corsi sostegno, CLIL, BES, DSA">
+  <PageHero
+    eyebrow="Area Scuola"
+    title={`Corsi di perfezionamento <em class="serif" style="color:var(--c-amber)">per docenti</em>`}
+    lead="Un anno accademico e sessanta crediti (o due anni e centoventi): il taglio più diffuso per far crescere il punteggio in graduatoria e aggiornare la propria didattica."
+    crumbs={[{ label: 'Area Scuola', href: '/area-scuola/' }, { label: 'Corsi di perfezionamento' }]}
+  >
+    <div class="phero__chips"><span class="chip chip--dark">{n60} annuali · 60 CFU</span><span class="chip chip--dark">{n120} biennali · 120 CFU</span><span class="chip chip--dark">1.500 ore l’anno · online</span></div>
+  </PageHero>
+  <section class="section--tight">
+    <div class="wrap">
+      <Catalog total={perfezionamenti.length} noun={['corso', 'corsi']} placeholder="Cerca (es. sostegno, CLIL, DSA, bullismo)…" filters={[{ key: 'cfu', label: 'Durata', options: [{ v: '60', label: 'Annuali 60 CFU', n: n60 }, { v: '120', label: 'Biennali 120 CFU', n: n120 }] }]}>
+        {perfezionamenti.map((p) => (
+          <CourseCard href={ROUTES.perf(p.slug)} title={p.title} accent="var(--c-mint)" chips={[{ t: `${p.cfu} CFU`, c: 'mint' }, { t: p.cfu === '120' ? 'Biennale' : 'Annuale' }]} meta={p.durata} data={{ cfu: p.cfu ?? '' }} />
+        ))}
+      </Catalog>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

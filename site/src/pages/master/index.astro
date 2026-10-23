@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import MasterList from '../../components/MasterList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import { masters, AREE, ROUTES, type AreaKey } from '../../lib/catalog';
+const icons: Record<AreaKey, string> = { scuola: 'school', completamento: 'target', sanitaria: 'heart', pa: 'landmark', 'post-laurea': 'briefcase' };
+---
+<Base title="Master online di I e II livello" description={`${masters.length} master universitari online di I e II livello da 60 CFU: Mondo Scuola, completamento classe di concorso, Area Sanitaria, Pubblica Amministrazione e Post Laurea.`} keywords="master online, master I livello, master II livello, master 60 CFU, master scuola, master sanitari, master pubblica amministrazione, punteggio GPS">
+  <PageHero
+    eyebrow="Alta formazione"
+    title={`${masters.length} master per <em class="serif" style="color:var(--c-amber)">fare il salto</em>.`}
+    lead="Master universitari di I e II livello da 60 CFU, interamente online: per salire in graduatoria, specializzarti nella tua professione o cambiare strada."
+    crumbs={[{ label: 'Master' }]}
+  />
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="areas">
+        {(Object.keys(AREE) as AreaKey[]).map((a, i) => (
+          <a href={ROUTES.masterArea(a)} class="area" style={`--accent:${AREE[a].color};--d:${i}`} data-reveal>
+            <span class="area__ic"><Icon name={icons[a]} size={26} /></span>
+            <strong>{AREE[a].short}</strong>
+            <span class="area__n">{masters.filter((m) => m.area === a).length} master</span>
+          </a>
+        ))}
+      </div>
+      <MasterList />
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+
+<style>
+  .areas { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 34px; }
+  .area { position: relative; display: grid; gap: 6px; padding: 20px; border-radius: var(--r); background: #fff; text-decoration: none; box-shadow: var(--shadow-sm); overflow: hidden; transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+  .area::after { content: ''; position: absolute; right: -30px; bottom: -30px; width: 90px; height: 90px; border-radius: 50%; background: var(--accent); opacity: 0.12; transition: transform 0.5s var(--ease); }
+  .area:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .area:hover::after { transform: scale(2.4); }
+  .area__ic { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: var(--accent); color: #fff; margin-bottom: 6px; }
+  .area strong { font: 700 1.05rem/1.2 var(--f-display); color: var(--c-ink); }
+  .area__n { font-size: 0.86rem; color: var(--c-muted); }
+  @media (max-width: 1000px) { .areas { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .areas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

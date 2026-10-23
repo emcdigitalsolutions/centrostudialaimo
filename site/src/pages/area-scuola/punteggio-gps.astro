@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Faq from '../../components/Faq.astro';
+import Icon from '../../components/Icon.astro';
+import { SITE, mailto } from '../../site.config';
+const packs = [
+  { id: 'basic', name: 'Basic', color: 'var(--c-mint)', punti: '+3', sub: 'punti GPS', items: ['Certificazione DigComp 2.2 (Accredia)', 'Certificazione DigCompEdu (Accredia)'], for: 'Per iniziare dal digitale' },
+  { id: 'medium', name: 'Medium', color: 'var(--c-blue)', punti: '+6/9', sub: 'punti GPS secondo il livello', items: ['Certificazioni DigComp 2.2 + DigCompEdu', 'Corso di inglese online', 'Certificazione di inglese B2, C1 o C2'], for: 'Digitale e lingua' },
+  { id: 'plus', name: 'Plus', color: 'var(--c-violet)', punti: '+6/9', sub: 'punti GPS secondo il livello', items: ['Corso di perfezionamento CLIL', 'Corso di inglese online', 'Certificazione di inglese B2, C1 o C2'], for: 'Per chi punta sul CLIL' },
+  { id: 'gold', name: 'Gold', color: 'var(--c-amber)', punti: '9-12', sub: 'punti GPS', items: ['Certificazioni DigComp 2.2 + DigCompEdu', 'Corso di perfezionamento CLIL', 'Corso di inglese online', 'Certificazione di inglese B2, C1 o C2'], for: 'Il massimo del punteggio', best: true },
+];
+const faq = [
+  { q: 'Quanti punti valgono le certificazioni nelle GPS?', a: 'Il punteggio dipende dalla tabella di valutazione dei titoli in vigore e dal livello: la certificazione linguistica cresce da B2 a C2 e, abbinata al perfezionamento CLIL, aumenta ulteriormente. Prima dell’iscrizione verifichiamo con te la tabella aggiornata.' },
+  { q: 'Entro quando devo conseguire i titoli?', a: 'I titoli devono essere conseguiti entro la scadenza prevista dall’ordinanza per l’aggiornamento delle graduatorie. Per questo conviene muoversi per tempo: ti indichiamo i tempi medi di ogni percorso.' },
+  { q: 'Posso personalizzare il pacchetto?', a: 'Sì: possiamo combinare certificazioni, perfezionamenti e master in base ai titoli che hai già e al punteggio che vuoi raggiungere.' },
+];
+---
+<Base title="Aumenta il punteggio GPS: pacchetti certificazioni e CLIL" description="Pacchetti per aumentare il punteggio nelle Graduatorie Provinciali per le Supplenze (GPS): certificazioni informatiche DigComp, certificazione di inglese B2, C1, C2 e perfezionamento CLIL, fino a 12 punti." keywords="punteggio GPS, aumentare punteggio graduatorie, certificazione inglese GPS, CLIL punteggio, DigComp punteggio, pacchetti GPS docenti">
+  <PageHero
+    eyebrow="Area Scuola"
+    title={`Sali in graduatoria, <em class="serif" style="color:var(--c-amber)">un titolo alla volta</em>.`}
+    lead="I percorsi che fanno punteggio nelle Graduatorie Provinciali per le Supplenze (GPS), riuniti in pacchetti: certificazioni informatiche, inglese e CLIL."
+    crumbs={[{ label: 'Area Scuola', href: '/area-scuola/' }, { label: 'Punteggio GPS' }]}
+  />
+  <section class="section--tight">
+    <div class="wrap packs">
+      {packs.map((p, i) => (
+        <article id={p.id} class:list={['pack', { 'pack--best': p.best }]} style={`--accent:${p.color};--d:${i}`} data-reveal>
+          {p.best && <span class="pack__badge">Più completo</span>}
+          <p class="pack__for">{p.for}</p>
+          <h2>Pacchetto <span>{p.name}</span></h2>
+          <p class="pack__pts"><strong>{p.punti}</strong><span>{p.sub}</span></p>
+          <ul>{p.items.map((it) => <li><Icon name="check" size={18} stroke={2.4} />{it}</li>)}</ul>
+          <a class="btn btn--block" href={mailto(SITE.email.info, `Pacchetto GPS ${p.name}`, `Buongiorno,\nvorrei informazioni sul pacchetto ${p.name} per il punteggio GPS.\n\nNome:\nTelefono:\nClasse di concorso:\n`)}>Chiedi informazioni <Icon name="arrow" class="arrow" /></a>
+        </article>
+      ))}
+    </div>
+    <p class="wrap packs__note">Punteggi indicativi secondo la tabella di valutazione dei titoli delle GPS: verifichiamo insieme a te i punti effettivi in base ai titoli che hai già.</p>
+  </section>
+  <Faq items={faq} title="Punteggio GPS: cosa sapere" />
+  <CtaBand />
+</Base>
+
+<style>
+  .packs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: stretch; }
+  .pack { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px 24px; background: #fff; border-radius: var(--r-lg); box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent); transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease); }
+  .pack:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .pack--best { background: var(--c-ink); color: #c9d1e6; box-shadow: var(--shadow-lg); }
+  .pack--best h2 { color: #fff; }
+  .pack__badge { position: absolute; top: -14px; right: 20px; background: var(--c-amber); color: var(--c-ink); font: 700 0.75rem/1 var(--f-body); padding: 7px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .pack__for { margin: 0; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); }
+  .pack h2 { font-size: 1.5rem; margin: 0; }
+  .pack__pts { display: flex; align-items: baseline; gap: 8px; margin: 6px 0 4px; }
+  .pack__pts strong { font: 800 2.8rem/1 var(--f-display); letter-spacing: -0.04em; color: var(--accent); }
+  .pack__pts span { font-size: 0.86rem; color: var(--c-muted); }
+  .pack--best .pack__pts span { color: #aeb8d3; }
+  .pack ul { list-style: none; padding: 0; margin: 4px 0 18px; display: grid; gap: 10px; }
+  .pack li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.95rem; }
+  .pack li :global(svg) { color: var(--accent); flex: none; margin-top: 2px; }
+  .pack .btn { margin-top: auto; }
+  .pack--best .btn { --bg: var(--c-amber); --fg: var(--c-ink); }
+  .packs__note { font-size: 0.88rem; color: var(--c-muted); margin-top: 22px; }
+  @media (max-width: 1080px) { .packs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .packs { grid-template-columns: minmax(0, 1fr); } }
+</style>

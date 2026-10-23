@@ -1,0 +1,17 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/PageHero.astro';
+import LaureeList from '../../../components/LaureeList.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { STATS } from '../../../lib/catalog';
+---
+<Base title="Corsi di laurea online triennali e magistrali" description={`Tutti i ${STATS.lauree} corsi di laurea online: ${STATS.triennali} triennali e ${STATS.magistrali} magistrali in Ingegneria, Psicologia, Economia, Giurisprudenza e Lettere. Piani di studio, classi di laurea e valutazione CFU gratuita.`} keywords="corsi di laurea online, università telematica, laurea triennale online, laurea magistrale online, piano di studi, valutazione CFU">
+  <PageHero
+    eyebrow="Università online"
+    title={`${STATS.lauree} corsi di laurea, <em class="serif" style="color:var(--c-amber)">un solo tutor</em> che ti segue.`}
+    lead="Triennali e magistrali da seguire online, con lezioni sempre disponibili, esami in sede e la possibilità di farti riconoscere gli esami già sostenuti. Filtra per facoltà e apri la scheda per il piano di studi completo."
+    crumbs={[{ label: 'Università', href: '/universita/' }, { label: 'Corsi di laurea' }]}
+  />
+  <section class="section--tight"><div class="wrap"><LaureeList /></div></section>
+  <CtaBand variant="cfu" />
+</Base>

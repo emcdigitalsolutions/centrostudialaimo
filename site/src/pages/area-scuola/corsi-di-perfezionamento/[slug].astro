@@ -1,0 +1,32 @@
+---
+import GenericCourse from '../../../components/GenericCourse.astro';
+import { perfezionamenti, ROUTES, type Corso } from '../../../lib/catalog';
+import { SITE } from '../../../site.config';
+export function getStaticPaths() {
+  return perfezionamenti.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props as { c: Corso };
+const anni = c.cfu === '120' ? 'Biennale' : 'Annuale';
+---
+<GenericCourse
+  title={c.title}
+  kind={`Corso di perfezionamento ${anni.toLowerCase()} ${c.cfu} CFU`}
+  body={c.body}
+  program={c.insegnamenti}
+  url={ROUTES.perf(c.slug)}
+  credits={c.cfu}
+  hours={c.durata}
+  crumbs={[{ label: 'Area Scuola', href: '/area-scuola/' }, { label: 'Corsi di perfezionamento', href: '/area-scuola/corsi-di-perfezionamento/' }, { label: c.title }]}
+  chips={['Corso di perfezionamento', anni, `${c.cfu} CFU`, c.durata ?? '', 'Online']}
+  facts={[
+    { icon: 'award', label: 'Tipologia', value: `Perfezionamento ${anni.toLowerCase()}` },
+    { icon: 'grad', label: 'Crediti', value: `${c.cfu} CFU` },
+    { icon: 'clock', label: 'Durata', value: c.durata ?? '' },
+    { icon: 'laptop', label: 'Modalità', value: 'Online, piattaforma h24' },
+    ...(SITE.showPrices && c.prezzo ? [{ icon: 'euro', label: 'Quota', value: c.prezzo }] : []),
+  ]}
+  note="Titolo valutabile nelle graduatorie del personale docente secondo le tabelle ministeriali."
+  related={perfezionamenti.filter((x) => x.slug !== c.slug).slice(0, 3).map((x) => ({ href: ROUTES.perf(x.slug), title: x.title, chips: [{ t: `${x.cfu} CFU`, c: 'mint' }, { t: x.cfu === '120' ? 'Biennale' : 'Annuale' }], meta: x.durata, accent: 'var(--c-mint)' }))}
+  relatedTitle="Altri corsi di perfezionamento"
+  keywords={`corso di perfezionamento ${c.title.toLowerCase()}, perfezionamento ${c.cfu} CFU, punteggio graduatorie docenti, GPS, corsi per docenti online`}
+/>

@@ -1,0 +1,97 @@
+{
+ "scienze-delleconomia-indirizzo-in-green-economy-e-sostenibilita": {
+  "i": ["Una magistrale in economia orientata alla transizione ecologica. Economia dell’ambiente e dello sviluppo, strategia, programmazione e controllo si uniscono a green marketing, nuove tecnologie ed economia circolare, diritto commerciale e tributario avanzato.", "Forma economisti capaci di guidare imprese ed enti verso modelli sostenibili e di gestire progetti finanziati in ambito ambientale."],
+  "o": ["Valutare l’impatto economico delle politiche ambientali", "Applicare i principi dell’economia circolare", "Progettare strategie di green marketing", "Gestire controllo e strategia d’impresa", "Conoscere il diritto commerciale e tributario avanzato"],
+  "s": ["Esperto di economia ambientale e sostenibilità", "Project manager di progetti green finanziati", "Analista di sviluppo sostenibile per enti pubblici e privati", "Commercialista, previo esame di abilitazione", "Funzionario di alto livello nella pubblica amministrazione"]
+ },
+ "scienze-delleconomia-indirizzo-in-scienze-economiche": {
+  "i": ["La magistrale in economia nella sua versione più completa. Strategia e governo d’azienda, programmazione e controllo, economia del diritto, dell’ambiente e dello sviluppo si integrano con marketing avanzato, statistica economica e diritto commerciale e tributario.", "Un esame dedicato a gestione del portafoglio, fondi pensione e previdenza complementare amplia il profilo verso la finanza."],
+  "o": ["Guidare strategia e controllo di gestione", "Analizzare mercati e fenomeni economici", "Applicare il diritto commerciale e tributario avanzato", "Gestire portafogli e strumenti previdenziali", "Usare la statistica economica per le decisioni"],
+  "s": ["Commercialista e fiscalista, previo esame di abilitazione", "Consulente aziendale e analista di mercato", "Controller e responsabile amministrativo", "Funzionario di alto livello nella pubblica amministrazione", "Docente nella scuola secondaria, con i requisiti previsti"]
+ },
+ "scienze-delleducazione-e-della-formazione-indirizzo-scienze-delleducazione-della-prima-infanzia": {
+  "i": ["Il corso per diventare educatore nei servizi per i bambini da 0 a 6 anni. Pedagogia dell’infanzia, psicologia dello sviluppo e dell’apprendimento, sociologia, antropologia e neuropsichiatria infantile costruiscono una base teorica solida.", "Il laboratorio di pedagogia del nido, i tirocini e gli esami a scelta portano la teoria nella pratica: progettare attività, osservare i bambini, lavorare con le famiglie e in équipe."],
+  "o": ["Conoscere lo sviluppo del bambino da 0 a 6 anni", "Progettare e condurre attività educative nella prima infanzia", "Osservare e documentare il comportamento infantile", "Collaborare con famiglie e servizi del territorio", "Promuovere inclusione e uso consapevole delle tecnologie"],
+  "s": ["Educatore nei nidi e nei servizi educativi per l’infanzia", "Educatore nei servizi integrativi e ludoteche", "Educatore domiciliare e territoriale", "Operatore in progetti di sostegno alla genitorialità", "Collaboratore in progetti educativi di enti locali"]
+ },
+ "scienze-delleducazione-e-della-formazione-indirizzo-scienze-delleducazione-e-della-formazione": {
+  "i": ["Il corso forma educatori e formatori capaci di lavorare nei contesti educativi, sociali e culturali. Pedagogia generale e sociale, psicologia, antropologia, didattica e pedagogia speciale si affiancano a linguistica, geografia e linguaggi espressivi.", "Si impara a progettare e valutare percorsi educativi per persone di ogni età, anche in contesti multiculturali, e a lavorare in équipe con altre figure professionali."],
+  "o": ["Conoscere i processi educativi e formativi", "Progettare e valutare interventi educativi", "Lavorare in contesti multiculturali e inclusivi", "Usare le tecnologie per la formazione", "Collaborare in équipe multidisciplinari"],
+  "s": ["Educatore professionale socio-pedagogico", "Educatore nei servizi per l’infanzia e l’adolescenza", "Operatore in comunità, centri diurni e servizi sociali", "Formatore e tutor in enti di formazione", "Animatore socio-educativo e culturale"]
+ },
+ "scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-attivita-motoria-nella-scuola-secondaria": {
+  "i": ["Una magistrale per chi vuole insegnare e promuovere il movimento a scuola. Attività motoria nella scuola secondaria, giochi sportivi scolastici, attività fisica adattata e didattica dell’inclusione sono il cuore del percorso.", "Fisiologia dei nutrienti, ergonomia, medicina dello sport, sociologia del corpo e psicologia della salute completano una preparazione orientata al benessere degli studenti."],
+  "o": ["Progettare l’educazione motoria a scuola", "Adattare le attività a età e abilità diverse", "Organizzare giochi sportivi e attività inclusive", "Promuovere stili di vita sani", "Collaborare con insegnanti, famiglie e servizi"],
+  "s": ["Docente di scienze motorie, con i requisiti previsti", "Esperto di attività motoria in progetti scolastici", "Preparatore in società e scuole sportive giovanili", "Operatore di attività fisica adattata", "Consulente per progetti di promozione della salute"]
+ },
+ "scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-biomeccanica": {
+  "i": ["Analizzare il movimento umano per migliorarlo, prevenire i disturbi e favorire il recupero. L’indirizzo Biomeccanica approfondisce valutazione antropometrica, biomeccanica dell’esercizio, analisi dei dati biomedici del movimento, ergonomia e malattie dell’apparato locomotore.", "Lo studente impara a valutare il gesto motorio e a progettare programmi di esercizio preventivo, compensativo e rieducativo."],
+  "o": ["Valutare composizione corporea e movimento", "Analizzare il gesto motorio con strumenti biomeccanici", "Progettare esercizio preventivo e correttivo", "Applicare ergonomia e prevenzione posturale", "Lavorare con popolazioni speciali"],
+  "s": ["Chinesiologo ed esperto di analisi del movimento", "Consulente per ergonomia e prevenzione posturale", "Preparatore atletico", "Collaboratore in centri di riabilitazione e medicina sportiva", "Personal trainer per popolazioni speciali"]
+ },
+ "scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-palestra-del-benessere": {
+  "i": ["L’esercizio fisico come strumento di salute e qualità della vita. L’indirizzo Palestra del Benessere prepara a progettare programmi di allenamento personalizzati per bambini, adulti e anziani, anche con patologie croniche stabilizzate.", "Fitness e wellness, medicina dello sport, alimentazione, attività motoria adattata e gestione delle risorse umane completano un profilo pronto a dirigere attività e strutture del benessere."],
+  "o": ["Progettare programmi di esercizio personalizzati", "Adattare l’attività a età e condizioni di salute", "Conoscere alimentazione e medicina dello sport", "Valutare la condizione fisica", "Gestire team e attività di un centro fitness"],
+  "s": ["Chinesiologo in palestre e centri benessere", "Responsabile tecnico di centri fitness", "Personal trainer per la salute", "Operatore di attività motoria adattata", "Consulente per programmi aziendali di benessere"]
+ },
+ "scienze-e-tecniche-psicologiche": {
+  "i": ["La laurea triennale in psicologia: le basi per comprendere mente, emozioni e comportamento. Psicologia generale e dello sviluppo, neurofisiologia, neuropsicologia, psicometria e metodologia della ricerca formano un sapere scientifico solido.", "L’indirizzo Psicologia applicata ai contesti sociali e clinici prepara a intervenire nella scuola, nel lavoro e nei servizi, e apre la strada alla magistrale per diventare psicologo."],
+  "o": ["Conoscere i processi cognitivi ed emotivi", "Comprendere lo sviluppo tipico e atipico", "Applicare metodi di ricerca e misura psicologica", "Conoscere le basi biologiche del comportamento", "Operare in contesti sociali, educativi e organizzativi"],
+  "s": ["Dottore in tecniche psicologiche, previo esame di Stato", "Operatore in servizi sociali, educativi e sanitari", "Assistente nella selezione e gestione del personale", "Collaboratore in progetti di prevenzione e promozione della salute", "Accesso alla magistrale in Psicologia"]
+ },
+ "scienze-e-tecniche-psicologiche-indirizzo-psicologia-criminologica-l24": {
+  "i": ["Le basi della psicologia applicate allo studio della devianza e della criminalità. Accanto alla formazione comune, psicologia generale, dello sviluppo, neurofisiologia e psicometria, l’indirizzo propone neuropsicologia forense e approfondimenti su devianza, trauma e rischio.", "Il percorso aiuta a comprendere i fattori psicologici, biologici e sociali dei comportamenti devianti e prepara alla magistrale in psicologia giuridica."],
+  "o": ["Conoscere le basi della psicologia scientifica", "Comprendere i fattori della devianza e del rischio", "Conoscere le basi della neuropsicologia forense", "Usare metodi di ricerca e valutazione", "Supportare interventi di prevenzione"],
+  "s": ["Operatore in servizi per la prevenzione della devianza", "Collaboratore in comunità e servizi per minori", "Assistente in progetti di sicurezza e prevenzione", "Dottore in tecniche psicologiche, previo esame di Stato", "Accesso alla magistrale in Psicologia giuridica"]
+ },
+ "scienze-pedagogiche-indirizzo-e-learning-didattica-digitale-e-media-education": {
+  "i": ["Una magistrale per il pedagogista dell’era digitale. Tecniche della formazione a distanza, sistemi didattici per l’e-learning, didattica ed educazione ai media si uniscono a docimologia, educazione degli adulti, psicologia dei gruppi e sociologia.", "Si formano specialisti capaci di progettare percorsi formativi online e di educare a un uso consapevole dei media."],
+  "o": ["Progettare corsi e ambienti di e-learning", "Applicare la didattica digitale", "Educare a un uso critico dei media", "Valutare apprendimenti e percorsi formativi", "Progettare formazione per gli adulti"],
+  "s": ["Pedagogista ed esperto di e-learning", "Instructional designer", "Formatore e coordinatore di formazione a distanza", "Esperto di media education per scuole ed enti", "Consulente per la formazione aziendale"]
+ },
+ "scienze-pedagogiche-indirizzo-pedagogia-e-scienze-umane": {
+  "i": ["La magistrale per diventare pedagogista, con una visione ampia delle scienze umane. Didattica generale, docimologia, psicologia scolastica e dell’orientamento, educazione degli adulti e letteratura per l’infanzia si integrano con storia, logica, filosofia della scienza e sociologia.", "Un esame su principi, legislazione e management scolastico e i tirocini completano la preparazione per coordinare servizi e progetti educativi."],
+  "o": ["Progettare e valutare interventi educativi", "Analizzare bisogni formativi", "Orientare studenti e adulti", "Conoscere legislazione e organizzazione scolastica", "Usare metodi di ricerca storica ed empirica"],
+  "s": ["Pedagogista", "Coordinatore di servizi educativi", "Consulente per l’orientamento", "Formatore e progettista educativo", "Docente nella scuola secondaria, con i requisiti previsti"]
+ },
+ "scienze-pedagogiche-indirizzo-pedagogista-della-marginalita-e-della-disabilita": {
+  "i": ["Una magistrale dedicata all’educazione nelle situazioni di fragilità, svantaggio e disabilità. Pedagogia dell’intervento educativo speciale, storia della pedagogia speciale e didattica dell’inclusione sono il cuore del percorso.", "Docimologia, psicologia dei gruppi e di comunità, educazione degli adulti e sociologia completano la formazione per progettare interventi inclusivi efficaci."],
+  "o": ["Progettare interventi educativi inclusivi", "Lavorare con persone con disabilità e in condizioni di marginalità", "Valutare bisogni e risultati degli interventi", "Collaborare con servizi, famiglie e comunità", "Conoscere la storia e i modelli della pedagogia speciale"],
+  "s": ["Pedagogista dell’inclusione", "Coordinatore di servizi per la disabilità", "Progettista di interventi in comunità e servizi sociali", "Consulente per scuole ed enti del terzo settore", "Formatore di operatori sociali"]
+ },
+ "scienze-politiche-e-sociali-indirizzo-politica-economia-e-pubblica-amministrazione": {
+  "i": ["Per capire come funzionano istituzioni, economia e politiche pubbliche, e per lavorarci. Scienza politica, storia contemporanea, sociologia, diritto pubblico e amministrativo si affiancano a economia politica, politica economica e analisi delle politiche pubbliche.", "L’indirizzo approfondisce l’organizzazione e la contabilità delle amministrazioni e la comunicazione politica."],
+  "o": ["Comprendere istituzioni e processi decisionali", "Analizzare e valutare le politiche pubbliche", "Conoscere diritto amministrativo e contabilità pubblica", "Leggere i fenomeni economici e sociali", "Comunicare nel settore pubblico"],
+  "s": ["Funzionario nella pubblica amministrazione, tramite concorso", "Addetto in enti locali e organizzazioni internazionali", "Analista di politiche pubbliche", "Collaboratore di partiti, sindacati e associazioni", "Addetto alla comunicazione politica e istituzionale"]
+ },
+ "scienze-politiche-e-sociali-indirizzo-politica-societa-e-istituzioni": {
+  "i": ["Un percorso per leggere i fenomeni politici e sociali in un mondo sempre più interconnesso. Scienza politica, storia delle dottrine politiche e delle relazioni internazionali, sociologia e metodologia della ricerca sociale si integrano con diritto pubblico ed economia.", "L’indirizzo offre gli strumenti per comprendere le relazioni tra sistema politico, economia e istituzioni e i loro cambiamenti."],
+  "o": ["Analizzare fenomeni politici e sociali", "Conoscere storia delle relazioni internazionali", "Applicare metodi di ricerca sociale", "Comprendere il funzionamento delle istituzioni", "Collegare politica, economia e società"],
+  "s": ["Funzionario in enti pubblici, tramite concorso", "Ricercatore sociale e analista", "Addetto alle relazioni istituzionali", "Operatore in organizzazioni internazionali e del terzo settore", "Collaboratore di centri studi e fondazioni"]
+ },
+ "servizi-giuridici-indirizzo-amministratori-di-condominio": {
+  "i": ["Una laurea giuridica pensata per chi vuole amministrare condomini e patrimoni immobiliari in modo professionale. Alle materie giuridiche fondamentali si aggiungono diritto immobiliare e governance del condominio, contabilità e fiscalità condominiale, diritto dell’edilizia e dell’ambiente.", "Si impara a gestire adempimenti, rapporti tra condomini, servizi e responsabilità legate agli immobili."],
+  "o": ["Conoscere il diritto privato e immobiliare", "Gestire contabilità e fiscalità del condominio", "Applicare le norme su edilizia e ambiente", "Organizzare assemblee, servizi e adempimenti", "Gestire i rapporti tra condomini e fornitori"],
+  "s": ["Amministratore di condominio", "Gestore di patrimoni immobiliari", "Consulente per società immobiliari", "Addetto in studi tecnici e legali", "Collaboratore di agenzie e servizi immobiliari"]
+ },
+ "servizi-giuridici-consulente-del-lavoro-e-giurista-dimpresa": {
+  "i": ["Il diritto applicato al lavoro e all’impresa. Il corso unisce le materie giuridiche di base a diritto del lavoro, diritto sindacale e delle relazioni industriali, diritto tributario del lavoro e diritto commerciale, insieme a economia e scienza delle finanze.", "Il terzo anno permette di personalizzare il percorso con insegnamenti a scelta, per preparare la professione di consulente del lavoro o di giurista d’impresa."],
+  "o": ["Conoscere il diritto del lavoro e sindacale", "Gestire gli aspetti fiscali e contributivi del lavoro", "Applicare il diritto commerciale all’impresa", "Interpretare contratti e normative", "Collaborare con aziende e uffici del personale"],
+  "s": ["Consulente del lavoro, previo praticantato ed esame di Stato", "Giurista d’impresa", "Addetto all’ufficio del personale", "Collaboratore in sindacati e associazioni di categoria", "Funzionario nella pubblica amministrazione, tramite concorso"]
+ },
+ "servizi-giuridici-indirizzo-criminologia": {
+  "i": ["Il diritto incontra criminologia, sociologia e psicologia per comprendere e prevenire il crimine. Alle materie giuridiche di base si aggiungono diritto penale, criminologia, tecniche investigative, psicopatologia forense e profiling, genetica forense.", "Il corso affronta temi attuali come criminalità organizzata, reati informatici, violenza di genere e tutela delle vittime."],
+  "o": ["Conoscere diritto penale e processuale", "Applicare tecniche investigative", "Comprendere cause e dinamiche della devianza", "Conoscere le basi della genetica e della psicologia forense", "Collaborare nella prevenzione e nella sicurezza"],
+  "s": ["Operatore nella sicurezza e nella prevenzione del crimine", "Collaboratore di studi legali e investigativi", "Operatore in servizi di supporto alle vittime e reinserimento", "Partecipazione ai concorsi delle forze dell’ordine", "Consulente per enti pubblici e privati"]
+ },
+ "servizi-giuridici-indirizzo-scienze-penitenziarie": {
+  "i": ["Per chi vuole lavorare nell’esecuzione della pena, nel recupero e nella rieducazione. Il corso unisce le materie giuridiche di base a diritto penale e penitenziario, criminologia penitenziaria, diritto minorile e diritto internazionale umanitario.", "Si studiano non solo il carcere ma anche le misure alternative e i percorsi di reinserimento sociale."],
+  "o": ["Conoscere diritto penale e penitenziario", "Comprendere la criminologia applicata al carcere", "Conoscere il diritto minorile", "Applicare i principi del diritto umanitario", "Supportare percorsi di reinserimento"],
+  "s": ["Operatore e funzionario dell’amministrazione penitenziaria, tramite concorso", "Collaboratore di uffici per l’esecuzione penale esterna", "Operatore in comunità e servizi per il reinserimento", "Collaboratore di associazioni del volontariato penitenziario", "Addetto in servizi della giustizia minorile"]
+ },
+ "servizi-giuridici-indirizzo-servizi-giuridici-per-limpresa": {
+  "i": ["Una laurea giuridica triennale con un taglio pratico, utile in aziende e pubbliche amministrazioni. Diritto privato, costituzionale, penale, amministrativo, commerciale, del lavoro e tributario offrono una preparazione completa.", "Il percorso allena ad applicare le norme ai casi concreti e a usare strumenti informatici per il lavoro giuridico."],
+  "o": ["Conoscere i principali ambiti del diritto", "Applicare le norme a casi concreti", "Gestire aspetti giuridici dell’impresa", "Usare strumenti informatici applicati al diritto", "Comunicare in almeno una lingua straniera"],
+  "s": ["Operatore giuridico in aziende private", "Addetto agli uffici legali e amministrativi", "Collaboratore di studi professionali", "Funzionario nella pubblica amministrazione, tramite concorso", "Accesso alle magistrali di area giuridica"]
+ }
+}
