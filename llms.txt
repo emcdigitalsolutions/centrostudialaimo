@@ -1,0 +1,317 @@
+# Centro Studi Alaimo
+
+> Centro Studi Alaimo: corsi di laurea online triennali e magistrali, master di I e II livello, corsi di perfezionamento, percorsi abilitanti, certificazioni informatiche e linguistiche e lezioni private. Orientamento gratuito e valutazione CFU.
+
+## Chi siamo
+
+Centro Studi Alaimo è un centro di formazione che offre orientamento gratuito e accompagna studenti, lavoratori, docenti, aspiranti insegnanti e personale ATA nella scelta e nello svolgimento di percorsi universitari e professionali. Area servita: Sicilia e tutta Italia (corsi online).
+
+## Contatti
+
+- Informazioni e orientamento: info@centrostudialaimo.it
+- Valutazione CFU: valutazioni@centrostudialaimo.it
+- Amministrazione: amministrazione@centrostudialaimo.it
+- Pagina contatti: https://centrostudialaimo.it/contatti/
+
+## Servizi principali
+
+- [Corsi di laurea online](https://centrostudialaimo.it/universita/corsi-di-laurea/): 48 triennali e 31 magistrali, nessun test di ammissione, tutor personale, esami in sede.
+- [Valutazione CFU gratuita](https://centrostudialaimo.it/universita/valutazione-cfu/): riconoscimento degli esami già sostenuti con preventivo dei costi.
+- [Corsi singoli](https://centrostudialaimo.it/universita/corsi-singoli/): esami universitari singoli per integrare CFU.
+- [Master](https://centrostudialaimo.it/master/): 124 master online di I e II livello da 60 CFU.
+- [Corsi di perfezionamento](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/): 29 corsi per docenti da 60 e 120 CFU.
+- [Percorsi abilitanti](https://centrostudialaimo.it/area-scuola/percorsi-abilitanti/): abilitazione 30-36-60 CFU e preparazione TFA sostegno.
+- [Punteggio GPS](https://centrostudialaimo.it/area-scuola/punteggio-gps/): pacchetti di certificazioni e CLIL per le graduatorie.
+- [Certificazioni](https://centrostudialaimo.it/certificazioni/): informatiche (Pekit, DigComp 2.2, DigCompEdu, LIM, Tablet, Coding, Dattilografia) e linguistiche (Inglese B2, C1, C2, CLIL).
+- [Corsi regionali](https://centrostudialaimo.it/corsi-regionali/): ASACOM, OSA, OPI, Segretario coordinatore amministrativo.
+- [Lezioni private](https://centrostudialaimo.it/lezioni-private/): ripetizioni scuola media e superiore, esami universitari, tesi, recupero anni, concorsi; in sede o online.
+
+## Corsi di laurea
+
+- [Computer Science and Automation Engineering - indirizzo Computational Intelligence](https://centrostudialaimo.it/universita/corsi-di-laurea/computer-science-and-automation-engineering-indirizzo-computational-intelligence/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Design e Discipline della Moda](https://centrostudialaimo.it/universita/corsi-di-laurea/design-e-discipline-della-moda/): laurea triennale, classe L3, facoltà di Lettere
+- [Economia e Commercio - indirizzo aziende sanitarie ed economia della salute](https://centrostudialaimo.it/universita/corsi-di-laurea/economia-e-commercio-indirizzo-aziende-sanitarie-ed-economia-della-salute/): laurea triennale, classe L33, facoltà di Economia
+- [Economia e Commercio - indirizzo Economia e commercio](https://centrostudialaimo.it/universita/corsi-di-laurea/economia-e-commercio/): laurea triennale, classe L33, facoltà di Economia
+- [Economia e Commercio - indirizzo Economics and business](https://centrostudialaimo.it/universita/corsi-di-laurea/economia-e-commercio-indirizzo-economics-and-business/): laurea triennale, classe L33, facoltà di Economia
+- [Economia e commercio - indirizzo Psicoeconomia](https://centrostudialaimo.it/universita/corsi-di-laurea/psicoeconomia/): laurea triennale, classe L33, facoltà di Economia
+- [Economia e Commercio - indirizzo Scienze bancarie e consulenti finanziari](https://centrostudialaimo.it/universita/corsi-di-laurea/economia-e-commercio-indirizzo-scienze-bancarie-e-consulenti-finanziari/): laurea triennale, classe L33, facoltà di Economia
+- [Economia e Commercio - indirizzo Start-Up d’impresa e modelli di business](https://centrostudialaimo.it/universita/corsi-di-laurea/economia-e-commercio-indirizzo-start-up-dimpresa-e-modelli-di-business/): laurea triennale, classe L33, facoltà di Economia
+- [Giurisprudenza](https://centrostudialaimo.it/universita/corsi-di-laurea/giurisprudenza/): laurea magistrale, classe LMG/01, facoltà di Giurisprudenza
+- [Ingegneria civile e ambientale - Indirizzo civile e ambientale](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-civile-e-ambientale-indirizzo-civile-e-ambientale/): laurea triennale, classe L7, facoltà di Ingegneria
+- [Ingegneria civile e ambientale - Indirizzo Paesaggistico](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-civile-e-ambientale/): laurea triennale, classe L7, facoltà di Ingegneria
+- [Ingegneria Civile – Indirizzo Gestione, manutenzione e controllo del costruito](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-civile-indirizzo-gestione-manutenzione-e-controllo-del-costruito/): laurea magistrale, classe LM23, facoltà di Ingegneria
+- [Ingegneria Civile – Indirizzo Strutture e territorio](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-civile-indirizzo-strutture-e-territorio/): laurea magistrale, classe LM23, facoltà di Ingegneria
+- [Ingegneria Civile – Indirizzo Tecnica e Gestione del progetto di Opere Pubbliche](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-civile-indirizzo-tecnica-e-gestione-del-progetto-di-opere-pubbliche/): laurea magistrale, classe LM23, facoltà di Ingegneria
+- [Ingegneria Industriale - Indirizzo chimico](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-chimico/): laurea triennale, classe L9, facoltà di Ingegneria
+- [Ingegneria Industriale - Indirizzo Energetico](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-energetico/): laurea triennale, classe L9, facoltà di Ingegneria
+- [Ingegneria Industriale - Indirizzo Energy engineering](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-energy-engineering/): laurea triennale, classe L9, facoltà di Ingegneria
+- [Ingegneria Industriale - Indirizzo gestionale](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-gestionale/): laurea triennale, classe L9, facoltà di Ingegneria
+- [Ingegneria Industriale - Indirizzo veicoli ibridi ed elettrici](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-veicoli-ibridi-ed-elettrici/): laurea triennale, classe L9, facoltà di Ingegneria
+- [Ingegneria Industriale – Indirizzo Industria 4.0](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-industria-4-0/): laurea magistrale, classe LM33, facoltà di Ingegneria
+- [Ingegneria Industriale – Indirizzo Progettuale Meccanico](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-progettuale-meccanico/): laurea magistrale, classe LM33, facoltà di Ingegneria
+- [Ingegneria Industriale – Indirizzo Tecnologico Gestionale](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-tecnologico-gestionale/): laurea magistrale, classe LM33, facoltà di Ingegneria
+- [Ingegneria Industriale – Indirizzo Termomeccanico](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-industriale-indirizzo-termomeccanico/): laurea magistrale, classe LM33, facoltà di Ingegneria
+- [Ingegneria Informatica e dell’Automazione](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-e-dellautomazione/): laurea magistrale, classe LM32, facoltà di Ingegneria
+- [Ingegneria Informatica e dell’Automazione – Indirizzo Artificial Intelligence](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-e-dellautomazione-indirizzo-artificial-intelligence/): laurea magistrale, classe LM32, facoltà di Ingegneria
+- [Ingegneria Informatica e dell’Automazione – Indirizzo Cybersecurity](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-e-dellautomazione-indirizzo-cybersecurity/): laurea magistrale, classe LM32, facoltà di Ingegneria
+- [Ingegneria Informatica e dell’Automazione – Indirizzo Robotica](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-e-dellautomazione-indirizzo-robotica/): laurea magistrale, classe LM32, facoltà di Ingegneria
+- [Ingegneria Informatica – Indirizzo Droni e sistemi robotici](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-indirizzo-droni/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Ingegneria Informatica – Indirizzo ingegneria delle app e dei sistemi cloud](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-indirizzo-ingegneria-app/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Ingegneria Informatica – Indirizzo Intelligenza Artificiale e Data Science](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-indirizzo-intelligenza-artificiale-e-data-science/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Ingegneria Informatica – Indirizzo sicurezza informatica](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-indirizzo-sicurezza-informatica/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Ingegneria Informatica – Indirizzo Sistemi di Elaborazione e Controllo](https://centrostudialaimo.it/universita/corsi-di-laurea/ingegneria-informatica-indirizzo-sistemi-di-elaborazione-e-controllo/): laurea triennale, classe L8, facoltà di Ingegneria
+- [Letteratura, Arte, Musica e Spettacolo – indirizzo Artistico, audiovisivo e dello spettacolo](https://centrostudialaimo.it/universita/corsi-di-laurea/letteratura-arte-musica-e-spettacolo-indirizzo-artistico-audiovisivo-e-dello-spettacolo/): laurea triennale, classe L10, facoltà di Lettere
+- [Letteratura, Arte, Musica e Spettacolo – indirizzo Letterario](https://centrostudialaimo.it/universita/corsi-di-laurea/letteratura-arte-musica-e-spettacolo-indirizzo-letterario/): laurea triennale, classe L10, facoltà di Lettere
+- [Letteratura, lingua e cultura Italiana – indirizzo Filologico](https://centrostudialaimo.it/universita/corsi-di-laurea/letteratura-lingua-e-cultura-italiana-indirizzo-filologico/): laurea magistrale, classe LM14, facoltà di Lettere
+- [Letteratura, lingua e cultura Italiana – indirizzo Promozione Culturale](https://centrostudialaimo.it/universita/corsi-di-laurea/letteratura-lingua-e-cultura-italiana-indirizzo-promozione-culturale/): laurea magistrale, classe LM14, facoltà di Lettere
+- [Lingue e culture europee del resto del mondo - Indirizzo Comunicazione interculturale](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-culture-europee-del-resto-del-mondo-indirizzo-comunicazione-interculturale/): laurea triennale, classe L11, facoltà di Lettere
+- [Lingue e culture europee del resto del mondo - Indirizzo Editoriale e multimediale](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-culture-europee-del-resto-del-mondo-indirizzo-editoriale-e-multimediale/): laurea triennale, classe L11, facoltà di Lettere
+- [Lingue e culture europee del resto del mondo - Indirizzo Pedagogico-didattico](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-culture-europee-del-resto-del-mondo-indirizzo-pedagogico-didattico/): laurea triennale, classe L11, facoltà di Lettere
+- [Lingue e culture europee del resto del mondo - Indirizzo Tecnico computazionale](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-culture-europee-del-resto-del-mondo-indirizzo-tecnico-computazionale/): laurea triennale, classe L11, facoltà di Lettere
+- [Lingue e Letterature Moderne e Traduzione Interculturale – Indirizzo Lingue e letterature europee](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-letterature-moderne-e-traduzione-interculturale-indirizzo-lingue-e-letterature-europee/): laurea magistrale, classe LM37, facoltà di Lettere
+- [Lingue e Letterature Moderne e Traduzione Interculturale – Indirizzo Traduzione e processi interlinguistici](https://centrostudialaimo.it/universita/corsi-di-laurea/lingue-e-letterature-moderne-e-traduzione-interculturale-indirizzo-traduzione-e-processi-interlinguistici/): laurea magistrale, classe LM37, facoltà di Lettere
+- [Psicologia – Indirizzo Psicologia clinica e dinamica](https://centrostudialaimo.it/universita/corsi-di-laurea/psicologia-indirizzo-psicologia-clinica-e-dinamica/): laurea magistrale, classe LM51, facoltà di Psicologia
+- [Psicologia – Indirizzo Psicologia e nuove tecnologie](https://centrostudialaimo.it/universita/corsi-di-laurea/psicologia-indirizzo-psicologia-e-nuove-tecnologie/): laurea magistrale, classe LM51, facoltà di Psicologia
+- [Psicologia – Indirizzo Psicologia giuridica e criminologia](https://centrostudialaimo.it/universita/corsi-di-laurea/psicologia-indirizzo-psicologia-giuridica/): laurea magistrale, classe LM51, facoltà di Psicologia
+- [Psicologia – Indirizzo Psicologia strategica](https://centrostudialaimo.it/universita/corsi-di-laurea/psicologia-indirizzo-psicologia-strategica/): laurea magistrale, classe LM51, facoltà di Psicologia
+- [Scienze biologiche - Indirizzo Ambiente e biodiversità](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-biologiche-indirizzo-ambiente-e-biodiversita/): laurea triennale, classe L13, facoltà di Psicologia
+- [Scienze biologiche - Indirizzo Biosanitario e molecolare](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-biologiche-indirizzo-biosanitario-e-molecolare/): laurea triennale, classe L13, facoltà di Psicologia
+- [Scienze del turismo per il management e i beni culturali - indirizzo Global Tourism and Cultural Heritage Management](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-global-tourism-and-cultural-heritage-management/): laurea triennale, classe L15, facoltà di Economia
+- [Scienze del turismo per il management e i beni culturali - indirizzo Management dell’ospitalità e del territorio](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-management-dellospitalita-e-del-territorio/): laurea triennale, classe L15, facoltà di Economia
+- [Scienze del turismo per il management e i beni culturali - indirizzo Management e turismo culturale](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-del-turismo-per-il-management-e-i-beni-culturali-indirizzo-management-e-turismo-culturale/): laurea triennale, classe L15, facoltà di Economia
+- [Scienze della Comunicazione – Indirizzo Comunicazione Istituzionale e d’Impresa](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-comunicazione-indirizzo-comunicazione-istituzionale-e-dimpresa/): laurea triennale, classe L20, facoltà di Giurisprudenza
+- [Scienze della Comunicazione – Indirizzo Digital Entertainment and Gaming](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-comunicazione-indirizzo-digital-entertainment-and-gaming/): laurea triennale, classe L20, facoltà di Giurisprudenza
+- [Scienze della Comunicazione – Indirizzo Digital Marketing](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-comunicazione-indirizzo-digital-marketing/): laurea triennale, classe L20, facoltà di Giurisprudenza
+- [Scienze della Comunicazione – Indirizzo Influencer](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-comunicazione-indirizzo-influencer/): laurea triennale, classe L20, facoltà di Giurisprudenza
+- [Scienze della nutrizione umana indirizzo Chimica, Tecnologia e Marketing](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-nutrizione-umana-2/): laurea magistrale, classe LM61, facoltà di Psicologia
+- [Scienze della nutrizione umana indirizzo Nutrizione Molecolare](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-della-nutrizione-umana/): laurea magistrale, classe LM61, facoltà di Psicologia
+- [Scienze delle Attività Motorie e Sportive - Indirizzo Scienze delle Attività Motorie e Sportive](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delle-attivita-motorie-e-sportive-indirizzo-scienze-delle-attivita-motorie-e-sportive/): laurea triennale, classe L22, facoltà di Psicologia
+- [Scienze delle Attività Motorie e Sportive - Indirizzo Sport and Football Management](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delle-attivita-motorie-e-sportive-indirizzo-sport-and-football-management/): laurea triennale, classe L22, facoltà di Psicologia
+- [Scienze dell’Economia – Indirizzo in E-Commerce e Digital Management](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delleconomia-indirizzo-in-e-commerce-e-digital-management/): laurea magistrale, classe LM56, facoltà di Economia
+- [Scienze dell’Economia – Indirizzo in Green Economy e Sostenibilità](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delleconomia-indirizzo-in-green-economy-e-sostenibilita/): laurea magistrale, classe LM56, facoltà di Economia
+- [Scienze dell’Economia – Indirizzo in scienze economiche](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delleconomia-indirizzo-in-scienze-economiche/): laurea magistrale, classe LM56, facoltà di Economia
+- [Scienze dell’Educazione e della Formazione - Indirizzo Scienze dell’Educazione della prima infanzia](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delleducazione-e-della-formazione-indirizzo-scienze-delleducazione-della-prima-infanzia/): laurea triennale, classe L19, facoltà di Psicologia
+- [Scienze dell’Educazione e della Formazione - Indirizzo Scienze dell’Educazione e della Formazione](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-delleducazione-e-della-formazione-indirizzo-scienze-delleducazione-e-della-formazione/): laurea triennale, classe L19, facoltà di Psicologia
+- [Scienze dell’esercizio fisico per il benessere e la salute – Indirizzo Attività motoria nella scuola secondaria](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-attivita-motoria-nella-scuola-secondaria/): laurea magistrale, classe LM67, facoltà di Psicologia
+- [Scienze dell’esercizio fisico per il benessere e la salute – Indirizzo Biomeccanica](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-biomeccanica/): laurea magistrale, classe LM67, facoltà di Psicologia
+- [Scienze dell’esercizio fisico per il benessere e la salute – Indirizzo Palestra del Benessere](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-per-lesercizio-fisico-per-il-benessere-e-la-salute-indirizzo-palestra-del-benessere/): laurea magistrale, classe LM67, facoltà di Psicologia
+- [Scienze e Tecniche Psicologiche indirizzo Psicologia Applicata ai contesti sociali e clinici](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-e-tecniche-psicologiche/): laurea triennale, classe L24, facoltà di Psicologia
+- [Scienze e Tecniche Psicologiche indirizzo Psicologia criminologica](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-e-tecniche-psicologiche-indirizzo-psicologia-criminologica-l24/): laurea triennale, classe L24, facoltà di Psicologia
+- [Scienze pedagogiche – Indirizzo e-Learning, didattica digitale e media education](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-pedagogiche-indirizzo-e-learning-didattica-digitale-e-media-education/): laurea magistrale, classe LM85, facoltà di Psicologia
+- [Scienze pedagogiche – Indirizzo Pedagogia e scienze umane](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-pedagogiche-indirizzo-pedagogia-e-scienze-umane/): laurea magistrale, classe LM85, facoltà di Psicologia
+- [Scienze pedagogiche – Indirizzo Pedagogista della marginalità e della disabilità](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-pedagogiche-indirizzo-pedagogista-della-marginalita-e-della-disabilita/): laurea magistrale, classe LM85, facoltà di Psicologia
+- [Scienze politiche e sociali - Indirizzo Politica, economia e pubblica amministrazione](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-politiche-e-sociali-indirizzo-politica-economia-e-pubblica-amministrazione/): laurea triennale, classe L36, facoltà di Giurisprudenza
+- [Scienze politiche e sociali - Indirizzo Politica, Società e Istituzioni](https://centrostudialaimo.it/universita/corsi-di-laurea/scienze-politiche-e-sociali-indirizzo-politica-societa-e-istituzioni/): laurea triennale, classe L36, facoltà di Giurisprudenza
+- [Servizi giuridici - Indirizzo Amministratori di condominio](https://centrostudialaimo.it/universita/corsi-di-laurea/servizi-giuridici-indirizzo-amministratori-di-condominio/): laurea triennale, classe L14, facoltà di Giurisprudenza
+- [Servizi giuridici - Indirizzo Consulente del lavoro e giurista d’impresa](https://centrostudialaimo.it/universita/corsi-di-laurea/servizi-giuridici-consulente-del-lavoro-e-giurista-dimpresa/): laurea triennale, classe L14, facoltà di Giurisprudenza
+- [Servizi giuridici - indirizzo Criminologia](https://centrostudialaimo.it/universita/corsi-di-laurea/servizi-giuridici-indirizzo-criminologia/): laurea triennale, classe L14, facoltà di Giurisprudenza
+- [Servizi giuridici - indirizzo Scienze penitenziarie](https://centrostudialaimo.it/universita/corsi-di-laurea/servizi-giuridici-indirizzo-scienze-penitenziarie/): laurea triennale, classe L14, facoltà di Giurisprudenza
+- [Servizi giuridici - indirizzo Servizi Giuridici per l’Impresa](https://centrostudialaimo.it/universita/corsi-di-laurea/servizi-giuridici-indirizzo-servizi-giuridici-per-limpresa/): laurea triennale, classe L14, facoltà di Giurisprudenza
+
+## Master Mondo Scuola
+
+- [Autismo: dalla diagnosi all’intervento psicoeducativo](https://centrostudialaimo.it/master/autismo-dalla-diagnosi-allintervento-psicoeducativo/): master di I livello, 60 CFU
+- [Competenze e metodologie didattiche dell’animatore digitale](https://centrostudialaimo.it/master/competenze-e-metodologie-didattiche-dellanimatore-digitale/): master di I livello, 60 CFU
+- [Competenze non cognitive e life skills in ambito scolastico](https://centrostudialaimo.it/master/competenze-non-cognitive-e-life-skills-in-ambito-scolastico/): master di I livello, 60 CFU
+- [Competenze per sviluppare il pensiero computazionale con il coding](https://centrostudialaimo.it/master/competenze-per-sviluppare-il-pensiero-computazionale-con-il-coding/): master di I livello, 60 CFU
+- [Didattica della lingua italiana come lingua seconda (L2)](https://centrostudialaimo.it/master/didattica-italiana-come-lingua-seconda-l2/): master di I livello, 60 CFU
+- [Didattica e arti terapie – Tecniche creative in ambito scolastico](https://centrostudialaimo.it/master/didattica-e-arti-terapie-tecniche-creative-in-ambito-scolastico/): master di I livello, 60 CFU
+- [Didattica integrale per il nuovo ambiente di apprendimento](https://centrostudialaimo.it/master/didattica-integrale-per-il-nuovo-ambiente-di-apprendimento/): master di I livello, 60 CFU
+- [Educare in istituti penitenziari](https://centrostudialaimo.it/master/educare-in-istituti-penitenziari/): master di II livello, 60 CFU
+- [Glottodidattica infantile](https://centrostudialaimo.it/master/glottodidattica-infantile/): master di I livello, 60 CFU
+- [Il bullismo: interpretazione fenomenologia prevenzione e didattica](https://centrostudialaimo.it/master/il-bullismo-interpretazione-fenomenologia-prevenzione-e-didattica/): master di I livello, 60 CFU
+- [Il dirigente scolastico: funzioni competenze e responsabilità nel sistema scolastico italiano](https://centrostudialaimo.it/master/il-dirigente-scolastico-funzioni-competenze-e-responsabilita-nel-sistema-scolastico-italiano/): master di II livello, 60 CFU
+- [Il docente di sostegno “dal vero”](https://centrostudialaimo.it/master/il-docente-di-sostegno-dal-vero/): master di II livello, 60 CFU
+- [Il docente di sostegno: educare all’inclusione](https://centrostudialaimo.it/master/il-docente-di-sostegno-educare-allinclusione/): master di II livello, 60 CFU
+- [Il profilo professionale del docente abilitato e le competenze chiave](https://centrostudialaimo.it/master/il-profilo-professionale-del-docente-abilitato-e-le-competenze-chiave/): master di II livello, 60 CFU
+- [La figura dell’insegnante di sostegno nella scuola](https://centrostudialaimo.it/master/la-figura-dellinsegnante-di-sostegno-nella-scuolala-figura-de/): master di I livello, 60 CFU
+- [La professione docente nella scuola di oggi](https://centrostudialaimo.it/master/la-professione-docente-nella-scuola-di-oggi/): master di I livello, 60 CFU
+- [Le funzioni del dirigente tecnico tra valutazione e management](https://centrostudialaimo.it/master/le-funzioni-del-dirigente-tecnico-tra-valutazione-e-management/): master di II livello, 60 CFU
+- [L’abilitazione all’insegnamento nella scuola dell’inclusione. Il docente delle competenze culturali, educative, pedagogiche, metodologie e relazioni](https://centrostudialaimo.it/master/labilitazione-allinsegnamento-nella-scuola-dellinclusione-il-docente-delle-competenze-culturali-educative-pedagogiche-metodologie-e-relazioni/): master di II livello, 60 CFU
+- [Management della Scuola: il DSGA](https://centrostudialaimo.it/master/management-della-scuola-il-dsga/): master di I livello, 60 CFU
+- [Master a scuola oggi - indirizzo Alternanza scuola lavoro](https://centrostudialaimo.it/master/master-a-scuola-oggi-indirizzo-alternanza-scuola-lavoro/): master di I livello, 60 CFU
+- [Master a scuola oggi - indirizzo didattica metacognitiva](https://centrostudialaimo.it/master/master-a-scuola-oggi-indirizzo-didattica-metacognitiva/): master di I livello, 60 CFU
+- [Master a scuola oggi - metodologie didattiche e strumenti innovativi per gli alunni con bisogni educativi speciali (BES)](https://centrostudialaimo.it/master/master-a-scuola-oggi-3-indirizzi-metodologie-didattiche-bes-didattica-metacognitiva-alternanza-scuola-lavoro/): master di I livello, 60 CFU
+- [Master Italiano L2 – L’insegnamento dell’Italiano agli stranieri](https://centrostudialaimo.it/master/master-italiano-l2-linsegnamento-dellitaliano-agli-stranieri/): master di I livello, 60 CFU
+- [Metodologie didattiche per l’integrazione degli alunni con disturbi specifici di apprendimento (DSA)](https://centrostudialaimo.it/master/master-a-scuola-oggi-indirizzo-metodologie-didattiche-per-lintegrazione-degli-alunni-con-dsa/): master di I livello, 60 CFU
+- [Nuova Didattica per le Lingue: Multimediale, Flipped Learning e Clil](https://centrostudialaimo.it/master/nuova-didattica-per-le-lingue-multimediale-flipped-learning-e-clil-2/): master di I livello, 60 CFU
+- [Profili pedagogici e didattici dell’insegnamento di scienze motorie nella scuola primaria](https://centrostudialaimo.it/master/profili-pedagogici-e-didattici-dellinsengnamento-di-scienze-motorie-nella-scuola-primaria/): master di I livello, 60 CFU
+- [Psicologia scolastica](https://centrostudialaimo.it/master/psicologia-scolastica/): master di I livello, 60 CFU
+- [Tecnologie digitali e metodologie didattiche a distanza - indirizzo Formazione continua e nei contesti professionali](https://centrostudialaimo.it/master/tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-formazione-continua-e-nei-contesti-professionali/): master di I livello, 60 CFU
+- [Tecnologie digitali e metodologie didattiche a distanza - indirizzo insegnamento di sostegno](https://centrostudialaimo.it/master/tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-insegnamento-di-sostegno/): master di I livello, 60 CFU
+- [Tecnologie digitali e metodologie didattiche a distanza - indirizzo scuola dell’infanzia](https://centrostudialaimo.it/master/tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-dellinfanzia/): master di I livello, 60 CFU
+- [Tecnologie digitali e metodologie didattiche a distanza - indirizzo scuola primaria](https://centrostudialaimo.it/master/tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-primaria/): master di I livello, 60 CFU
+- [Tecnologie digitali e metodologie didattiche a distanza - indirizzo scuola secondaria di I e II grado](https://centrostudialaimo.it/master/tecnologie-digitali-e-metodologie-didattiche-a-distanza-indirizzo-scuola-secondaria-di-i-e-ii-grado/): master di I livello, 60 CFU
+
+## Master Completamento Classe di Concorso
+
+- [Master A 01-54: Insegnare storia dell’arte negli istituti secondari di II grado](https://centrostudialaimo.it/master/master-a01-a54-insegnare-storia-dellarte-negli-istituti-secondari-di-ii-grado/): master di I livello, 60 CFU
+- [Master A11-A12-A13: L’insegnamento negli istituti secondari di I e II grado](https://centrostudialaimo.it/master/master-a11-12-13-linsegnamento-negli-istituti-secondari-di-i-e-ii-grado/): master di I livello, 60 CFU
+- [Master A15: L’insegnamento delle discipline sanitarie negli istituti secondari di II grado](https://centrostudialaimo.it/master/master-a15-linsegnamento-delle-discipline-sanitarie-negli-istituti-secondari-di-ii-grado/): master di I livello, 60 CFU
+- [Master A18: L’insegnamento delle materie filosofiche e umanistiche negli istituti secondari di II grado: Metodologie didattiche](https://centrostudialaimo.it/master/master-a18-linsegnamento-delle-materie-filosofiche-e-umanistiche-negli-istituti-secondari-di-ii-grado-metodologie-didattiche/): master di I livello, 60 CFU
+- [Master A19: Insegnare filosofia e storia negli istituti di II grado](https://centrostudialaimo.it/master/master-a19-insegnare-filosofia-e-storia-negli-istituti-di-2-grado/): master di I livello, 60 CFU
+- [Master A20-26-27-28: L’insegnamento delle materie scientifiche negli istituti secondari di I e II grado: matematica, scienze e fisica](https://centrostudialaimo.it/master/master-a20-26-28-linsegnamento-delle-materie-scientifiche-negli-istituti-secondari-di-i-e-ii-grado-matematica-e-fisica-metodologie-didattiche/): master di I livello, 60 CFU
+- [Master A21: Discipline geografiche per l’insegnamento negli istituti secondari di I e II grado: metodologie didattiche](https://centrostudialaimo.it/master/master-a21-discipline-geografiche-per-linsegnamento-negli-istituti-secondari-di-i-e-ii-grado-metodologie-didattiche/): master di I livello, 60 CFU
+- [Master A22: area linguistica per l’insegnamento negli istituti secondari di I e II grado](https://centrostudialaimo.it/master/master-a22-area-linguistica-per-linsegnamento-negli-istituti-secondari-di-i-e-ii-grado/): master di I livello, 60 CFU
+- [Master A23: Insegnare lingua italiana per discenti di lingua straniera negli istituti secondari di 2 grado](https://centrostudialaimo.it/master/master-a23-insegnare-lingua-italiana-per-discenti-di-lingua-straniera-negli-istituti-secondari-di-2-grado/): master di I livello, 60 CFU
+- [Master A40: L’insegnamento di scienze e tecnologie elettriche ed elettroniche nelle scuole secondarie di I e II grado](https://centrostudialaimo.it/master/master-a40-linsegnamento-di-scienze-e-tecnologie-elettriche-ed-elettroniche-nelle-scuole-secondarie-di-i-e-ii-grado/): master di I livello, 60 CFU
+- [Master A46: L’insegnamento delle materie giuridico-economiche negli istituti secondari di II grado: Metodologie didattiche](https://centrostudialaimo.it/master/master-a46-linsegnamento-delle-materie-giuridico-economiche-negli-istituti-secondari-di-ii-grado-metodologie-didattiche/): master di I livello, 60 CFU
+
+## Master Area Sanitaria
+
+- [Arteterapia](https://centrostudialaimo.it/master/arteterapia/): master di I livello, 60 CFU
+- [Aspetti giuridici, medico-legali e relazionali della professione sanitaria](https://centrostudialaimo.it/master/aspetti-giuridici-medico-legali-e-relazionali-della-professione-sanitaria/): master di II livello, 60 CFU
+- [Assistenza in pneumologia e nella riabilitazione respiratoria](https://centrostudialaimo.it/master/assistenza-in-pneumologia-e-della-riabilitazione-respiratoria/): master di I livello, 60 CFU
+- [Assistenza infermieristica in terapia intensiva](https://centrostudialaimo.it/master/assistenza-infermieristica-in-terapia-intensiva/): master di I livello, 60 CFU
+- [Biomeccanica e interferenze neurofisiologiche alla postura](https://centrostudialaimo.it/master/biomeccanica-e-interferenze-neurofisiologiche-alla-postura/): master di I livello, 60 CFU
+- [Case manager](https://centrostudialaimo.it/master/case-manager/): master di I livello, 60 CFU
+- [Comunicazione digitale in medicina](https://centrostudialaimo.it/master/comunicazione-digitale-in-medicina/): master di II livello, 60 CFU
+- [Disturbi del comportamento alimentare](https://centrostudialaimo.it/master/disturbi-del-comportamento-alimentare/): master di I livello, 60 CFU
+- [Esperto in assistenza e gestione del paziente con disturbi respiratori del sonno](https://centrostudialaimo.it/master/esperto-in-assistenza-e-gestione-del-paziente-con-disturbi-respiratori-del-sonno/): master di I livello, 60 CFU
+- [Esperto in comunicazione e relazioni nella realtà fisica e virtuale in sanità](https://centrostudialaimo.it/master/esperto-in-comunicazione-e-relazioni-nella-realta-fisica-e-virtuale-in-sanita/): master di I livello, 60 CFU
+- [Esperto in psicogeriatria](https://centrostudialaimo.it/master/esperto-in-psicogeriatria/): master di I livello, 60 CFU
+- [Esperto in salute, sicurezza e ambiente nei luoghi di lavoro pubblici e privati – HSE Management](https://centrostudialaimo.it/master/esperto-in-salute-sicurezza-e-ambiente-nei-luoghi-di-lavoro-pubblici-e-privati-hse-management/): master di II livello, 60 CFU
+- [Esperto in tutela giuridica, medicina legale e gestione del rischio](https://centrostudialaimo.it/master/esperto-in-tutela-giuridica-medicina-legale-e-gestione-del-rischio/): master di I livello, 60 CFU
+- [Etnomedicina](https://centrostudialaimo.it/master/etnomedicina/): master di I livello, 60 CFU
+- [Fitoterapia clinica](https://centrostudialaimo.it/master/fitoterapia-clinica/): master di II livello, 80 CFU
+- [Fitoterapia generale e clinica](https://centrostudialaimo.it/master/fitoterapia-generale-e-clinica/): master di I livello, 80 CFU
+- [Formazione infermieristica di ambito psichiatrico](https://centrostudialaimo.it/master/formazione-infermieristica-di-ambito-psichiatrico/): master di I livello, 60 CFU
+- [Gestione della violenza in ambito sociale, sanitario ed educativo](https://centrostudialaimo.it/master/gestione-della-violenza-in-ambito-sociale-sanitario-ed-educativo/): master di II livello, 60 CFU
+- [Gestione delle cure palliative e della terapia del dolore](https://centrostudialaimo.it/master/gestione-delle-cure-palliative-e-della-terapia-del-dolore/): master di I livello, 60 CFU
+- [Gestione dell’antibioticoresistenza e delle infezioni acquisite in comunità](https://centrostudialaimo.it/master/gestione-dellantibioticoresistenza-e-delle-infezioni-acquisite-in-comunita/): master di I livello, 60 CFU
+- [Gestione dell’area socio educativa e socio sanitaria](https://centrostudialaimo.it/master/gestione-dellarea-socio-educativa-e-socio-sanitaria/): master di II livello, 60 CFU
+- [Gestione e coordinamento dell’area socio-sanitaria](https://centrostudialaimo.it/master/gestione-e-coordinamento-dellarea-socio-sanitaria/): master di I livello, 70 CFU
+- [Gestione, coordinamento e innovazione dei servizi per la disabilità](https://centrostudialaimo.it/master/gestione-coordinamento-e-innovazione-dei-servizi-per-la-disabilita/): master di I livello, 60 CFU
+- [Il Benessere globale: medicina alternativa come supporto alla medicina tradizionale](https://centrostudialaimo.it/master/il-benessere-globale-medicina-alternativa-come-supporto-alla-medicina-tradizionale/): master di I livello, 60 CFU
+- [Il professionista sanitario nell’attività forense: perizia, Consulenza Tecnica d’Ufficio (C.T.U) e consulenza di parte](https://centrostudialaimo.it/master/il-professionista-sanitario-nell-attivita-forense-perizia-consulenza-tecnica-dufficio-c-t-u-e-consulenza-di-parte/): master di I livello, 60 CFU
+- [Infermiere di famiglia e di comunità](https://centrostudialaimo.it/master/infermiere-di-famiglia-e-di-comunita/): master di I livello, 60 CFU
+- [Intelligenza artificiale: applicazioni nella diagnostica per immagini e nella robotica radiologia interventistica e neurochirurgica](https://centrostudialaimo.it/master/intelligenza-artificiale-applicazioni-nella-diagnostica-per-immagini-e-nella-robotica-radiologia-interventistica-e-neurochirurgica/): master di I livello, 60 CFU
+- [La gestione delle infezioni acquisite in comunità](https://centrostudialaimo.it/master/la-gestione-delle-infezioni-acquisite-in-comunita/): master di I livello, 60 CFU
+- [La Medicina Estetica](https://centrostudialaimo.it/master/la-medicina-estetica-master-area-sanitaria-ii-livello/): master di II livello, 60 CFU
+- [Lo psicologo di comunità](https://centrostudialaimo.it/master/lo-psicologo-di-comunita/): master di I livello, 60 CFU
+- [L’infermiere di anestesia e rianimazione](https://centrostudialaimo.it/master/linfermiere-di-anestesia-e-rianimazione/): master di I livello, 60 CFU
+- [L’infermiere in neonatologia](https://centrostudialaimo.it/master/linfermiere-in-neonatologia/): master di I livello, 60 CFU
+- [L’infermiere in urologia: tecniche endoscopiche e chirurgiche](https://centrostudialaimo.it/master/linfermiere-in-urologia-tecniche-endoscopiche-e-chirurgiche/): master di I livello, 60 CFU
+- [L’infermiere specializzato nell’emergenza-urgenza sanitaria territoriale e ospedaliera](https://centrostudialaimo.it/master/linfermiere-specializzato-nellemergenza-urgenza-sanitaria-territoriale-e-ospedaliera/): master di I livello, 60 CFU
+- [L’ostetrica di comunità](https://centrostudialaimo.it/master/lostetrica-di-comunita/): master di I livello, 60 CFU
+- [Management per il coordinamento delle professioni sanitarie](https://centrostudialaimo.it/master/management-per-il-coordinamento-delle-professioni-sanitarie/): master di I livello, 70 CFU
+- [Management per la direzione di struttura complessa](https://centrostudialaimo.it/master/management-per-la-direzione-di-struttura-complessa/): master di II livello, 60 CFU
+- [Management per la gestione di organizzazioni sanitarie](https://centrostudialaimo.it/master/management-per-la-gestione-di-organizzazioni-sanitarie/): master di II livello, 60 CFU
+- [Management, innovazione e sicurezza degli accessi vascolari](https://centrostudialaimo.it/master/management-innovazione-e-sicurezza-degli-accessi-vascolari/): master di I livello, 60 CFU
+- [Manager 4.0 in Sanità](https://centrostudialaimo.it/master/manager-4-0-in-sanita/): master di I livello, 60 CFU
+- [Nep trainer® - Specialista della neuroeducazione e dell’apprendimento motorio nella disabilità e nella neurotipicità](https://centrostudialaimo.it/master/nep-trainer-specialista-della-neuroeducazione-e-dellapprendimento-motorio-nella-disabilita-e-nella-neurotipicita/): master di I livello, 60 CFU
+- [Nutrizione clinica e applicata](https://centrostudialaimo.it/master/nutrizione-clinica-e-applicata/): master di II livello, 60 CFU
+- [Nutrizione e Dietologia](https://centrostudialaimo.it/master/nutrizione-e-dietologia/): master di I livello, 60 CFU
+- [Operatore sanitario specializzato nell’assistenza cardiovascolare](https://centrostudialaimo.it/master/operatore-sanitario-specializzato-nellassistenza-cardiovascolare/): master di I livello, 60 CFU
+- [Osteopatia](https://centrostudialaimo.it/master/osteopatia/): master di I livello, 60 CFU
+- [Risk management e Total quality management](https://centrostudialaimo.it/master/risk-management-e-total-quality-management/): master di II livello, 60 CFU
+- [Risk management in sanità](https://centrostudialaimo.it/master/risk-management-in-sanita/): master di I livello, 60 CFU
+- [Sanità 4.0: Esperto nella gestione dello spettro autistico](https://centrostudialaimo.it/master/sanita-4-0-esperto-nella-gestione-dello-spettro-autistico/): master di I livello, 60 CFU
+- [Scienze Motorie in Sanità](https://centrostudialaimo.it/master/scienze-motorie-in-sanita/): master di I livello, 60 CFU
+- [Valutazione motoria e posturale](https://centrostudialaimo.it/master/valutazione-motoria-e-posturale/): master di I livello, 60 CFU
+
+## Master Pubblica Amministrazione
+
+- [Addetto ufficio del processo (Ministero della Giustizia)](https://centrostudialaimo.it/master/addetto-ufficio-del-processo-ministero-della-giustizia-2-livello/): master di II livello, 60 CFU
+- [Amministrazione Aziende Sanitarie](https://centrostudialaimo.it/master/amministrazione-aziende-sanitarie-i-livello/): master di I livello, 60 CFU
+- [Amministrazione Aziende Sanitarie](https://centrostudialaimo.it/master/amministrazione-aziende-sanitarie-ii-livello/): master di II livello, 60 CFU
+- [Diritto Amministrativo](https://centrostudialaimo.it/master/diritto-amministrativo-master-pubblica-amministrazione-i-livello/): master di I livello, 60 CFU
+- [Diritto Amministrativo](https://centrostudialaimo.it/master/diritto-amministrativo-master-pubblica-amministrazione-ii-livello/): master di II livello, 60 CFU
+- [Funzionario Amministrativo Enti Locali e Amministrazione Centrale](https://centrostudialaimo.it/master/funzionario-amministrativo-enti-locali-e-amministrazione-centrale-i-livello/): master di I livello, 60 CFU
+- [Funzionario amministrativo Enti Locali e Amministrazione Centrale](https://centrostudialaimo.it/master/funzionario-amministrativo-enti-locali-e-amministrazione-centrale-ii-livello/): master di II livello, 60 CFU
+- [Funzionario Tributario](https://centrostudialaimo.it/master/funzionario-tributario-i-livello/): master di I livello, 60 CFU
+- [Funzionario Tributario](https://centrostudialaimo.it/master/funzionario-tributario-ii-livello/): master di II livello, 60 CFU
+- [Gestione degli appalti pubblici](https://centrostudialaimo.it/master/gestione-degli-appalti-pubblici-i-livello/): master di I livello, 60 CFU
+- [Gestione degli appalti pubblici](https://centrostudialaimo.it/master/gestione-degli-appalti-pubblici-ii-livello/): master di II livello, 60 CFU
+- [Governance e Management della PA](https://centrostudialaimo.it/master/governance-e-management-della-pa-ii-livello/): master di II livello, 60 CFU
+- [Innovazione e Management nelle PA](https://centrostudialaimo.it/master/innovazione-e-management-nelle-pa-i-livello/): master di I livello, 60 CFU
+- [Organizzazione e innovazione nella PA](https://centrostudialaimo.it/master/organizzazione-e-innovazione-nella-pa-i-livello/): master di I livello, 60 CFU
+- [Social media & digital manager. comunicazione pubblica digitale e intelligenza artificiale applicata ed etica](https://centrostudialaimo.it/master/social-media-digital-manager-comunicazione-pubblica-digitale-e-intelligenza-artificiale-applicata-ed-etica-2/): master di II livello, 60 CFU
+- [Specialista in Mercato e Servizi per il Lavoro nei CPI](https://centrostudialaimo.it/master/specialista-in-mercato-e-servizi-per-il-lavoro-nei-cpi-ii-livello/): master di II livello, 60 CFU
+- [Transizione Ambientale](https://centrostudialaimo.it/master/transizione-ambientale-i-livello/): master di I livello, 60 CFU
+- [Transizione Ambientale](https://centrostudialaimo.it/master/transizione-ambientale-ii-livello/): master di II livello, 60 CFU
+- [Transizione Digitale nella PA](https://centrostudialaimo.it/master/transizione-digitale-nella-pa-i-livello/): master di I livello, 60 CFU
+- [Trasparenza e Anticorruzione nella PA](https://centrostudialaimo.it/master/trasparenza-e-anticorruzione-nella-pa-ii-livello/): master di II livello, 60 CFU
+
+## Master Post Laurea
+
+- [AI Engineering](https://centrostudialaimo.it/master/ai-engineering-i-livello/): master di I livello, 60 CFU
+- [Business Administration](https://centrostudialaimo.it/master/business-administration-i-e-ii-livello/): master di II livello, 60 CFU
+- [Criminologia – indirizzo Psicologia Giuridica e Forense](https://centrostudialaimo.it/master/criminologia-indirizzo-psicologia-giuridica-e-forense-ii-livello/): master di II livello, 60 CFU
+- [Criminologia – indirizzo Scienze Forensi e Investigative](https://centrostudialaimo.it/master/criminologia-indirizzo-scienze-forensi-e-investigative-i-e-ii-livello/): master di II livello, 60 CFU
+- [Esperto management del turismo e strategie digitali per il patrimonio culturale](https://centrostudialaimo.it/master/esperto-management-del-turismo-e-strategie-digitali-per-il-patrimonio-culturale-i-livello/): master di I livello, 60 CFU
+- [Gestione degli Enti Sportivi: Diritto, Fiscalità e Lavoro del Mondo dello Sport](https://centrostudialaimo.it/master/gestione-degli-enti-sportivi-diritto-fiscalita-e-lavoro-del-mondo-dello-sport/): master di I livello, 60 CFU
+- [Lavoro e disabilità: Il disability job supporter (DJS)](https://centrostudialaimo.it/master/lavoro-e-disabilita-il-disability-job-supporter-djs-i-livello/): master di I livello, 60 CFU
+- [Management & Cybersecurity](https://centrostudialaimo.it/master/management-cybersecurity-i-livello/): master di I livello, 60 CFU
+- [Risorse umane, lavoro e organizzazione](https://centrostudialaimo.it/master/risorse-umane-lavoro-e-organizzazione-i-livello/): master di I livello, 60 CFU
+- [Scienze Informative per la Sicurezza](https://centrostudialaimo.it/master/scienze-informative-per-la-sicurezza-ii-livello/): master di II livello, 60 CFU
+- [Storytelling - scrivere un film, un romanzo, realizzare un podcast](https://centrostudialaimo.it/master/storytelling-scrivere-un-film-un-romanzo-realizzare-un-podcast-i-livello/): master di I livello, 60 CFU
+
+## Corsi di perfezionamento
+
+- [Attività e strategie di sostegno didattico agli alunni con disabilità nella scuola di oggi: La formazione dell’insegnante specializzato](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/attivita-e-strategie-di-sostegno-didattico-agli-alunni-con-disabilita-nella-scuola-di-oggi-la-formazione-dellinsegnante-specializzato/): 60 CFU
+- [Competenze e metodologie didattiche dell’animatore digitale](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/competenze-e-metodologie-didattiche-dellanimatore-digitale/): 60 CFU
+- [Competenze non cognitive e life skills in ambito scolastico](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/competenze-non-cognitive-e-life-skills-in-ambito-scolastico/): 60 CFU
+- [Competenze per sviluppare il pensiero computazionale con il coding](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/competenze-per-sviluppare-il-pensiero-computazionale-con-il-coding/): 60 CFU
+- [Didattica dell’insegnamento con la metodologia CLIL](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/didattica-dellinsegnamento-con-la-metodologia-clil/): 60 CFU
+- [Didattica e arti terapie - tecniche creative in ambito scolastico](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/didattica-e-arti-terapie-tecniche-creative-in-ambito-scolastico/): 60 CFU
+- [Didattica Integrale per il Nuovo Ambiente di Apprendimento](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/didattica-integrale-per-il-nuovo-ambiente-di-apprendimento-2/): 60 CFU
+- [Difficoltà dell’apprendimento in situazioni di handicap ed integrazione scolastica](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/difficolta-dellapprendimento-in-situazioni-di-handicap-ed-integrazione-scolastica/): 60 CFU
+- [Educare in istituti penitenziari](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/educare-in-istituti-penitenziari/): 60 CFU
+- [Gestire i disturbi dell’apprendimento in prospettiva psicopedagogica](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/gestire-i-disturbi-dellapprendimento-in-prospettiva-psicopedagogica/): 60 CFU
+- [Glottodidattica infantile](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/glottodidattica-infantile/): 60 CFU
+- [Il bullismo - interpretazione, fenomenologia, prevenzione e didattica](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/il-bullismo-interpretazione-fenomenologia-prevenzione-e-didattica/): 60 CFU
+- [Il docente di sostegno “Dal vero”](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/il-docente-di-sostegno-dal-vero/): 60 CFU
+- [Il docente di sostegno: educare all’inclusione](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/il-docente-di-sostegno-educare-allinclusione/): 60 CFU
+- [Il profilo professionale del docente abilitato e le competenze chiave](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/il-profilo-professionale-del-docente-abilitato-e-le-competenze-chiave/): 60 CFU
+- [La buona scuola - metodologie didattiche](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/la-buona-scuola-metodologie-didattiche/): 60 CFU
+- [La figura dell’insegnante di sostegno nella scuola](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/la-figura-dellinsegnante-di-sostegno-nella-scuola/): 60 CFU
+- [La scuola delle competenze - progettare, valutare, certificare](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/la-scuola-delle-competenze-progettare-valutare-certificare/): 120 CFU
+- [Le funzioni dell’ITP nella scuola di oggi](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/le-funzioni-dellitp-nella-scuola-di-oggi/): 60 CFU
+- [L’insegnamento della lingua italiana agli alunni stranieri](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/linsegnamento-della-lingua-italiana-agli-alunni-stranieri/): 60 CFU
+- [Metodologie didattiche ed apprendimento integrato di competenze CLIL](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/metodologie-didattiche-ed-apprendimento-integrato-di-competenze-clil/): 60 CFU
+- [Metodologie didattiche integrate e buone pratiche nella scuola dell’innovazione e dell’inclusione](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/metodologie-didattiche-integrate-e-buone-pratiche-nella-scuola-dellinnovazione-e-dellinclusione/): 120 CFU
+- [Metodologie didattiche per l’integrazione degli alunni con DSA](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/metodologie-didattiche-per-lintegrazione-degli-alunni-con-dsa/): 60 CFU
+- [Metodologie didattiche, l’insegnamento curriculare e l’integrazione degli alunni con bisogni educativi speciali (BES)](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/metodologie-didattiche-linsegnamento-curriculare-e-lintegrazione-degli-alunni-con-bisogni-educativi-specialibes/): 60 CFU
+- [Nuova didattica per le lingue: la metodologia CLIL](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/nuova-didattica-per-le-lingue-la-metodologia-clil/): 60 CFU
+- [Pratiche innovative con le tecnologie didattiche: tablet, lavagna multimediale (LIM)](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/pratiche-innovative-con-le-tecnologie-didattiche-tablet-lavagna-multimediale-lim/): 60 CFU
+- [Profili pedagogici e didattici dell’insegnamento di scienze motorie nella scuola primaria](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/profili-pedagogici-e-didattici-dellinsegnamento-di-scienze-motorie-nella-scuola-primaria/): 60 CFU
+- [Psicologia scolastica](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/psicologia-scolastica/): 60 CFU
+- [Tecnologie digitali e metodologiche didattiche a distanza](https://centrostudialaimo.it/area-scuola/corsi-di-perfezionamento/tecnologie-digitali-e-metodologiche-didattiche-a-distanza-scuola-dellinfanzia/): 60 CFU
+
+## Percorsi abilitanti
+
+- [Corso di preparazione TFA Sostegno 2026 XI ciclo](https://centrostudialaimo.it/area-scuola/percorsi-abilitanti/corso-di-preparazione-tfa-sostegno-2026-xi-ciclo/)
+- [Percorsi abilitanti 30 CFU ex art. 13](https://centrostudialaimo.it/area-scuola/percorsi-abilitanti/percorsi-abilitanti-30-cfu/)
+- [Percorsi Abilitanti per l’Insegnamento 30-36-60 CFU](https://centrostudialaimo.it/area-scuola/percorsi-abilitanti/percorsi-abilitanti-per-linsegnamento-30-36-60-cfu/)
+- [TFA Summer per idonei e soprannumerari](https://centrostudialaimo.it/area-scuola/percorsi-abilitanti/tfa-summer-per-idonei-e-soprannumerari/)
+
+## Certificazioni
+
+- [Certificazione Informatica Pekit Expert – Accredia](https://centrostudialaimo.it/certificazioni/certificazione-informatica-pekit/): certificazione informatica
+- [Certificazione di inglese B2, C1 e C2 con corso online](https://centrostudialaimo.it/certificazioni/certificazione-inglese-b2-c1-e-c2-con-corso-online/): certificazione linguistica
+- [CLIL + corso di inglese online + certificazione linguistica](https://centrostudialaimo.it/certificazioni/clil-corso-di-inglese-online-certificazione-linguistica/): certificazione linguistica
+- [Corso di Coding](https://centrostudialaimo.it/certificazioni/corso-di-coding/): certificazione informatica
+- [Corso di Dattilografia](https://centrostudialaimo.it/certificazioni/corso-di-dattilografia/): certificazione informatica
+- [Corso di formazione LIM](https://centrostudialaimo.it/certificazioni/corso-di-formazione-lim/): certificazione informatica
+- [Corso di formazione Tablet](https://centrostudialaimo.it/certificazioni/corso-di-formazione-tablet/): certificazione informatica
+- [DigComp 2.2 – Certificazione internazionale di alfabetizzazione digitale](https://centrostudialaimo.it/certificazioni/alfabetizzazione-digitale/): certificazione informatica
+- [DigCompEdu – Certificazione delle Competenze Digitali](https://centrostudialaimo.it/certificazioni/digcompedu-certificazione-delle-competenze-digitali/): certificazione informatica
+
+## Corsi regionali
+
+- [Corso ASACOM: Assistente all’autonomia e alla comunicazione](https://centrostudialaimo.it/corsi-regionali/asacom-assistente-autonomia-comunicazione/)
+- [Corso OPI: Operatore per l’Infanzia](https://centrostudialaimo.it/corsi-regionali/opi-operatore-per-linfanzia/)
+- [Corso OSA: Operatore Socio Assistenziale](https://centrostudialaimo.it/corsi-regionali/osa-operatore-socio-assistenziale/)
+- [Corso Segretario Coordinatore Amministrativo](https://centrostudialaimo.it/corsi-regionali/segretario-coordinatore-amministrativo/)
+
+## Domande frequenti
+
+- L’orientamento è gratuito? Sì, la consulenza di orientamento e la valutazione CFU sono gratuite e senza impegno.
+- Le lauree online hanno valore legale? Sì, i titoli delle università telematiche riconosciute dal MUR hanno lo stesso valore di quelli degli atenei tradizionali.
+- C’è un test di ammissione? No, per i corsi di laurea proposti non è previsto e le iscrizioni sono aperte tutto l’anno.
+- I titoli valgono per le graduatorie? Master, perfezionamenti e certificazioni sono valutabili secondo le tabelle ministeriali in vigore.
+
+## Parole chiave
+
+università online, università telematica, corsi di laurea online, master online, corsi di perfezionamento docenti, percorsi abilitanti 60 CFU, TFA sostegno, punteggio GPS, certificazione inglese B2 C1 C2, CLIL, certificazione Pekit, DigComp, lezioni private, ripetizioni, valutazione CFU, Sicilia
